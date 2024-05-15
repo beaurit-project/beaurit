@@ -1,7 +1,7 @@
 @charset "utf-8";
 
 body {
-  font-family: 'Pretendard';
+  font-family: 'Pretendard', '맑은 고딕', 돋움;
 }
 header {
   position: fixed;
