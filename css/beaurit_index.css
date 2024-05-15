@@ -32,3 +32,7 @@
   --color-point-pink: #FF9EAA;
   --color-point-yellow: #FFCE51;
 }
+
+body{
+  font-family: var(--font-m-ko);
+}
