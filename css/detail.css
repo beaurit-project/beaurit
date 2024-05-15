@@ -9,7 +9,6 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 0 10px;
-  background-color: #fff;
   z-index: 9999;
 }
 header .menu-page {
@@ -33,62 +32,74 @@ header .menu-page span {
 
 /******** home-pliates *******/
 .home-pliates{
-  margin: 120px 350px 0;
+  margin: 210px 400px 0;
+  position: relative;
+  min-width: 1500px;
 }
 .home-pliates .back-btn{
   background-color: #F4F5F6;
-  height: 30px;
-  width:  100px;
+  height: 40px;
+  width: 100px;
+  text-align: center;
   border-radius: 30px;
-  font-size: var(--font-button);
-  place-content: center;
+  font-size: var(--font-title-sm);
+  line-height: 40px;
+  font-family: var(--font-m-en);
+  position: absolute;
+  top: -50px;
+  margin: 8px;
 }
 .detail-img{
-  width: 600px;
-  height: 600px;
+  width: 700px;
+  height: 700px;
   border-radius: 55px;
   background-color: var(--color-point-orange);
   position: relative;
   z-index: -999;
-  margin-left: calc(100% - 650px);
+  margin-left: calc(100% - 750px);
 }
 .detail-img p{
   background: url(../images/detail-img/상세페이지-제품.png) no-repeat 50% / cover;
-  width: 700px;
-  height: 700px;
+  width: 800px;
+  height: 800px;
   text-indent: -9999px;
   position: absolute;
   top: -50px; left: -50px;
 }
 .home-pliates h1{
-  font-size: var(--font-title-lg);
+  font-size: var(--font-title-xlg);
   position: absolute;
-  top: 200px;
+  top: 40px;
   font-family: var(--font-m-en);
+}
+.home-pliates h1 span{
+  color: #FF9771;
 }
 .home-pliates .buy{
   display: block;
   background-color: #000;
   color: #fff;
-  width: 280px;text-align: center;
+  width: 250px;text-align: center;
   height: 50px; line-height: 50px;
   border-radius: 20px;
-  margin-top: 10px;
+  margin-top: 15px;
   position: absolute;
-  right: 700px;
+  right: 470px;
   font-family: var(--font-m-en);
   font-weight: 600;
+  text-transform: uppercase;
 }
 .home-pliates .buy-txt{
   font-size: var(--font-button);
   font-weight: 600;
   position: absolute;
-  right: 430px;
-  margin-top: 10px;
+  right: 100px;
+  margin-top: 15px;
 }
 .home-pliates .buy-txt1{
   margin-top: 40px;
 }
+
 
 .home-pliates .review{
   display: flex;
@@ -96,13 +107,75 @@ header .menu-page span {
   justify-content: center;
   background-color: #000;
   color: #fff;
-  width: 450px;
+  width: 400px;
   height: 80px;
   border-radius: 30px;
+  position: absolute;
+  top: 350px;
 }
 .home-pliates .review strong{
   font-size: 30px;
+  margin-right: 30px;
+}
+.home-pliates .review li:nth-child(3) strong{
+  margin-right: 0;
+}
+.home-pliates .review li:nth-child(3) p{
+  margin-right: 0;
 }
 .home-pliates .review li{
   font-size: var(--font-button);
 }
+.home-pliates .review p{
+  text-align: center;
+  margin-right: 30px
+}
+
+.home-pliates .review li:nth-child(1) strong::after, .home-pliates .review li:nth-child(2) strong::after{
+  content: "";
+  position: absolute;
+  top: 25px; 
+  width: 1px;
+  height: 25px;
+  background-color: #fff;
+}
+
+.home-pliates .review li:nth-child(1) strong::after{
+  left: 140px;
+}
+.home-pliates .review li:nth-child(2) strong::after{
+  right: 183px;
+}
+
+.home-pliates .review-txt-box{
+  width: 430px;
+  font-size: var(--font-button);
+  position: absolute;
+  top: 460px;
+}
+.home-pliates h2{
+ font-size: var(--font-title-md);
+ font-family: var(--font-m-en);
+
+ position: absolute;
+ top: 580px;
+}
+
+
+/********** add-color-into ***********/
+.add-color-into{
+  margin: 450px 600px 0;
+}
+.add-color-into .add-color-img-box .add-color-img{
+  display: flex;
+  text-indent: ;
+}
+.add-color-into .add-color-img-box .add-color-img #bg1{
+  background: url(../images/detail-img/add-color-img1.png);
+}
+.add-color-into .add-color-img-box .add-color-img #bg2{
+  background: url(../images/detail-img/add-color-img2.png);
+}
+
+
+
