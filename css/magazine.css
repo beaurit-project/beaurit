@@ -1,0 +1,92 @@
+header {
+    /* position: fixed;
+    top: 0; */
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 50px;
+    position: relative;
+  }
+   
+  header .menu-page {
+    width: 60px; height: 60px;
+    border-radius: 50%;
+    align-self: center;
+    background-color: #fff;
+  }
+  header .menu-page span {
+    display: block;
+    width: 25px; height: 2px;
+    background-color: #000000;
+  }
+  
+  header .menu-page .bar2 {
+    margin: 5px 0;
+  }
+
+  body{background-color: #F3F3F3;}
+  /* magazine main */
+
+  .magazine-detail{
+    text-align: center;
+    width: 80%;
+    position: relative;
+    margin: 0 auto;
+  }
+  .magazine-box{border-radius: 20px; background-color: #fff;}
+  .magazine-box img{
+    width: 100%; height: 100%;
+    max-width: 500px;
+  }
+  .magazine-txtbox{
+    text-align: left;
+    padding: 30px 50px;
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+    border-radius: 20px 20px 0 0;
+  }
+  .magazine-txtbox-top{width: 100%; height: 500px; background-color: #fff; text-align: left; position: absolute; top: 195px; padding: 50px; display: block;}
+
+  .magazine-txtbox.txtbox1{background-color: var(--color-point-orange);}
+  .magazine-txtbox.txtbox2{background-color: var(--color-point-pink);}
+  .magazine-txtbox.txtbox3{background-color: var(--color-point-yellow);}
+
+
+  .magazine-txtbox a{
+    grid-column: 2 / 3;
+    border: 1px solid #000;
+    height: 30px; width: 80px;
+    border-radius: 5px;
+    line-height: 30px;
+    text-align: center;
+  }
+
+  .magazine-box p{
+    max-width: 70%;
+    margin: 60px auto 0;
+    padding-bottom: 30px;
+    line-height: 2;
+    word-break: keep-all;
+  }
+  .magazine-txtbox-text p{
+    margin: 20px 0;
+  }
+
+  .magazine-imgbox{
+    width: 100%; height: 200px; background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    background: no-repeat 50% / cover;
+    background-image: url(../images/magazine-img/메거진이미지배열.png);
+    margin: 20px 0; 
+  }
+  .magazine-box.box1 img:first-child{margin-top: 500px;}
+  /* footer */
+  footer p{
+    width: 70%;
+    line-height: 2;
+    text-align: center;
+    margin: 200px auto 50px;
+  }
