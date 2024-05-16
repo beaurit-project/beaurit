@@ -34,6 +34,10 @@
 }
 
 
+body{
+  font-family: var(--font-m-ko);
+}
+
 
 /* !!제목태그 크기통일 필요!! */
 h1{font-size: var(--font-title-md);}
@@ -41,8 +45,9 @@ h2{font-size: 40px;}
 h3{font-size: 30px;}
 
 
-/***** choice ****/
+/********** choice *********/
 .choice-img h1, h2{font-family: var(--font-m-en);}
 .choice-img p{font-family: var(--font-m-ko);font-size: 16px;}
 .choice-img a{font-family: var(--font-m-ko);font-size: 20px;}
 .choice-box .choice-btn{font-family: var(--font-m-ko); font-size: var(--font-title-sm); font-weight: bold;}
+
