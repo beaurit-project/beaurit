@@ -9,7 +9,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 10px;
+  padding: 0 30px;
   z-index: 9999;
 }
 header .menu-page {
@@ -29,16 +29,22 @@ header .menu-page span {
   margin-left: 20px;
   margin: 5px 17px 5px;
 }
+header .menu-page #bar1.on{
+  background-color: #000;
+}
 
+
+header.none{
+  opacity: 0;
+  transition: 1s;
+}
 
 
 /***** hilights *****/
 
 .highlights{
   position: relative; 
-  margin: 100px;
   font-family: var(--font-m-en);
-  max-width: 1000px;
 }
 .highlights h2{
  font-size: var(--font-title-md);
@@ -88,8 +94,8 @@ header .menu-page span {
 
 .highlights-bg1{
   background: url(../images/main-img/highlights_2.png)no-repeat;
-  width: 700px;
-  height: 570px;
+  width: 500px;
+  height: 550px;
   text-indent: -9999px;
 }
 
@@ -114,6 +120,9 @@ header .menu-page span {
   height: 570px;
   text-indent: -9999px;
 }
+.highlights-bg2 p{
+  opacity: 0;
+}
 .highlights-bg2:hover p{
   background: url(../images/main-img/bg1.png) no-repeat;
   width: 500px;
@@ -132,24 +141,30 @@ header .menu-page span {
 
 .highlights-bg3{
   background: url(../images/main-img/highlights_4.png) no-repeat;
-  width: 750px;
-  height: 570px;
+  width: 1000px;
+  height: 700px;
   text-indent: -9999px;
   position: absolute;
   left: -300px;
+  top: 20px;
 }
 .highlights-img-txt4{
   position: absolute;
   top: 50px;
   left: 200px;
 }
+.highlights-bg3 p{
+  opacity: 0;
+  margin: 0;
+}
 .highlights-bg3:hover p{
   background: url(../images/main-img/bg2.png) no-repeat;
   width: 1000px;
-  height: 800px;
+  height: 600px;
   opacity: 0.8;
   transition: 0.3s;
 }
+
 
 /***** addcolor *****/
 .addcolor .slide-img img{

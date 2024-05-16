@@ -31,7 +31,18 @@
   --color-point-orange: #FF9168;
   --color-point-pink: #FF9EAA;
   --color-point-yellow: #FFCE51;
+  
+  
+  
+  /***** mobile font-size ****/
+  --font-mobile-lg: 16px;
+  --font-mobile-md: 12px;
+  --font-mobile-sm: 10px;
+  
 }
+
+
+
 
 
 body{
