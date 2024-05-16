@@ -169,6 +169,7 @@ header.none{
 /***** addcolor *****/
 .addcolor .slide-img img{
   width: 100%;
+  margin-bottom: 300px;
 }
 .addcolor h2{
   text-align: center;
