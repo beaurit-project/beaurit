@@ -8,9 +8,6 @@
   <!-- reset -->
   <link rel="stylesheet" href="../assets/styles/reset.css">
   <!-- plugIn style -->
-
-  <!-- fonts -->
-  <link rel="stylesheet" href="../assets/styles/pretendard-subset.css">
   <!-- 공통된 style -->
   <link rel="stylesheet" href="../css/beaurit_index.css">
   <!-- 이 페이지에만 들어가는 style -->
@@ -20,6 +17,8 @@
   <script src="../assets/jquery-3.7.1.min.js"></script>
   <!-- plugIn js -->
   <!-- 공통된 js -->
+  <!-- 이 페이지에만 들어가는 js -->
+  <script defer src="../js/product_list.js"></script>
 </head>
 
 <body>
@@ -46,38 +45,146 @@
   </section>
 
   <!-- 제품 개수, 필터 영역 -->
-  <div class="product-list-filter">
+  <div class="product-list-filter-box">
     <p>14개의 상품이 있습니다.</p>
-    <ul>
+    <ul class="product-list-filter">
       <li><a href="#">신상품</a></li>
       <li><a href="#">상품명</a></li>
       <li><a href="#">낮은가격</a></li>
       <li><a href="#">높은가격</a></li>
+      <li><img src="../images/list-img/list-icon-filter.png" alt="필터아이콘"></li>
     </ul>
-    <div class="view-type-wrapper">
-      <a href="#" class="view-type">
-        <img src="../images/list-img/list-icon-filter.png" alt="필터아이콘" class="view-type-icon">
-      </a>
-    </div>
   </div>
 
   <!-- 제품 리스트 영역 -->
   <section class="product-list">
     <ul class="product-list-img">
-      <li><a href="#"><img src="../images/list-img/제품리스트1.png" alt="코어클럽42기"></a></li>
-      <li><a href="#"><img src="../images/list-img/제품리스트2.png" alt="홈필라테스set+다리밴드"></a></li>
-      <li><a href="#"><img src="../images/list-img/제품리스트3.png" alt="홈필라테스set"></a></li>
-      <li><a href="#"><img src="../images/list-img/제품리스트4.png" alt="릴렉스 요가링"></a></li>
-      <li><a href="#"><img src="../images/list-img/제품리스트5.jpg" alt="뷰릿토핑"></a></li>
-      <li><a href="#"><img src="../images/list-img/제품리스트6.jpg" alt="샤인유어바디"></a></li>
-      <li><a href="#"><img src="../images/list-img/제품리스트7.jpg" alt="뷰릿 다리밴드"></a></li>
-      <li><a href="#"><img src="../images/list-img/제품리스트8.png" alt="샤인유어바디 대용량"></a></li>
-      <li><a href="#"><img src="../images/list-img/제품리스트9.png" alt="샤유바 보틀"></a></li>
-      <li><a href="#"><img src="../images/list-img/제품리스트10.png" alt="뷰릿 베이직바"></a></li>
-      <li><a href="#"><img src="../images/list-img/제품리스트11.jpg" alt="뷰릿 티칭밴드"></a></li>
-      <li><a href="#"><img src="../images/list-img/제품리스트12.png" alt="뷰릿백"></a></li>
-      <li><a href="#"><img src="../images/list-img/제품리스트13.jpg" alt="뷰릿 토핑set"></a></li>
-      <li><a href="#"><img src="../images/list-img/제품리스트14.png" alt="뷰릿 다리밴드+티칭밴드"></a></li>
+      <li class="product-list-item1">
+        <div class="product-list-inner-wrapper">
+        <a href="#"><img src="../images/list-img/제품리스트1.png" alt="코어클럽42기"></a>
+        <div class="best-seller-box">
+          <p>BEST SELLER</p>
+        </div>
+      </div>
+        <div class="product-list-des">
+          <strong class="name">코어클럽 42기</strong>
+          <div class="bar"></div>
+          <p class="price">60,000원</p>
+        </div>
+      </li>
+      <li class="product-list-item2">
+        <a href="#"><img src="../images/list-img/제품리스트2.png" alt="홈필라테스set+다리밴드"></a>
+        <div class="best-seller-box">
+          <p>BEST SELLER</p>
+        </div>
+        <div class="product-list-des">
+          <strong class="name">홈필라테스SET+뷰릿 다리 밴드</strong>
+          <div class="bar"></div>
+          <p class="price">177,800원</p>
+        </div>
+      </li>
+      <li class="product-list-item3">
+        <a href="#"><img src="../images/list-img/제품리스트3.png" alt="홈필라테스set"></a>
+        <div class="best-seller-box">
+          <p>BEST SELLER</p>
+        </div>
+        <div class="product-list-des">
+          <strong class="name">뷰릿 홈필라테스 SET</strong>
+          <div class="bar"></div>
+          <p class="price">99,800원</p>
+        </div>
+      </li>
+      <li class="product-list-item4">
+        <a href="#"><img src="../images/list-img/제품리스트4.png" alt="릴렉스 요가링"></a>
+        <div class="best-seller-box">
+          <p>BEST SELLER</p>
+        </div>
+        <div class="product-list-des">
+          <strong class="name">릴렉스 요가링</strong>
+          <div class="bar"></div>
+          <p class="price">78,000원</p>
+        </div>
+      </li>
+      <li class="product-list-item5">
+        <a href="#"><img src="../images/list-img/제품리스트5.jpg" alt="뷰릿토핑"></a>
+        <div class="product-list-des">
+          <strong class="name">뷰릿토핑</strong>
+          <div class="bar"></div>
+          <p class="price">59,000원</p>
+        </div>
+      </li>
+      <li class="product-list-item6">
+        <a href="#"><img src="../images/list-img/제품리스트6.jpg" alt="샤인유어바디"></a>
+        <div class="product-list-des">
+          <strong class="name">샤인유어바디(샤유바)</strong>
+          <div class="bar"></div>
+          <p class="price">49,000원</p>
+        </div>
+      </li>
+      <li class="product-list-item7">
+        <a href="#"><img src="../images/list-img/제품리스트7.jpg" alt="뷰릿 다리밴드"></a>
+        <div class="product-list-des">
+          <strong class="name">뷰릿 다리밴드</strong>
+          <div class="bar"></div>
+          <p class="price">59,000원</p>
+        </div>
+      </li>
+      <li class="product-list-item8">
+        <a href="#"><img src="../images/list-img/제품리스트8.png" alt="샤인유어바디 대용량"></a>
+        <div class="product-list-des">
+          <strong class="name">샤인유어바디 대용량</strong>
+          <div class="bar"></div>
+          <p class="price">78,000원</p>
+        </div>
+      </li>
+      <li class="product-list-item9">
+        <a href="#"><img src="../images/list-img/제품리스트9.png" alt="샤유바 보틀"></a>
+        <div class="product-list-des">
+          <strong class="name">샤유바 보틀</strong>
+          <div class="bar"></div>
+          <p class="price">16,000원</p>
+        </div>
+      </li>
+      <li class="product-list-item10">
+        <a href="#"><img src="../images/list-img/제품리스트10.png" alt="뷰릿 베이직바"></a>
+        <div class="product-list-des">
+          <strong class="name">뷰릿 베이직바</strong>
+          <div class="bar"></div>
+          <p class="price">63,000원</p>
+        </div>
+      </li>
+      <li class="product-list-item11">
+        <a href="#"><img src="../images/list-img/제품리스트11.jpg" alt="뷰릿 티칭밴드"></a>
+        <div class="product-list-des">
+          <strong class="name">뷰릿 티칭밴드</strong>
+          <div class="bar"></div>
+          <p class="price">42,800원</p>
+        </div>
+      </li>
+      <li class="product-list-item12">
+        <a href="#"><img src="../images/list-img/제품리스트12.png" alt="뷰릿백"></a>
+        <div class="product-list-des">
+          <strong class="name">뷰릿백</strong>
+          <div class="bar"></div>
+          <p class="price">16,000원</p>
+        </div>
+      </li>
+      <li class="product-list-item13">
+        <a href="#"><img src="../images/list-img/제품리스트13.jpg" alt="뷰릿 토핑set"></a>
+        <div class="product-list-des">
+          <strong class="name">뷰릿 토핑 SET</strong>
+          <div class="bar"></div>
+          <p class="price">122,000원</p>
+        </div>
+      </li>
+      <li class="product-list-item14">
+        <a href="#"><img src="../images/list-img/제품리스트14.png" alt="뷰릿 다리밴드+티칭밴드"></a>
+        <div class="product-list-des">
+          <strong class="name">뷰릿 다리밴드+티칭밴드</strong>
+          <div class="bar"></div>
+          <p class="price">120,800원</p>
+        </div>
+      </li>
     </ul>
   </section>
 
@@ -102,6 +209,17 @@
         <span>Online License: [제 2019-서울강남-03937 호]</span>
         <span>[사업자정보확인]</span>
       </p>
+      <div class="footer-bottom-sns">
+        <img src="../images/list-img/footer-icon-insta.png" alt="인스타그램 연결">
+        <img src="../images/list-img/footer-icon-youtube.png" alt="유튜브채널 연결">
+      </div>
+      <div class="footer-bottom-btn">
+        <a href="#">
+          <img src="../images/list-img/list-icon-kakaoch.png" alt="카카오채널 연결">
+          <div class="footer-bottom-btn-bar"></div>
+          <svg width="30" height="30" fill="none" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="m7.293 8.293 3.995-4a1 1 0 0 1 1.32-.084l.094.083 4.006 4a1 1 0 0 1-1.32 1.499l-.094-.083-2.293-2.291v11.584a1 1 0 0 1-.883.993L12 20a1 1 0 0 1-.993-.884L11 19.001V7.41L8.707 9.707a1 1 0 0 1-1.32.084l-.094-.084a1 1 0 0 1-.084-1.32l.084-.094 3.995-4-3.995 4Z" fill="#fff"/></svg>
+        </a>
+      </div>
     </section>
   </footer>
 </body>
