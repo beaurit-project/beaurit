@@ -1,7 +1,6 @@
 @charset "UTF-8";
 /****** header ********/
 
-
 header {
   position: fixed;
   top: 0;
@@ -381,6 +380,23 @@ footer p{
 
 @media (max-width : 450px){
   /****** header ********/
+  header{
+    height: 70px;
+  }
+  header img{
+    width: 100px;
+  }
+  header .menu-page{
+    width: 40px;
+    height: 40px;
+  }
+  header .menu-page span {
+    display: block;
+    width: 20px;
+    height: 2px;
+    background-color: #fff;
+    margin: 3px 10px 3px;
+  }
 /******** home-pliates *******/
   /********* footer **********/
   /********* add-color-into ***********/
