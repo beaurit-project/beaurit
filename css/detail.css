@@ -179,7 +179,7 @@ header.none{
 
 /********** add-color-into ***********/
 .add-color-into{
-  margin: 400px;
+  margin: 300px 500px 500px 500px;
   position: relative;
   min-width: 1000px;
 }
@@ -378,3 +378,12 @@ footer p{
   right: 40px;
 }
 
+
+@media (max-width : 450px){
+  /****** header ********/
+/******** home-pliates *******/
+  /********* footer **********/
+  /********* add-color-into ***********/
+  /********** add-color-into-txt ***********/
+  /********** set-product ***********/
+}
