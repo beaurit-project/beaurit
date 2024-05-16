@@ -42,9 +42,6 @@
 }
 
 
-
-
-
 body{
   font-family: var(--font-m-ko);
 }
@@ -62,3 +59,11 @@ h3{font-size: 30px;}
 .choice-img a{font-family: var(--font-m-ko);font-size: 20px;}
 .choice-box .choice-btn{font-family: var(--font-m-ko); font-size: var(--font-title-sm); font-weight: bold;}
 
+
+footer{
+    line-height: 1.2;
+    text-align: center;
+    margin: 100px auto 0 ;
+    font-size: .8rem;
+    color: #414141;
+  }
