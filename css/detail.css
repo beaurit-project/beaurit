@@ -60,6 +60,7 @@ header.none{
   margin: 8px;
   font-weight: bold;
 }
+
 .detail-img{
   width: 700px;
   height: 700px;
@@ -85,9 +86,62 @@ header.none{
   font-family: var(--font-m-en);
   width: 100px;
 }
-.home-pliates h1 span{
-  color: #FF9771;
+.home-pliates .home-h1{
+  top: 168px;
+  font-size: var(--font-title-lg);
+  line-height: 59px;
 }
+
+.beaurit-h1 {
+  height: 100px;
+  display: flex;
+}
+
+/******* beaurit 글자 움직임 ***********/
+.beaurit-h1 span {
+  position: relative;
+  top: 20px;
+  display: inline-block;
+  animation: bounce .3s ease infinite alternate;
+  font-family: var(--font-m-en);
+  font-size: 80px;
+  color: var(--color-point-orange);
+  text-shadow: 0 1px 0 #F6F5F2,
+               0 2px 0 #F6F5F2,
+               0 3px 0 #F6F5F2,
+               0 4px 0 #F6F5F2,
+               0 5px 0 #F6F5F2,
+               0 6px 0 transparent,
+               0 7px 0 transparent,
+               0 8px 0 transparent,
+               0 9px 0 transparent,
+               0 10px 10px rgba(0, 0, 0, .4);
+}
+
+.beaurit-h1 span:nth-child(2) { animation-delay: .1s; }
+.beaurit-h1 span:nth-child(3) { animation-delay: .2s; }
+.beaurit-h1 span:nth-child(4) { animation-delay: .3s; }
+.beaurit-h1 span:nth-child(5) { animation-delay: .4s; }
+.beaurit-h1 span:nth-child(6) { animation-delay: .5s; }
+.beaurit-h1 span:nth-child(7) { animation-delay: .6s; }
+.beaurit-h1 span:nth-child(8) { animation-delay: .7s; }
+
+@keyframes bounce {
+  100% {
+    top: -5px;
+    text-shadow: 0 1px 0 #F6F5F2,
+                 0 2px 0 #F6F5F2,
+                 0 3px 0 #F6F5F2,
+                 0 4px 0 #F6F5F2,
+                 0 5px 0 #F6F5F2,
+                 0 6px 0 #F6F5F2,
+                 0 7px 0 #F6F5F2,
+                 0 8px 0 #F6F5F2,
+                 0 9px 0 #F6F5F2,
+                 0 50px 25px rgba(0, 0, 0, .2);
+  }
+}
+
 .home-pliates .buy{
   display: block;
   background-color: #000;
@@ -101,6 +155,10 @@ header.none{
   font-family: var(--font-m-en);
   font-weight: 600;
   text-transform: uppercase;
+}
+.home-pliates .buy:hover{
+  background-color: rgb(0, 0, 0 , 0.3);
+  color: #000;
 }
 .home-pliates .buy-txt{
   font-size: var(--font-button);
@@ -272,31 +330,50 @@ header.none{
   font-size: 100px;
   height: 10px;
   position: absolute;
-  right: -604px;
-  top: 230px;
+  right: -650px;
+  top: 300px;
   transform: rotate(-90deg);
   color: rgb(255, 151, 113, 20%);
   margin: 0;
   /* display: none; */
 }
 
-.set{
+/******** 글자 타이핑 **********/
+.text_box{
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 100px;
+  width: 450px;
+  font-size: 40px;
+  position: absolute;
+  right: 50%;
+  transform: translate(50%);
+  margin-top: 220px;
+  font-weight: 700;
+  font-family: var(--font-m-ko);
+  color: rgb(255, 145, 104, .8);
+}
+
+
+/********** hero-section 텍스트 움직임 *****************/
+.hero-section{
   background-color: var(--color-point-orange);
   height: 100px;
-  font-size: 45px;
-  font-weight: 800;
-  min-width: 1000px;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
 }
-.set li{
-  margin-right: 25px;
-  white-space: nowrap;
+.hero-section .loop-container .item{
+  font-size: var(--font-title-lg);
+  font-weight: 500;
+  margin-right: 20px;
 }
-.set li img{
+.hero-section .loop-container .item img{
   margin-top: 5px;
-  margin-right: 3px;
+  margin-right: 20px;
+  width: 60px;
 }
 
 /********** set-product ***********/
@@ -333,6 +410,7 @@ header.none{
   margin-left: 30px;
   transform: rotate(10deg);
   transition: 0.3s;
+  cursor: pointer;
 }
 .set-menu .set-img1:hover .img1{
   transform: none;
@@ -360,6 +438,7 @@ header.none{
   top: -100px;
   margin-left: 50px;
   transition: 0.3s;
+  cursor: pointer;
 }
 .set-menu .set-img2:hover .img2{
   transform: none;
@@ -376,13 +455,21 @@ header.none{
 /********* footer **********/
 footer{
   margin-top: 200px;
+  height: 100px;
+  /* background-color: #D9D9D9; */
+  position: relative;
 }
 footer .footer-img{
-  margin: 40px;
+  /* margin: 40px; */
+  position: absolute;
+  left: 30px;
+  bottom: 30px;
+  margin-top: 10px;
 }
 footer p{
   position: absolute;
-  right: 40px;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 
@@ -415,6 +502,16 @@ footer p{
     background-color: #fff;
     margin: 3px 10px 3px;
   }
+
+/******* beaurit 글자 움직임 ***********/
+.beaurit-h1 span{
+  font-size: 30px;
+  margin-top: 10px;
+}
+ .home-pliates .home-h1{
+  font-size: 20px;
+  margin-top: 18px;
+}
   
 /******** home-pliates *******/
 .home-pliates{
@@ -488,7 +585,7 @@ footer p{
   height: 60px;
   border-radius: 20px;
   position: absolute;
-  top: 200px;
+  top: 245px;
   margin-left: 10px;
 }
 .home-pliates .review strong{
@@ -599,23 +696,38 @@ footer p{
     top: 550px;
     height: 0;
   }
+
+/******** 글자 타이핑 **********/
+  .text_box{
+    font-size: 20px;
+    width: 230px;
+    bottom: -280px;
+  }
+
+  /********** hero-section 텍스트 움직임 *****************/
   .set{
     height: 55px;
     min-width: 450px;
-    margin-top: 300px;
+    margin-top: 270px;
   }
-  .set li img{
-    width: 20px;
-    margin: 0;
-    /* overflow-x: hidden; */
+
+  .hero-section{
+    height: 50px;
+   margin-bottom: 80px;
   }
-  .set li{
-    font-size: var(--font-mobile-lg);
-    margin-right: 5px;
+  .hero-section .loop-container .item{
+    font-size: 20px;
+    font-weight: 500;
+    margin-right: 20px;
+    display: flex;
+    align-items: center;
   }
-  .set li:last-child{
-    display: none;
+  .hero-section .loop-container .item img{
+    margin-top: 3px;
+    margin-right: 20px;
+    width: 25px;
   }
+  
   /********** set-product ***********/
   .set-product{
     width: 100%;
@@ -641,22 +753,30 @@ footer p{
     height: 150px;
     border-radius: 20px;
     margin: 60px 45px;
+    
   }
   .set-menu .img1{
     background-size: 50%;
     margin-top: 20px;
+    transform: rotate(5deg);
+    cursor: pointer;
   }
+
   .set-menu .set-img2{
     width: 300px;
     height: 150px;
     border-radius: 20px;
     margin: 55px 45px;
+    cursor: pointer;
   }
   .set-menu .img2{
     background-size: 50%;
     margin-top: 50px;
     height: 300px;
     overflow: hidden;
+    transform: none;
+    position: absolute;
+    transform: rotate(10deg);
   }
   .set-img1 p:last-child, .set-img2 p:last-child{
     font-size: var(--font-mobile-md);
@@ -673,17 +793,13 @@ footer p{
     height: 100px;
   }
   footer .footer-img img{
-    /* margin: 0 0 20px 0; */
     position: absolute;
-    top: 35px;
-    left: 15px;
     width: 100px;
+    bottom: 10px;
   }
   footer p{
     margin: 0;
     font-size: var(--font-mobile-sm);
-    right: 20px;
-    top: 40px;
   }
 
 }
