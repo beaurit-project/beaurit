@@ -66,3 +66,23 @@ body{margin: 0;}
 }
 
 
+/* 효과 */
+
+  
+.logo-effect {
+    background-color: #fff;
+    width: 200px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    cursor: pointer;
+    margin-top: calc(50% - 100px);
+  }
+  
+ .logo-effect span {
+    font-size: 30px;
+    color: #00FFC6;
+    transition: transform 100ms ease-out;
+  }
