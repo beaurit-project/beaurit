@@ -1,11 +1,11 @@
-// /******* header **********/
-// $(window).on('scroll',()=>{
-//   if(scrollY > 100){
-//     $('header').addClass('none');
-//   }else{
-//     $('header').removeClass('none').animate({'transition': '1s'});
-//   }
-// })
+/******* header **********/
+$(window).on('scroll',()=>{
+  if(scrollY > 100){
+    $('header').addClass('none');
+  }else{
+    $('header').removeClass('none').animate({'transition': '1s'});
+  }
+})
 
 /******* add-color-into 슬라이드 버튼 ***********/
   
