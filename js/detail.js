@@ -23,38 +23,4 @@ $(window).on('scroll',()=>{
   });
 
 
-  // const autoSlide = () => {
-  //   currentIdx = (currentIdx + 1) % $('.add-color-img li img').length; //0,1,2,3
-  //   $('.add-color-img').stop().animate({
-  //     marginLeft: -100 * currentIdx + '%'
-  //   }, 700);
-
-  //   $('.add-color-img-box .btn-group li').eq(currentIdx).addClass('on').siblings().removeClass('on')
-  // } 
-
-  // let mainSlide = setInterval(autoSlide, 3000);
-
-
-  // $('.add-color-img-box').on({
-  //   mouseenter: () => { clearInterval(mainSlide) },
-  //   mouseleave: () => { mainSlide = setInterval(autoSlide, 3000) },
-  // })
-
-
-  const mainSwiper = new Swiper(".main-swiper", {
-    speed: 600,
-    loop:true, //시간차 움직임
-    parallax: true, 
-    autoplay: {
-      delay: 2500,
-      disableOnInteraction: false
-    },
-    pagination: {
-      el: ".swiper-pagination",
-      type: "fraction"
-    },
-    navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev",
-    },
-  });
+  
