@@ -280,12 +280,7 @@ header.none{
   /* display: none; */
 }
 
-
-/********** set-product ***********/
-.set-product {
-  min-width: 1000px;
-}
-.set-product .set{
+.set{
   display: flex;
   align-items: center;
   justify-content: center;
@@ -295,14 +290,20 @@ header.none{
   font-weight: 800;
   min-width: 1000px;
 }
-.set-product .set li{
+.set li{
   margin-right: 25px;
   white-space: nowrap;
 }
-.set-product .set li img{
+.set li img{
   margin-top: 5px;
   margin-right: 3px;
 }
+
+/********** set-product ***********/
+.set-product {
+  min-width: 1000px;
+}
+ 
 .set-product h3{
   text-align: center;
   font-size: 40px;
@@ -387,15 +388,17 @@ footer p{
 
 @media (max-width : 450px){
   body {
-    overflow-x: hidden;
-    min-width: 450px;
+    margin: 0 auto;
   }
 
 
   /****** header ********/
   header{
+    min-width: 400px;
     height: 70px;
-    width: 100%;
+    padding: 0;
+    width: 400px;
+    /* overflow-x: hidden; */
   }
   header img{
     width: 100px;
@@ -415,9 +418,13 @@ footer p{
 /******** home-pliates *******/
 .home-pliates{
   min-width: 450px;
-  margin: 10px;
+  /* margin: 10px; */
+  width: 100%;
+  margin: 0;
+  padding: 10px;
   position: relative;
   height: 900px;
+  /* overflow-x: hidden; */
 }
 .home-pliates h1{
   font-size: var(--font-mobile-lg);
@@ -515,13 +522,15 @@ footer p{
   /********* add-color-into ***********/
   .add-color-into{
     min-width:450px;
-    margin: 10px;
+    margin: 0;
+    padding: 10px;
     height: 900px;
   }
   /********** add-color-into-txt ***********/
   .add-color-into-txt{
     min-width: 450px;
-    margin: 10px;
+    margin: 0;
+    padding: 10px;
   }
   .add-color-into-txt h3{
     font-size: var(--font-mobile-lg);
@@ -581,25 +590,32 @@ footer p{
     top: 550px;
     height: 0;
   }
-  /********** set-product ***********/
-  .set-product{
+  .set{
+    height: 55px;
     min-width: 450px;
     margin-top: 300px;
   }
-  .set-product .set{
-    height: 55px;
-    min-width: 450px;
-  }
-  .set-product .set li img{
+  .set li img{
     width: 20px;
     margin: 0;
+    /* overflow-x: hidden; */
   }
-  .set-product .set li{
+  .set li{
     font-size: var(--font-mobile-lg);
+    margin-right: 5px;
   }
-  .set-product .set li:last-child{
+  .set li:last-child{
     display: none;
   }
+  /********** set-product ***********/
+  .set-product{
+    min-width: 450px;
+    margin-top: 20px;
+    overflow: hidden;
+    z-index: -9999;
+    /* background-color: #ddd; */
+  }
+
   .set-product  h3{
     margin: 40px auto 0;
     text-align: center;
@@ -643,27 +659,23 @@ footer p{
   footer{
     margin: 0;
     position: relative;
+    /* overflow-x: hidden; */
+    /* background-color: #ddd; */
+    height: 100px;
   }
   footer .footer-img img{
     /* margin: 0 0 20px 0; */
     position: absolute;
-    left: 20px;
+    top: 35px;
+    left: 15px;
+    width: 100px;
   }
   footer p{
     margin: 0;
     font-size: var(--font-mobile-sm);
-    right: 50x;
-    top: 18px;
+    right: 20px;
+    top: 40px;
   }
+
 }
 
-/* footer{
-  margin-top: 200px;
-}
-footer .footer-img{
-  margin: 40px;
-}
-footer p{
-  position: absolute;
-  right: 40px;
-} */
