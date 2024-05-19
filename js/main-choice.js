@@ -76,12 +76,13 @@ $('.choice-product-contents').on({
 if (window.matchMedia("(max-width: 450px)").matches) {
     $(window).on('scroll', function () {
         let progressIndex = 0;
-        const windowHeight = $(window).height(); 
-        const windowTop = $(window).scrollTop(); 
+        const windowHeight = $(window).height(); // 뷰포트(화면)의 높이
+        const windowTop = $(window).scrollTop(); // 스크롤된 거리
 
         userDetail.each(function (index) {
-            const elementTop = $(this).offset().top; 
+            const elementTop = $(this).offset().top; // 요소의 상단 위치
 
+            // 요소의 상단이 화면의 상단으로부터 10% 이하일 때
             if (windowTop >= elementTop - (windowHeight * 0.1)) {
                 useTxtDetail.removeClass('active');
                 waystouseNoBar.removeClass('active');
