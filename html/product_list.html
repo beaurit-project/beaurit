@@ -5,7 +5,12 @@
   <meta charset="utf-8">
   <title>제품 - 뷰릿</title>
   <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
-
+  <!-- favicon -->
+  <link rel="shortcut icon" href="../favicon/favicon.ico" type="image/x-icon">
+  <link rel="apple-touch-icon" sizes="180x180" href="../favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="../favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="../favicon/favicon-16x16.png">
+  <link rel="manifest" href="../favicon/site.webmanifest">
   <!-- reset -->
   <link rel="stylesheet" href="../assets/styles/reset.css">
   <!-- plugIn style -->
@@ -17,7 +22,6 @@
   <!-- jQuery -->
   <script src="../assets/jquery-3.7.1.min.js"></script>
   <!-- plugIn js -->
-  <!-- 공통된 js -->
   <!-- 이 페이지에만 들어가는 js -->
   <script defer src="../js/product_list.js"></script>
 </head>
@@ -54,7 +58,10 @@
       <li><a href="#">낮은가격</a></li>
       <li><a href="#">높은가격</a></li>
       <li><img src="../images/list-img/list-icon-filter.png" alt="필터아이콘"></li>
-      <li class="mobile-filter"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#5f6368"><path d="M480-344 240-584l56-56 184 184 184-184 56 56-240 240Z"/></svg><span>상품정렬</span></li>
+      <li class="mobile-filter"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960"
+          width="24px" fill="#5f6368">
+          <path d="M480-344 240-584l56-56 184 184 184-184 56 56-240 240Z" />
+        </svg><span>상품정렬</span></li>
     </ul>
   </div>
 
@@ -62,6 +69,7 @@
   <section class="product-list">
     <ul class="product-list-img">
       <li class="product-list-item1">
+        <div class="thumbnail">
           <a href="#">
             <img src="../images/list-img/제품리스트1.png" alt="코어클럽42기">
           </a>
@@ -72,6 +80,7 @@
             <a href="#">
               <img src="../images/list-img/list-icon-cart.png" alt="장바구니 등록">
             </a>
+          </div>
         </div>
         <div class="best-seller-box">
           <p>BEST SELLER</p>
@@ -83,22 +92,24 @@
         </div>
       </li>
       <li class="product-list-item2">
-        <a href="#">
-          <img src="../images/list-img/제품리스트2.png" alt="홈필라테스set+다리밴드">
-        </a>
+        <div class="thumbnail">
+          <a href="#">
+            <img src="../images/list-img/제품리스트2.png" alt="홈필라테스set+다리밴드">
+          </a>
+          <div class="product-list-img-option-box">
+            <a href="#">
+              <img src="../images/list-img/list-icon-option.png" alt="제품옵션 보기">
+            </a>
+            <a href="#">
+              <img src="../images/list-img/list-icon-wish.png" alt="관심상품 등록">
+            </a>
+            <a href="#">
+              <img src="../images/list-img/list-icon-cart.png" alt="장바구니 등록">
+            </a>
+          </div>
+        </div>
         <div class="best-seller-box">
           <p>BEST SELLER</p>
-        </div>
-        <div class="product-list-img-option-box">
-          <a href="#">
-            <img src="../images/list-img/list-icon-option.png" alt="제품옵션 보기">
-          </a>
-          <a href="#">
-            <img src="../images/list-img/list-icon-wish.png" alt="관심상품 등록">
-          </a>
-          <a href="#">
-            <img src="../images/list-img/list-icon-cart.png" alt="장바구니 등록">
-          </a>
         </div>
         <div class="product-list-des">
           <strong class="name">홈필라테스SET+뷰릿 다리 밴드</strong>
@@ -107,19 +118,21 @@
         </div>
       </li>
       <li class="product-list-item3">
-        <a href="#">
-          <img src="../images/list-img/제품리스트3.png" alt="홈필라테스set">
-        </a>
+        <div class="thumbnail">
+          <a href="#">
+            <img src="../images/list-img/제품리스트3.png" alt="홈필라테스set">
+          </a>
+          <div class="product-list-img-option-box">
+            <a href="#">
+              <img src="../images/list-img/list-icon-wish.png" alt="관심상품 등록">
+            </a>
+            <a href="#">
+              <img src="../images/list-img/list-icon-cart.png" alt="장바구니 등록">
+            </a>
+          </div>
+        </div>
         <div class="best-seller-box">
           <p>BEST SELLER</p>
-        </div>
-        <div class="product-list-img-option-box">
-          <a href="#">
-            <img src="../images/list-img/list-icon-wish.png" alt="관심상품 등록">
-          </a>
-          <a href="#">
-            <img src="../images/list-img/list-icon-cart.png" alt="장바구니 등록">
-          </a>
         </div>
         <div class="product-list-des">
           <strong class="name">뷰릿 홈필라테스 SET</strong>
@@ -128,19 +141,21 @@
         </div>
       </li>
       <li class="product-list-item4">
-        <a href="#">
-          <img src="../images/list-img/제품리스트4.png" alt="릴렉스 요가링">
-        </a>
+        <div class="thumbnail">
+          <a href="#">
+            <img src="../images/list-img/제품리스트4.png" alt="릴렉스 요가링">
+          </a>
+          <div class="product-list-img-option-box">
+            <a href="#">
+              <img src="../images/list-img/list-icon-wish.png" alt="관심상품 등록">
+            </a>
+            <a href="#">
+              <img src="../images/list-img/list-icon-cart.png" alt="장바구니 등록">
+            </a>
+          </div>
+        </div>
         <div class="best-seller-box">
           <p>BEST SELLER</p>
-        </div>
-        <div class="product-list-img-option-box">
-          <a href="#">
-            <img src="../images/list-img/list-icon-wish.png" alt="관심상품 등록">
-          </a>
-          <a href="#">
-            <img src="../images/list-img/list-icon-cart.png" alt="장바구니 등록">
-          </a>
         </div>
         <div class="product-list-des">
           <strong class="name">릴렉스 요가링</strong>
@@ -149,16 +164,18 @@
         </div>
       </li>
       <li class="product-list-item5">
-        <a href="#">
-          <img src="../images/list-img/제품리스트5.jpg" alt="뷰릿토핑">
-        </a>
-        <div class="product-list-img-option-box">
+        <div class="thumbnail">
           <a href="#">
-            <img src="../images/list-img/list-icon-wish.png" alt="관심상품 등록">
+            <img src="../images/list-img/제품리스트5.jpg" alt="뷰릿토핑">
           </a>
-          <a href="#">
-            <img src="../images/list-img/list-icon-cart.png" alt="장바구니 등록">
-          </a>
+          <div class="product-list-img-option-box">
+            <a href="#">
+              <img src="../images/list-img/list-icon-wish.png" alt="관심상품 등록">
+            </a>
+            <a href="#">
+              <img src="../images/list-img/list-icon-cart.png" alt="장바구니 등록">
+            </a>
+          </div>
         </div>
         <div class="product-list-des">
           <strong class="name">뷰릿토핑</strong>
@@ -167,19 +184,21 @@
         </div>
       </li>
       <li class="product-list-item6">
-        <a href="#">
-          <img src="../images/list-img/제품리스트6.jpg" alt="샤인유어바디">
-        </a>
-        <div class="product-list-img-option-box">
+        <div class="thumbnail">
           <a href="#">
-            <img src="../images/list-img/list-icon-option.png" alt="제품옵션 보기">
+            <img src="../images/list-img/제품리스트6.jpg" alt="샤인유어바디">
           </a>
-          <a href="#">
-            <img src="../images/list-img/list-icon-wish.png" alt="관심상품 등록">
-          </a>
-          <a href="#">
-            <img src="../images/list-img/list-icon-cart.png" alt="장바구니 등록">
-          </a>
+          <div class="product-list-img-option-box">
+            <a href="#">
+              <img src="../images/list-img/list-icon-option.png" alt="제품옵션 보기">
+            </a>
+            <a href="#">
+              <img src="../images/list-img/list-icon-wish.png" alt="관심상품 등록">
+            </a>
+            <a href="#">
+              <img src="../images/list-img/list-icon-cart.png" alt="장바구니 등록">
+            </a>
+          </div>
         </div>
         <div class="product-list-des">
           <strong class="name">샤인유어바디(샤유바)</strong>
@@ -188,19 +207,21 @@
         </div>
       </li>
       <li class="product-list-item7">
-        <a href="#">
-          <img src="../images/list-img/제품리스트7.jpg" alt="뷰릿 다리밴드">
-        </a>
-        <div class="product-list-img-option-box">
+        <div class="thumbnail">
           <a href="#">
-            <img src="../images/list-img/list-icon-option.png" alt="제품옵션 보기">
+            <img src="../images/list-img/제품리스트7.jpg" alt="뷰릿 다리밴드">
           </a>
-          <a href="#">
-            <img src="../images/list-img/list-icon-wish.png" alt="관심상품 등록">
-          </a>
-          <a href="#">
-            <img src="../images/list-img/list-icon-cart.png" alt="장바구니 등록">
-          </a>
+          <div class="product-list-img-option-box">
+            <a href="#">
+              <img src="../images/list-img/list-icon-option.png" alt="제품옵션 보기">
+            </a>
+            <a href="#">
+              <img src="../images/list-img/list-icon-wish.png" alt="관심상품 등록">
+            </a>
+            <a href="#">
+              <img src="../images/list-img/list-icon-cart.png" alt="장바구니 등록">
+            </a>
+          </div>
         </div>
         <div class="product-list-des">
           <strong class="name">뷰릿 다리밴드</strong>
@@ -209,19 +230,21 @@
         </div>
       </li>
       <li class="product-list-item8">
-        <a href="#">
-          <img src="../images/list-img/제품리스트8.png" alt="샤인유어바디 대용량">
-        </a>
-        <div class="product-list-img-option-box">
+        <div class="thumbnail">
           <a href="#">
-            <img src="../images/list-img/list-icon-option.png" alt="제품옵션 보기">
+            <img src="../images/list-img/제품리스트8.png" alt="샤인유어바디 대용량">
           </a>
-          <a href="#">
-            <img src="../images/list-img/list-icon-wish.png" alt="관심상품 등록">
-          </a>
-          <a href="#">
-            <img src="../images/list-img/list-icon-cart.png" alt="장바구니 등록">
-          </a>
+          <div class="product-list-img-option-box">
+            <a href="#">
+              <img src="../images/list-img/list-icon-option.png" alt="제품옵션 보기">
+            </a>
+            <a href="#">
+              <img src="../images/list-img/list-icon-wish.png" alt="관심상품 등록">
+            </a>
+            <a href="#">
+              <img src="../images/list-img/list-icon-cart.png" alt="장바구니 등록">
+            </a>
+          </div>
         </div>
         <div class="product-list-des">
           <strong class="name">샤인유어바디 대용량</strong>
@@ -230,16 +253,18 @@
         </div>
       </li>
       <li class="product-list-item9">
-        <a href="#">
-          <img src="../images/list-img/제품리스트9.png" alt="샤유바 보틀">
-        </a>
-        <div class="product-list-img-option-box">
+        <div class="thumbnail">
           <a href="#">
-            <img src="../images/list-img/list-icon-wish.png" alt="관심상품 등록">
+            <img src="../images/list-img/제품리스트9.png" alt="샤유바 보틀">
           </a>
-          <a href="#">
-            <img src="../images/list-img/list-icon-cart.png" alt="장바구니 등록">
-          </a>
+          <div class="product-list-img-option-box">
+            <a href="#">
+              <img src="../images/list-img/list-icon-wish.png" alt="관심상품 등록">
+            </a>
+            <a href="#">
+              <img src="../images/list-img/list-icon-cart.png" alt="장바구니 등록">
+            </a>
+          </div>
         </div>
         <div class="product-list-des">
           <strong class="name">샤유바 보틀</strong>
@@ -248,16 +273,18 @@
         </div>
       </li>
       <li class="product-list-item10">
-        <a href="#">
-          <img src="../images/list-img/제품리스트10.png" alt="뷰릿 베이직바">
-        </a>
-        <div class="product-list-img-option-box">
+        <div class="thumbnail">
           <a href="#">
-            <img src="../images/list-img/list-icon-wish.png" alt="관심상품 등록">
+            <img src="../images/list-img/제품리스트10.png" alt="뷰릿 베이직바">
           </a>
-          <a href="#">
-            <img src="../images/list-img/list-icon-cart.png" alt="장바구니 등록">
-          </a>
+          <div class="product-list-img-option-box">
+            <a href="#">
+              <img src="../images/list-img/list-icon-wish.png" alt="관심상품 등록">
+            </a>
+            <a href="#">
+              <img src="../images/list-img/list-icon-cart.png" alt="장바구니 등록">
+            </a>
+          </div>
         </div>
         <div class="product-list-des">
           <strong class="name">뷰릿 베이직바</strong>
@@ -266,16 +293,18 @@
         </div>
       </li>
       <li class="product-list-item11">
-        <a href="#">
-          <img src="../images/list-img/제품리스트11.jpg" alt="뷰릿 티칭밴드">
-        </a>
-        <div class="product-list-img-option-box">
+        <div class="thumbnail">
           <a href="#">
-            <img src="../images/list-img/list-icon-wish.png" alt="관심상품 등록">
+            <img src="../images/list-img/제품리스트11.jpg" alt="뷰릿 티칭밴드">
           </a>
-          <a href="#">
-            <img src="../images/list-img/list-icon-cart.png" alt="장바구니 등록">
-          </a>
+          <div class="product-list-img-option-box">
+            <a href="#">
+              <img src="../images/list-img/list-icon-wish.png" alt="관심상품 등록">
+            </a>
+            <a href="#">
+              <img src="../images/list-img/list-icon-cart.png" alt="장바구니 등록">
+            </a>
+          </div>
         </div>
         <div class="product-list-des">
           <strong class="name">뷰릿 티칭밴드</strong>
@@ -284,16 +313,18 @@
         </div>
       </li>
       <li class="product-list-item12">
-        <a href="#">
-          <img src="../images/list-img/제품리스트12.png" alt="뷰릿백">
-        </a>
-        <div class="product-list-img-option-box">
+        <div class="thumbnail">
           <a href="#">
-            <img src="../images/list-img/list-icon-wish.png" alt="관심상품 등록">
+            <img src="../images/list-img/제품리스트12.png" alt="뷰릿백">
           </a>
-          <a href="#">
-            <img src="../images/list-img/list-icon-cart.png" alt="장바구니 등록">
-          </a>
+          <div class="product-list-img-option-box">
+            <a href="#">
+              <img src="../images/list-img/list-icon-wish.png" alt="관심상품 등록">
+            </a>
+            <a href="#">
+              <img src="../images/list-img/list-icon-cart.png" alt="장바구니 등록">
+            </a>
+          </div>
         </div>
         <div class="product-list-des">
           <strong class="name">뷰릿백</strong>
@@ -302,19 +333,21 @@
         </div>
       </li>
       <li class="product-list-item13">
-        <a href="#">
-          <img src="../images/list-img/제품리스트13.jpg" alt="뷰릿 토핑set">
-        </a>
-        <div class="product-list-img-option-box">
+        <div class="thumbnail">
           <a href="#">
-            <img src="../images/list-img/list-icon-option.png" alt="제품옵션 보기">
+            <img src="../images/list-img/제품리스트13.jpg" alt="뷰릿 토핑set">
           </a>
-          <a href="#">
-            <img src="../images/list-img/list-icon-wish.png" alt="관심상품 등록">
-          </a>
-          <a href="#">
-            <img src="../images/list-img/list-icon-cart.png" alt="장바구니 등록">
-          </a>
+          <div class="product-list-img-option-box">
+            <a href="#">
+              <img src="../images/list-img/list-icon-option.png" alt="제품옵션 보기">
+            </a>
+            <a href="#">
+              <img src="../images/list-img/list-icon-wish.png" alt="관심상품 등록">
+            </a>
+            <a href="#">
+              <img src="../images/list-img/list-icon-cart.png" alt="장바구니 등록">
+            </a>
+          </div>
         </div>
         <div class="product-list-des">
           <strong class="name">뷰릿 토핑 SET</strong>
@@ -323,19 +356,21 @@
         </div>
       </li>
       <li class="product-list-item14">
-        <a href="#">
-          <img src="../images/list-img/제품리스트14.png" alt="뷰릿 다리밴드+티칭밴드">
-        </a>
-        <div class="product-list-img-option-box">
+        <div class="thumbnail">
           <a href="#">
-            <img src="../images/list-img/list-icon-option.png" alt="제품옵션 보기">
+            <img src="../images/list-img/제품리스트14.png" alt="뷰릿 다리밴드+티칭밴드">
           </a>
-          <a href="#">
-            <img src="../images/list-img/list-icon-wish.png" alt="관심상품 등록">
-          </a>
-          <a href="#">
-            <img src="../images/list-img/list-icon-cart.png" alt="장바구니 등록">
-          </a>
+          <div class="product-list-img-option-box">
+            <a href="#">
+              <img src="../images/list-img/list-icon-option.png" alt="제품옵션 보기">
+            </a>
+            <a href="#">
+              <img src="../images/list-img/list-icon-wish.png" alt="관심상품 등록">
+            </a>
+            <a href="#">
+              <img src="../images/list-img/list-icon-cart.png" alt="장바구니 등록">
+            </a>
+          </div>
         </div>
         <div class="product-list-des">
           <strong class="name">뷰릿 다리밴드+티칭밴드</strong>
