@@ -1,5 +1,5 @@
 @charset "UTF-8";
-
+body{overflow-x: hidden;}
 /* header */
 header {
   position: fixed;
@@ -34,14 +34,11 @@ header .menu-page span {
   margin-left: 20px;
   margin: 5px 17px 5px;
 }
-header .menu-page #bar1.on{
-  background-color: #000;
-}
 
 
 header.none{
   opacity: 0;
-  transition: 1s;
+  transition: 2s;
 }
 
 

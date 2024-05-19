@@ -1,6 +1,6 @@
-/******* header **********/
+/******* header 사라짐 **********/
 $(window).on('scroll',()=>{
-  if(scrollY > 100){
+  if(scrollY > 200){
     $('header').addClass('none');
   }else{
     $('header').removeClass('none').animate({'transition': '1s'});
@@ -69,6 +69,8 @@ $(window).on('scroll',()=>{
   document.querySelectorAll('.loop-container').forEach(el => createLoopingText(el));
 
   
+
+
 /******** 글자 타이핑 **********/
   const content = "기구 필라테스를 내 방에서, 뷰릿 홈 필라테스";
   const text = document.querySelector(".text");
@@ -89,7 +91,22 @@ $(window).on('scroll',()=>{
 
 
 
-  /**************** 마우스 커서 ******************/
+/******** 슬라이드 움직임 *****/
+  const subSwiper = new Swiper(".sub-swiper", {
+    speed: 1000,
+    loop:true,
+    autoplay: {
+      delay: 4000,
+      disableOnInteraction: false
+    },
+    pagination: {
+      el: ".sub-page-no",
+      clickable: true,
+    }
+  });
+
+
+/**************** 마우스 커서 ******************/
   
   const emoji = document.querySelector('.emoji');
   $('.emoji');
@@ -100,7 +117,7 @@ $(window).on('scroll',()=>{
 
   // 커서를 따라 다니는 이모지 좌표
   // $(window).on('mousemove', ()=>{})
-  $('.add-color-img img').on('mousemove',(e)=>{
+  addEventListener ('mousemove',(e)=>{
     mouseX = e.clientX;
     mouseY = e.clientY;
     console.log(mouseX, mouseY)
@@ -115,12 +132,25 @@ $(window).on('scroll',()=>{
   const emojiMov= () =>{
     requestAnimationFrame(emojiMov); //연속 호출 필요
 
-    emojiX += (mouseX - emojiX) * 0.1
-    emojiY += (mouseY - emojiY) * 0.1
+    emojiX += (mouseX - emojiX) * 0.4
+    emojiY += (mouseY - emojiY) * 0.4
 
     emoji.style.transform = `translate(${emojiX}px, ${emojiY}px)`;
   }
 
   emojiMov();
 
-  $('.add-color-img img').on('mousemove',(e)=>{})
+
+  
+  $('.swiper, .set-img1, .set-img2').on({
+    'mouseenter' : (e) => { 
+      const target = $('.emoji');
+      target.css({display : 'block'});
+    },
+    'mouseleave' : (e) => {
+      const target = $('.emoji');
+      target.css({display : 'none'});
+    }
+  });
+
+  
