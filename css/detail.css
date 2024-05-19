@@ -1,5 +1,6 @@
 @charset "UTF-8";
 /****** header ********/
+body{color: #222; overflow-x: hidden;}
 
 header {
   position: fixed;
@@ -21,28 +22,31 @@ header .menu-page {
   flex-direction: column;
   place-content: center;
 }
+header .menu-page {
+  margin-top: 3px;
+}
+
 header .menu-page span {
   display: block;
   width: 25px;
   height: 2px;
   background-color: #fff;
   margin-left: 20px;
-  margin: 5px 17px 5px;
+  margin: 0 17px 5px;
 }
-header .menu-page #bar1.on{
-  background-color: #000;
+header .menu-page .bar1{
+  margin-top: 3px;
 }
-
 
 header.none{
   opacity: 0;
-  transition: 1s;
+  transition: 2s;
 }
 
 
 /******** home-pliates *******/
 .home-pliates{
-  margin: 250px;
+  margin: 270px;
   position: relative;
   min-width: 1300px;
 }
@@ -239,71 +243,53 @@ header.none{
 
 /********** add-color-into ***********/
 .add-color-into{
-  margin: 300px 500px 500px 500px;
+  margin: 300px 400px 400px 400px;
   position: relative;
   min-width: 1000px;
   /* cursor: none; */
 }
 
-
+/********* 마우스 커서 **********/
 .emoji{
-  background-color: rgb(255, 219, 92, 0.8);
-  box-shadow: 0 0 30px  rgb(255, 219, 92), 0 0 10px  rgb(255, 219, 92, 1);
+  background-color: #000;
+  /* box-shadow: 0 0 30px  rgb(255, 219, 92), 0 0 10px  rgb(255, 219, 92, 1); */
   padding: 4px;
   border-radius: 50%;
+  width: 70px;
+  height: 70px;
   position: fixed;
-  top: 20px; left: 20px;
-  font-size: 2rem;
+  top: 5px; left: 5px;
+  font-size: 3rem;
+  text-align: center;
   pointer-events: none;
   z-index: 999;
   display: none;
 
   will-change: transform;
 }
-
-.add-color-into .add-color-img-btn .add-color-img-box .add-color-img{
-  display: flex;
-  width: 400%;
-  position: relative;
-}
-.add-color-into .add-color-img-btn .add-color-img-box .add-color-img li{
-  width: 25%;
-}
-.add-color-into .add-color-img-btn .add-color-img-box .add-color-img img{
-  width: 400px;
+.swiper{
   cursor: none;
 }
+
+
+/******** 슬라이드 움직임 *****/
 .add-color-img-box{
   width: 400px;
   overflow: hidden;
 }
-.btn-group{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: absolute;
-  bottom: -40px;
-  left: 20px;
+
+.swiper-wrapper .swiper-slide img{
+  width: 400px;
+}
+.swiper-pagination{
+  background-color: #F4F5F6;
   border-radius: 25px;
   width: 100px;
-  height: 30px;
-  
-  background-color: #F4F5F6;
 }
 
-.btn-group li{
-  text-indent: -9999px;
-  background-color: #D9D9D9;
-  width: 10px; height: 10px;
-  margin: 3px;
-  border-radius: 50%;
-  cursor: pointer;
-}
-.btn-group li:hover{
-  background-color: #000;
-}
 
 /********** add-color-into-txt ***********/
+
 .add-color-into-txt h3{
   font-size: 45px;
   margin-bottom: 25px;
@@ -355,6 +341,8 @@ header.none{
   color: rgb(255, 151, 113, 20%);
   margin: 0;
   /* display: none; */
+  font-weight: var(--font-m-en);
+  font-weight: 700;
 }
 
 /******** 글자 타이핑 **********/
@@ -369,12 +357,14 @@ header.none{
   position: absolute;
   right: 50%;
   transform: translate(50%);
-  margin-top: 220px;
+  margin-top: 260px;
   font-weight: 700;
   font-family: var(--font-m-ko);
   color: rgb(255, 145, 104, .8);
 }
-
+.text_box span{
+  margin-bottom: 250px;
+}
 
 /********** hero-section 텍스트 움직임 *****************/
 .hero-section{
@@ -385,12 +375,12 @@ header.none{
   overflow: hidden;
 }
 .hero-section .loop-container .item{
-  font-size: var(--font-title-lg);
-  font-weight: 500;
+  font-size: var(--font-title-md);
+  font-weight: 600;
   margin-right: 20px;
 }
 .hero-section .loop-container .item img{
-  margin-top: 5px;
+  margin-top: 2px;
   margin-right: 20px;
   width: 60px;
 }
@@ -398,9 +388,11 @@ header.none{
 /********** set-product ***********/
 .set-product {
   min-width: 1000px;
+  margin-top: 180px;
 }
  
 .set-product h3{
+  font-family: var(--font-m-en);
   text-align: center;
   font-size: 40px;
   margin-top: 150px;
@@ -418,6 +410,8 @@ header.none{
   border-radius: 43px;
   position: relative;
   margin-right: 30px;
+  cursor: none;
+  will-change: transform;
 }
 .set-menu .img1{
   background: url(../images/detail-img/상세페이지_3.png) no-repeat;
@@ -429,7 +423,7 @@ header.none{
   margin-left: 30px;
   transform: rotate(10deg);
   transition: 0.3s;
-  cursor: pointer;
+ 
 }
 .set-menu .set-img1:hover .img1{
   transform: none;
@@ -440,12 +434,14 @@ header.none{
   height: 400px;
   border-radius: 43px;
   position: relative;
+  will-change: transform;
 }
 .set-img1 p{
   position: absolute;
   bottom: -45px;
   left: -5px;
   font-size: 1.5rem;
+  font-family: var(--font-m-en);
 }
 .set-menu .img2{
   background: url(../images/detail-img/상세페이지_4.png) no-repeat;
@@ -457,8 +453,10 @@ header.none{
   top: -100px;
   margin-left: 50px;
   transition: 0.3s;
-  cursor: pointer;
+  cursor: none;
+  
 }
+
 .set-menu .set-img2:hover .img2{
   transform: none;
 }
@@ -467,7 +465,7 @@ header.none{
   bottom: -45px;
   left: -5px;
   font-size: 1.5rem;
-  
+  font-family: var(--font-m-en);
 }
 
 
@@ -647,7 +645,7 @@ footer p{
   /********* add-color-into ***********/
   .add-color-into{
     min-width:430px;
-    margin: 0;
+    margin: 100px 0;
     padding: 10px;
     height: 900px;
   }
@@ -666,13 +664,7 @@ footer p{
     font-size: var(--font-mobile-md);
     
   }
-  .add-color-into .add-color-img-btn .add-color-img-box .add-color-img img{
-    width: 350px;
-    margin: 80px 10px 0;
-  }
-  .btn-group{
-    bottom: 290px;
-  }
+ 
   .add-color-into-txt .easy{
     top: 640px;
     left: 20px;
@@ -716,11 +708,30 @@ footer p{
     height: 0;
   }
 
+  .add-color-img-box{
+    width: 400px;
+    overflow: hidden;
+  }
+
+  
+  .swiper-wrapper .swiper-slide img{
+    width: 360px;
+  }
+  .swiper-pagination{
+    position: absolute;
+    top: 520px;
+  }
+  
+
 /******** 글자 타이핑 **********/
   .text_box{
     font-size: 20px;
     width: 230px;
-    bottom: -280px;
+    bottom: -270px;
+    left: -30px;
+  }
+  .text_box span{
+    margin-bottom: 10px;
   }
 
   /********** hero-section 텍스트 움직임 *****************/
@@ -740,10 +751,11 @@ footer p{
     margin-right: 20px;
     display: flex;
     align-items: center;
+    font-weight: 800;
   }
   .hero-section .loop-container .item img{
-    margin-top: 3px;
-    margin-right: 20px;
+    margin-bottom: 3px;
+    margin-right: 15px;
     width: 25px;
   }
   

@@ -14,6 +14,7 @@
 
   <!-- reset -->
   <link rel="stylesheet" href="../assets/styles/reset.css">
+  <link rel="stylesheet" href="../assets/styles/swiper-bundle.min.css">
   <!-- fonts -->
 
   <!-- 공통된 style -->
@@ -23,6 +24,7 @@
 
   <!-- jQuery -->
   <script src="../assets/jquery-3.7.1.min.js"></script>
+  <script src="../assets/swiper-bundle.min.js"></script>
   <!-- plugIn -->
 
 </head>
@@ -88,32 +90,25 @@
   <section class="add-color-into">
     <div class="emoji">🏃‍♀️</div>
     
-  <div class="add-color-img-btn">
-    <div class="add-color-img-box">
-      <ul class="add-color-img">
-       <li><img src="../images/detail-img/add-color-img1.png" alt="상세페이지1"></li>
-       <li><img src="../images/detail-img/add-color-img2.png" alt="상세페이지2"></li>
-       <li><img src="../images/detail-img/add-color-img3.png" alt="상세페이지3"></li>
-       <li><img src="../images/detail-img/add-color-img4.png" alt="상세페이지4"></li>
-      </ul>
 
-      <div class="swiper-button-next"></div>
-      <div class="swiper-button-prev"></div>
-      <div class="swiper-pagination"></div>
+    <div class="add-color-img-box">
+
+  <!------- 슬라이드 움직임 ------>
+      <div class="swiper sub-swiper">
+        <ul class="swiper-wrapper">
+          <li class="swiper-slide"><img src="../images/detail-img/add-color-img1.png" alt="상세페이지1"></li>
+          <li class="swiper-slide"><img src="../images/detail-img/add-color-img2.png" alt="상세페이지2"></li>
+          <li class="swiper-slide"><img src="../images/detail-img/add-color-img3.png" alt="상세페이지3"></li>
+          <li class="swiper-slide"><img src="../images/detail-img/add-color-img4.png" alt="상세페이지4"></li>
+        </ul>
+        
+      </div>
+      <div class="swiper-pagination sub-page-no"></div>
+
     </div>
 
-    <ul class="btn-group">
-      <li>1</li>
-      <li>2</li>
-      <li>3</li>
-      <li>4</li>
-    </ul>
-  </div>
-  
  <!------- add-color-into txt ----------->
   <div class="add-color-into-txt">
-
-    
 
     <div class="easy">
       <h3>Easy clean</h3>
