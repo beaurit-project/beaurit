@@ -23,8 +23,13 @@
     margin: 0 auto;
     text-align: center;
 }
-.choice-box h1, p, a{
+.choice-box h1{
     margin: 20px auto;
+    font-family: var(--font-m-en);
+}
+.choice-box p, a{
+    margin: 20px auto;
+    font-family: var(--font-m-ko);
 }
 .choice-box .choice-btn{
     display: block;
@@ -53,7 +58,9 @@
     align-content: center;
     height: 100%;
 }
-
+.choice-product-contents h1{
+    font-family: var(--font-m-en);
+}
 .choice-slide-imgbox{
     display: flex;
     height: 50%; width: 600%;
@@ -115,6 +122,11 @@
     width: 80%;
     margin: 50px auto;
 }
+
+.user-detail-box{
+    width: 70%;
+    margin: 0 auto;
+}
 .user-detail{
     margin: 0 0 50px 0;
     display: grid;
@@ -122,15 +134,13 @@
     background-color: #fff;
     text-align: left;
 }
-.user-detail-box{
-    width: 70%;
-    margin: 0 auto;
-
-}
 
 .user-detail img{
     width: 100%;
 }
+.use-txtdetail h3{font-family: var(--font-m-en);}
+.use-txtdetail p{font-family: var(--font-m-ko);}
+
 .use-txtdetail{
     margin: 50px;
     transition: .3s;
@@ -148,10 +158,10 @@
     position: relative;
     display: block;
     width: 200px; height: 40px;
-    background-color: #F4F5F6;
+    background-color: #eaeaea;
     border: 1px solid #000;
     border-radius: 20px;
-    text-align: center;
+    padding-left: 30px;
     line-height: 40px;
     margin: 0;
 }
@@ -162,56 +172,64 @@
     right: 15px;
 }
 
-
+.waystouse-btn:hover{
+    background-color: #000000;
+    color: #ffffff;
+}
+.waystouse-btn:hover img{
+    filter:invert(100%);
+}
 /* progress bar */
+
 .waystouse-no-bar{
     margin: 50px 0;
     width: 50px; height: 50px;
-    overflow: hidden;
     position: sticky;
-    top: 10%;
+    top: 18%;
 }
 .waystouse-no-bar li{
-    display: none;
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    opacity: 0;
     line-height: 50px;
     font-size: 2rem;
     color: #ddd;
     transition: .2s;
+
 }
 .waystouse-no-box .waystouse-no-bar li.active{
     color: #000000;
-    display: block;
+    opacity: 1;
 }
 
 .waystouse-box .progress-bar-wrapper{
     background-color: #ddd;
-    height: 5px; width: 100%;
+    height: 8px; width: 100%;
     border-radius: 10px;
     transform: translateY(-50px);
     position: sticky;
-    top: 180px;
+    top: 35%;
 }
-/* .progress-bar{height: 100%; width: 100%; background-color: #000000; border-radius: 10px;} */
 
 
-
-.btn-group {
+.progress-bar-btn-group {
     display: flex;
     justify-content: center;
     background-color: #ddd;
     border-radius: 10px;
     height: 8px;
-    width: auto; /* 변경된 부분 */
+    width: 50px; 
     position: relative;
 }
 
-.btn-group li:nth-child(1) {
-    width: 10px;
+.progress-bar-btn-group li:nth-child(1) {
+    width: 8.333px;
     height: 8px;
     background-color: #000;
     border-radius: 10px;
     text-indent: -9999px;
-    transition: width 0.3s ease; /* 변경된 부분 */
+    transition: width 0.3s ease;
     position: absolute;
     left: 0;
 }
@@ -223,7 +241,8 @@
     position: sticky;
     top: 0;
     padding-top: 10%;
-    /* transition: 1s; */
+    background-color: rgba(0, 0, 0, 0);
+
 }
 
 .user-detail.homepilates{
@@ -259,7 +278,146 @@
     top: 0;
     padding-top: 10%;
     background-color: rgba(0, 0, 0, 0);
+
 }
 
 
+/******* mo 화면 ********/
+@media (max-width:450px){
 
+
+.choice{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+}
+.choice-img{
+    grid-template-rows: 1 / 2;
+    width: 100%; height: 50%;
+}
+.choice-box h1{
+    margin: 0 5px;
+}
+.choice-product{
+    margin-top: 80px;
+    grid-template-rows: 2 / 3;
+    width: 100%;
+}
+.choice-slide-imgbox #bg1, #bg2, #bg3, #bg4, #bg5, #bg6{
+    /* background-size: 50%; */
+    width: 50vw; height: 100%;
+}
+
+.choice-product .choice-no-bar{
+    margin-top: 50px;
+}
+
+
+/* ways to use */
+.waystouse h2{
+    position: sticky;
+    top: 0;
+    padding-top: 10%;
+}
+.waystouse-no-box{
+    display: none;
+}
+.waystouse-box{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+.user-detail-box{
+    width: 80%;
+    margin-top: 50px;
+}
+.user-detail{
+    width: 100%;
+}
+.user-detail img{
+    width: 100%; 
+
+}
+.use-txtdetail{
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%;
+    opacity: 0;
+    background-color: #fff;
+    grid-column: 2 / 3;
+    padding: 0 10px;
+}
+.use-txtdetail.active{
+    margin-left: 0;
+}
+.waystouse-btn{
+    width: 90%;
+    font-size: var(--font-mobile-md);
+}
+.waystouse-btn img{
+    display: none;
+}
+
+.use-txtdetail h3{font-size: var(--font-mobile-lg);}
+.use-txtdetail p{font-size: var(--font-mobile-sm);}
+
+/* 슬라이드 영역 효과 */
+.user-detail.coreclub{
+    position: sticky;
+    top: 10%;
+    padding-top: 10%;
+    background-color: rgba(0, 0, 0, 0);
+
+}
+
+.user-detail.homepilates{
+    position: sticky;
+    top: 10%;
+    padding-top: 10%;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.user-detail.beaurittopping{
+    position: sticky;
+    top: 10%;
+    padding-top: 10%;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.user-detail.beauritlegband{
+    position: sticky;
+    top: 10%;
+    padding-top: 10%;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.user-detail.teachingband{
+    position: sticky;
+    top: 10%;
+    padding-top: 10%;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.user-detail.syd{
+    position: sticky;
+    top: 10%;
+    padding-top: 10%;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.use-txtdetail{
+    margin: 50px;
+    transition: .3s;
+    opacity: 0;
+    background-color: #fff;
+}
+.use-txtdetail.active{
+    opacity: 1;
+    background-color: #fff;
+
+}
+
+.waystouse-btn{margin: 0 ; padding: 0; text-align: center;}
+
+a .logo-effect{display: none;}
+
+}
