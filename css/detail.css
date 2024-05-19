@@ -242,7 +242,25 @@ header.none{
   margin: 300px 500px 500px 500px;
   position: relative;
   min-width: 1000px;
+  /* cursor: none; */
 }
+
+
+.emoji{
+  background-color: rgb(255, 219, 92, 0.8);
+  box-shadow: 0 0 30px  rgb(255, 219, 92), 0 0 10px  rgb(255, 219, 92, 1);
+  padding: 4px;
+  border-radius: 50%;
+  position: fixed;
+  top: 20px; left: 20px;
+  font-size: 2rem;
+  pointer-events: none;
+  z-index: 999;
+  display: none;
+
+  will-change: transform;
+}
+
 .add-color-into .add-color-img-btn .add-color-img-box .add-color-img{
   display: flex;
   width: 400%;
@@ -253,6 +271,7 @@ header.none{
 }
 .add-color-into .add-color-img-btn .add-color-img-box .add-color-img img{
   width: 400px;
+  cursor: none;
 }
 .add-color-img-box{
   width: 400px;

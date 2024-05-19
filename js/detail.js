@@ -5,7 +5,7 @@ $(window).on('scroll',()=>{
   }else{
     $('header').removeClass('none').animate({'transition': '1s'});
   }
-})
+});
 
 
 /******* add-color-into 슬라이드 버튼 ***********/
@@ -36,7 +36,7 @@ $(window).on('scroll',()=>{
         target: 0 
       },
       interpolationFactor: 0.1, // 선형 보간에 사용되는 요인
-      speed: 0.16, 
+      speed: 0.08,  //속도
       direction: -1
     };
     
@@ -86,4 +86,41 @@ $(window).on('scroll',()=>{
   }
   
   setInterval(typing, 200);
+
+
+
+  /**************** 마우스 커서 ******************/
   
+  const emoji = document.querySelector('.emoji');
+  $('.emoji');
+
+  // 마우스 좌표
+  let mouseX = 0;
+  let mouseY = 0;
+
+  // 커서를 따라 다니는 이모지 좌표
+  // $(window).on('mousemove', ()=>{})
+  $('.add-color-img img').on('mousemove',(e)=>{
+    mouseX = e.clientX;
+    mouseY = e.clientY;
+    console.log(mouseX, mouseY)
+  });
+
+  // 마우스 커서를 따라 다니는 이모지 좌표
+  let emojiX = 0;
+  let emojiY = 0;
+
+  // 호출
+
+  const emojiMov= () =>{
+    requestAnimationFrame(emojiMov); //연속 호출 필요
+
+    emojiX += (mouseX - emojiX) * 0.1
+    emojiY += (mouseY - emojiY) * 0.1
+
+    emoji.style.transform = `translate(${emojiX}px, ${emojiY}px)`;
+  }
+
+  emojiMov();
+
+  $('.add-color-img img').on('mousemove',(e)=>{})

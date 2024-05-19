@@ -12,6 +12,11 @@ header {
   padding: 0 30px;
   z-index: 9999;
 }
+header .logo-img{
+  position: absolute;
+  left: 30px;
+  top: 30px;
+}
 header .menu-page {
   background-color: #000;
   width: 60px;
@@ -167,15 +172,48 @@ header.none{
 
 
 /***** addcolor *****/
-.addcolor .slide-img img{
-  width: 100%;
-  margin-bottom: 300px;
-}
+
 .addcolor h2{
   text-align: center;
   font-family: var(--font-m-en);
   font-size: var(--font-title-md);
-  margin-bottom: 80px;
+  margin-bottom: 110px;
+  margin-top: 80px;
+}
+.addcolor{
+  margin-bottom: 200px;
 }
 
+/****** addcolor 제품 슬라이드 ********/
+#slider{
+  overflow: hidden;
+  position: relative;
+  width: 1440px;
+  height: 140px;
+  box-sizing: border-box;
+}
+.item img{
+  width: 130%;
+}
+.image-box{
+  width: 5478px;
+  height: 100%;
+  display: flex;
+  flex-wrap: nowrap;
+  animation: bannermove 20s linear infinite;
+}
 
+.image-box > div {
+  margin: 0px -1px 0px 0px;
+}
+
+@keyframes bannermove {
+  0% {
+    transform: translate(-33%, 0);
+    /* 속도 조절 */
+  }
+  100%{
+    transform: translate(0, 0); 
+    
+  }
+}
