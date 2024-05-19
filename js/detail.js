@@ -152,3 +152,5 @@ $(window).on('scroll',()=>{
       target.css({display : 'none'});
     }
   });
+
+  
