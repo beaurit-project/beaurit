@@ -1,21 +1,36 @@
 @charset "utf-8";
 
-/* main box */
-.main-bg-wrapper {
+/******** main box ********/
+body {
+  overflow-x: hidden;
+}
+.main-bg {
+  width: 100%;
+  height: 100vh;
+  border-radius: 45px;
+}
+.main-bg .main-bg-wrapper {
+  width: 100vw;
   position: relative;
-  width: 100%;
-  height: 100vh;
-  border-radius: 50px;
 }
-.main-bg-wrapper img {
-  border-radius: 45px 45px;
-  width: 100%;
-  height: 100vh;
-}
-.main-bg .main-bg-wrapper .main-bg-img {
+.main-bg .main-bg-wrapper .main-bg-contents {
   position: absolute;
   width: 100%;
-  border-radius: 50%;
+  height: 100vh;
+  transition: all 2s ease-out;
+  opacity: 0;
+}
+.main-bg-wrapper .main-bg-contents.active {
+  transform: scale(1.1);
+  opacity: 1;
+}
+.main-bg .main-bg-wrapper .main-bg-contents img {
+  width: 100%;
+  object-fit: cover;
+  height: 100vh;
+  position: absolute;
+  opacity: 1;
+  border-radius: 45px;
 }
 .main-bg .main-box {
   position: absolute;
@@ -26,6 +41,9 @@
 .main-bg .main-box h2 {
   font-size: var(--font-title-xlg);
 }
+.main-bg .main-box h2 .main-box-img {
+  margin-top: 10px;
+}
 .main-bg .main-box .main-sub-box {
   display: flex;
   position: relative;
@@ -35,21 +53,129 @@
   margin-top: 30px;
 }
 .main-bg .main-box .main-sub-box .button-container {
-  /* width: 100%; */
   position: absolute;
   top: 15px;
   left: 350px;
-  
+  width: 80px;
+  height: 90px;
 }
-.main-bg .main-box .main-sub-box .button-container {
-
+.main-bg .main-box .main-sub-box .button-container:hover .main-bg-wrapper .main-bg-contents {
+  opacity: 1;
+}
+.main-bg .main-box .main-sub-box .button-container .title-button {
+  background: none;
+  border: none;
+}
+.main-bg .main-box .main-sub-box .button-container .title-button .title-button-svg {
+  position: absolute;
 }
 
 /******** sub-main ********/
-main .sub-main {
+.sub-main {
   position: relative;
-  height: 100vh;
+  width: 100vw;
+  margin-bottom: 300px;
 }
-main .sub-main img {
+.sub-main .sub-main-container {
+  margin: 0 auto;
+  max-width: 1920px;
+  padding: 0 16px;
+  display: flex;
+  gap: 45px 200px;
+  padding: 48px 0 64px;
+}
+.sub-main .sub-main-container .sub-main-box1 {
   position: absolute;
+  top: 50%;
+  left: 40px;
+}
+.sub-main .sub-main-containr .sub-main-box1 img {
+  z-index: 9999px;
+}
+.sub-main .sub-main-container .sub-main-box1 .sub-main-img-bg {
+  background-color: #FF9168;
+  border-radius: 50%;
+  width: 450px;
+  height: 450px;
+  position: absolute;
+  top: 80px;
+  left: 50px;
+  z-index: -99;
+  opacity: 1;
+}
+.sub-main .sub-main-container .sub-main-box1 .sub-main-txt {
+  background-color: #000;
+  color: #fff;
+  width: 250px;
+  font-size: var(--font-title-lg);
+  font-family: var(--font-m-en);
+  font-weight: bold;
+  border-radius: 30px;
+  text-align: center;
+  padding: 10px;
+  transform: rotate(-10deg);
+  position: absolute;
+  left: 40%;
+  bottom: 2%;
+}
+.sub-main .sub-main-container .sub-main-box2 {
+  margin: 80px auto;
+}
+.sub-main .sub-main-container .sub-main-box2 .sub-main-img-bg{
+  background-color: #FF9EAA;
+  border-radius: 50%;
+  width: 450px;
+  height: 450px;
+  position: absolute;
+  top: 23%;
+  left: 35%;
+  z-index: -99;
+}
+.sub-main .sub-main-container .sub-main-box3 {
+  position: absolute;
+  bottom: -25%;
+  right: -5px;
+}
+.sub-main img {
+  width: 90%;
+}
+.sub-main .sub-main-container .sub-main-box3 .sub-main-img-bg {
+  background-color: #FFCE51;
+  width: 450px;
+  height: 450px;
+  border-radius: 50%;
+  position: absolute;
+  right: 20%;
+  bottom: 10%;
+  z-index: -99;
+  opacity: 1;
+}
+/* 제품 이미지에 hover했을 시 뒤에 없었던 색깔 배경이 나타나도록 */
+.sub-main .sub-main-container .sub-main-box1:hover .sub-main .sub-main-container .sub-main-box1 .sub-main-img-bg {
+  /* opacity: 1; */
+}
+.sub-main .sub-main-slide {
+  width: 200%;
+  height: 50px;
+  position: absolute;
+  top: 60%;
+  font-size: var(--font-title-md);
+  font-family: var(--font-m-en);
+  display: flex;
+  font-weight: bold;
+  /* animation: marquee 35s linear infinite; */
+  z-index: -999;
+}
+.sub-main .sub-main-slide .marquee-contents-box {
+  display: flex;
+  align-items: center;
+  gap: 100px;
+}
+@keyframes marquee {
+  0% { 
+    left : 0
+  }
+  100% { 
+    left: -100%;
+  }
 }
