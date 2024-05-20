@@ -12,7 +12,7 @@
     width: 100%; height: auto;
     background-color: #FF9EAA;
     border-radius: 50px 50px 0 0 ;
-    padding: 20px;
+    padding: 20px ;
 }
 .brand-story-logo{
     position: relative;
@@ -25,12 +25,11 @@
     grid-column: 1 / 2;
     width: 100%;
     margin-top: 100px;
-    position: sticky; top: 0;
 }
 .brand-story .circle .rotate{
-    position: relative;
     width: 70%;
     margin: 0 auto;
+    position: sticky; top: 25%;
 
 }
 .brand-story .circle .rotate li img{
@@ -58,4 +57,22 @@
     font-size: var(--font-title-sm);
     line-height: 2;
     padding-bottom: 100px;
+}
+.brand-story-txt-box img{
+    margin-bottom: 200px;
+}
+
+
+.footer-txt{
+    height: 300px;
+    background-color: var(--color-point-pink);
+    display: flex;
+    
+}
+.footer-img{
+    position: absolute;
+    width: 100%; left: 0;
+}
+.footer-img img{
+    width: 100%; height: 100%;
 }

@@ -1,21 +1,39 @@
-// 스크롤 이벤트를 사용하여 .brand-story의 위치를 모니터링하고 조건을 확인
-window.addEventListener('scroll', function() {
-    var brandStory = document.querySelector('.brand-story');
-    var brandStoryContainer = document.querySelector('.brand-story-container');
+window.onscroll = function () {
+    scrollRotate(); 
+};
+  
+function scrollRotate() {
+    let scrollTop = window.pageYOffset;
+    let scrollHeight = document.body.scrollHeight;
+    let windowHeight = window.innerHeight;
 
-    // .brand-story의 현재 위치 확인
-    var brandStoryTop = brandStory.getBoundingClientRect().top;
+    let brandStoryContainer = document.querySelector('.brand-story-container');
+    let brandStoryContainerRect = brandStoryContainer.getBoundingClientRect();
+    let containerBottom = brandStoryContainerRect.bottom;
 
-    // 조건 확인
-    if (brandStoryTop <= 0) {
-        // .brand-story의 top이 0이 되었을 때, .brand-story-container의 포지션 스티키 적용
-        brandStoryContainer.style.position = 'sticky';
-        brandStoryContainer.style.top = '0';
-        brandStoryContainer.style.zIndex = '100';
-    } else {
-        // .brand-story의 top이 0보다 크면, .brand-story-container의 스티키 속성 제거
-        brandStoryContainer.style.position = 'static';
-        brandStoryContainer.style.top = 'auto';
-        brandStoryContainer.style.zIndex = 'auto';
+    let rotateValue = 360 * (scrollTop / (scrollHeight - windowHeight));
+    if (containerBottom <= 0) {
+        rotateValue = 360; 
+    } else if (rotateValue >= 360) {
+        rotateValue = 0; 
     }
-});
+
+    let image1 = document.getElementById("rotate-img1");
+    image1.style.transform = "rotate(" + rotateValue + "deg)";
+    
+    let image2 = document.getElementById("rotate-img2");
+    image2.style.transform = "rotate(" + (-rotateValue) + "deg)";
+
+    let image3 = document.getElementById("rotate-img3");
+    image3.style.transform = "rotate(" + rotateValue + "deg)";
+
+    let image4 = document.getElementById("rotate-img4");
+    image4.style.transform = "rotate(" + (-rotateValue) + "deg)";
+
+    let image5 = document.getElementById("rotate-img5");
+    image5.style.transform = "rotate(" + rotateValue + "deg)";
+
+    let image6 = document.getElementById("rotate-img6");
+    image6.style.transform = "rotate(" + (-rotateValue) + "deg)";
+}
+
