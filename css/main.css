@@ -52,6 +52,7 @@ header.none{
  font-size: var(--font-title-md);
  font-family: var(--font-m-en);
  text-align: center;
+ margin-bottom: 100px;
 }
 .highlights .highlights-box{
   padding: 100px 350px;
@@ -148,7 +149,7 @@ header.none{
   text-indent: -9999px;
   position: absolute;
   left: -300px;
-  top: 20px;
+  top: 3px;
 }
 .highlights-img-txt4{
   position: absolute;
@@ -178,6 +179,7 @@ header.none{
   margin-top: 80px;
 }
 .addcolor{
+  margin-top: 100px;
   margin-bottom: 200px;
 }
 
@@ -214,3 +216,159 @@ header.none{
     
   }
 }
+
+
+/******* mo 화면 ********/
+@media (max-width:450px){
+  .highlights h2{
+    font-size: var(--font-mobile-xlg);
+  }
+  .highlights .highlights-box{
+    display: flex;
+    flex-direction: column;
+    padding: 6px;
+  }
+  .highlights-bg{
+    background: url(../images/main-img/모바일1.png)no-repeat;
+    height: 200px;
+  }
+  .highlights-bg1{
+    background: url(../images/main-img/모바일2.png)no-repeat;
+    height: 200px;
+  }
+  .highlights-bg2{
+    background: url(../images/main-img/모바일3.png)no-repeat;
+    height: 200px;
+  }
+  .highlights-bg3{
+    background: url(../images/main-img/모바일4.png)no-repeat;
+    left: 0;
+    top: 0;
+    height: 200px;
+  }
+  .highlights-bg p{
+    background: url(../images/main-img/바탕1.png)no-repeat;
+  }
+  .highlights-bg1:hover p{}
+  .highlights-bg2:hover p{}
+  .highlights-bg3:hover p{}
+}
+
+/* 
+.highlights{
+  position: relative; 
+  font-family: var(--font-m-en);
+}
+.highlights h2{
+ font-size: var(--font-title-md);
+ font-family: var(--font-m-en);
+ text-align: center;
+ margin-bottom: 100px;
+}
+.highlights .highlights-box .highlights-img{
+  position: relative;
+  width: 750px;
+}
+.highlights .highlights-box .highlights-img .highlights-img-txt{
+  position: absolute;
+  font-family: var(--font-m-en);
+}
+.highlights-bg{
+  background: url(../images/main-img/highights_1.png)no-repeat;
+  width: 760px;
+  height: 570px;
+}
+.highlights-bg p{
+  opacity: 0;
+  text-indent: -9999px;
+}
+.highlights-bg:hover p{
+  background: url(../images/main-img/bg3.png) no-repeat;
+  width: 800px;
+  height: 800px;
+  opacity: 0.8;
+  transition: 0.3s;
+}
+.highlights-img-txt1{
+  position: absolute;
+  top: 380px; left: 50px;
+}
+.highlights-img-txt h3{
+  font-size: 30px;
+}
+.highlights-img-txt p{
+  font-size: 20px;
+}
+
+.highlights-bg1{
+  background: url(../images/main-img/highlights_2.png)no-repeat;
+  width: 500px;
+  height: 550px;
+  text-indent: -9999px;
+}
+
+.highlights-bg1 p{
+  opacity: 0;
+}
+.highlights-bg1:hover p{
+  background: url(../images/main-img/bg1.png) no-repeat;
+  width: 500px;
+  height: 800px;
+  opacity: 0.8;
+  transition: 0.3s;
+}
+.highlights-img-txt2{
+  position: absolute;
+  top: 380px;
+  left: 50px;
+}
+.highlights-bg2{
+  background: url(../images/main-img/highlight_3.png) no-repeat;
+  width: 500px;
+  height: 570px;
+  text-indent: -9999px;
+}
+.highlights-bg2 p{
+  opacity: 0;
+}
+.highlights-bg2:hover p{
+  background: url(../images/main-img/bg1.png) no-repeat;
+  width: 500px;
+  height: 800px;
+  opacity: 0.8;
+  transition: 0.3s;
+}
+.highlights-bg-pos{
+  position: relative;
+}
+.highlights-img-txt3{
+  position: absolute;
+  top: 50px;
+  left: 50px;
+}
+
+.highlights-bg3{
+  background: url(../images/main-img/highlights_4.png) no-repeat;
+  width: 1000px;
+  height: 700px;
+  text-indent: -9999px;
+  position: absolute;
+  left: -300px;
+  top: 3px;
+}
+.highlights-img-txt4{
+  position: absolute;
+  top: 50px;
+  left: 200px;
+}
+.highlights-bg3 p{
+  opacity: 0;
+  margin: 0;
+}
+.highlights-bg3:hover p{
+  background: url(../images/main-img/bg2.png) no-repeat;
+  width: 1000px;
+  height: 600px;
+  opacity: 0.8;
+  transition: 0.3s;
+} */
