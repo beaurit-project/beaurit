@@ -391,16 +391,16 @@ header.none{
   height: 85px;
   display: flex;
   align-items: center;
-  /* overflow: hidden; */
-  width: 1920px;
+  overflow: hidden;
+  width: 100%;
 }
 .hero-section .loop-container .item:first-child{
-  margin-left: 150px;
+  margin-left: 200px;
 }
 .hero-section .loop-container .item{
   font-size: 35px;
   font-weight: 800;
-  margin-right: 50px;
+  margin-right: 80px;
   margin-top: 5px;
   text-align: center;
   margin-bottom: 5px;
@@ -519,13 +519,14 @@ footer p{
 @media (max-width : 450px){
   body {
     margin: 0 auto;
+    /* overflow-x: hidden; */
   }
  .emoji{
   opacity: 0;
  }
   main{
-    overflow-x: hidden;
     width: 100%;
+    overflow-x: hidden;
   }
 
   /****** header ********/
@@ -763,7 +764,7 @@ footer p{
     margin-bottom: 10px;
   }
 
-  /********** hero-section 텍스트 움직임 *****************/
+  /********** hero-section 텍스트 슬라이드 *****************/
   .set{
     height: 55px;
     min-width: 450px;
@@ -773,6 +774,7 @@ footer p{
   .hero-section{
     height: 50px;
    margin-bottom: 80px;
+   /* overflow-x: hidden; */
   }
   .hero-section .loop-container .item{
     font-size: 20px;
@@ -855,11 +857,10 @@ footer p{
   footer .footer-img img{
     position: absolute;
     width: 100px;
-    bottom: 10px;
+    bottom: 5px;
   }
   footer p{
-    margin: 0;
-    font-size: var(--font-mobile-sm);
+    display: none;
   }
 
 }
