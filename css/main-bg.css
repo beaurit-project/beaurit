@@ -91,6 +91,7 @@ body {
 }
 .sub-main .sub-main-containr .sub-main-box1 img {
   z-index: 9999px;
+  transition: .5s;
 }
 .sub-main .sub-main-container .sub-main-box1 .sub-main-img-bg {
   background-color: #FF9168;
@@ -101,6 +102,10 @@ body {
   top: 80px;
   left: 50px;
   z-index: -99;
+  transition: all .3s;
+  opacity: 0;
+}
+.sub-main .sub-main-container .sub-main-box1 .sub-main-img-bg.active {
   opacity: 1;
 }
 .sub-main .sub-main-container .sub-main-box1 .sub-main-txt {
@@ -117,6 +122,11 @@ body {
   position: absolute;
   left: 40%;
   bottom: 2%;
+  transition: all .3s;
+  opacity: 0;
+}
+.sub-main .sub-main-container .sub-main-box1 .sub-main-txt.active {
+  opacity: 1;
 }
 .sub-main .sub-main-container .sub-main-box2 {
   margin: 80px auto;
@@ -130,6 +140,11 @@ body {
   top: 23%;
   left: 35%;
   z-index: -99;
+  transition: all .3s;
+  opacity: 0;
+}
+.sub-main .sub-main-container .sub-main-box2 .sub-main-img-bg.active {
+  opacity: 1;
 }
 .sub-main .sub-main-container .sub-main-box3 {
   position: absolute;
@@ -148,11 +163,11 @@ body {
   right: 20%;
   bottom: 10%;
   z-index: -99;
-  opacity: 1;
+  transition: all .3s;
+  opacity: 0;
 }
-/* 제품 이미지에 hover했을 시 뒤에 없었던 색깔 배경이 나타나도록 */
-.sub-main .sub-main-container .sub-main-box1:hover .sub-main .sub-main-container .sub-main-box1 .sub-main-img-bg {
-  /* opacity: 1; */
+.sub-main .sub-main-container .sub-main-box3 .sub-main-img-bg.active {
+  opacity: 1;
 }
 .sub-main .sub-main-slide {
   width: 200%;
@@ -163,7 +178,7 @@ body {
   font-family: var(--font-m-en);
   display: flex;
   font-weight: bold;
-  /* animation: marquee 35s linear infinite; */
+  animation: marquee 30s linear infinite;
   z-index: -999;
 }
 .sub-main .sub-main-slide .marquee-contents-box {
