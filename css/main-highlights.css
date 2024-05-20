@@ -67,12 +67,17 @@
   position: absolute;
   margin-top: 380px;
 }
-.highlights-box:hover h3{
-  opacity: 1;
-}
-.highlights-box:hover p{
-  opacity: 1;
-}
+.highlights-img1:hover h3{opacity: 1;}
+.highlights-img2:hover h3{opacity: 1;}
+.highlights-img3:hover h3{opacity: 1;}
+.highlights-img4:hover h3{opacity: 1;}
+
+.highlights-img1:hover p{opacity: 1;}
+.highlights-img2:hover p{opacity: 1;}
+.highlights-img3:hover p{opacity: 1;}
+.highlights-img4:hover p{opacity: 1;}
+
+
 
 
   /******* mo 화면 ********/
