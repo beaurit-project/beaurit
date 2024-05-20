@@ -23,13 +23,18 @@
   <link rel="stylesheet" href="../css/main.css">
   <link rel="stylesheet" href="../css/main-bg.css">
   <link rel="stylesheet" href="../css/main-choice.css">
+  <link rel="stylesheet" href="../css/bg.css">
+  
 
   <!-- jQuery -->
 
   <script src="../assets/jquery-3.7.1.min.js"></script>
+  <script src="../assets/gsap.min.js"></script>
 
-
-  <!-- plugIn -->
+   <!-- plugIn -->
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+   <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+   
 </head>
 
 <body>
@@ -50,27 +55,42 @@
   </header>
 
 
-  <!------ main bg 영역 ------->
   <main>
-    <section class="main-bg">
-      <div class="main-bg-wrapper">
-        <div class="main-bg-img img1"><img src="../images/main-img/main-bg1.png" alt=""></div>
-        <div class="main-bg-img img2"><img src="../images/main-img/main-bg2.png" alt=""></div>
-        <div class="main-bg-img img3"><img src="../images/main-img/main-bg3.png" alt=""></div>
-      </div>
-      <div class="main-box">
-        <h2>Life is short
-          <img src="../images/main-img/main-bg4.png" alt="메인 박스 이미지1"><br>
-          do beaurit now
-          <img src="../images/main-img/main-bg5.png" alt="메인 박스 이미지2">
-        </h2>
-        <div class="main-sub-box">
-          <h2>PLAY NOW</h2>
-          <!-- mouse hover 아이콘 영역 -->
-          <a href="#" class="main-play">
+
+     <!------ main-bg 이미지 텍스트 효과 ------->
+     <section class="main-bg">
+
+      <div class="container">
+        <img src="../images/main-img/main-bg2.png" alt="메인 슬라이드 이미지2" class="bg-img">
+        <img src="../images/main-img/main-bg1.png" alt="메인 슬라이드 이미지1" class="bg-img">
+        <img src="../images/main-img/main-bg3.png" alt="메인 슬라이드 이미지3" class="bg-img">
+        <img src="../images/main-img/main-bg2.png" alt="메인 슬라이드 이미지2" class="bg-img">
+        <img src="../images/main-img/main-bg1.png" alt="메인 슬라이드 이미지1" class="bg-img">
+        <img src="../images/main-img/main-bg3.png" alt="메인 슬라이드 이미지3" class="bg-img">
+        <img src="../images/main-img/main-bg1.png" alt="메인 슬라이드 이미지1" class="bg-img">
+        <img src="../images/main-img/main-bg2.png" alt="메인 슬라이드 이미지2" class="bg-img">
+        <img src="../images/main-img/main-bg3.png" alt="메인 슬라이드 이미지3" class="bg-img">
+        
+        <div id="container">
+          <a href="#" class="btn" id="imageBtn"><p>이미지</p></a>
         </div>
+        
       </div>
+
+      <div class="main-box">
+        <h2 class="main-box-h2">Life is short
+          <img src="../images/main-img/main-bg4.png" alt="메인박스 이미지1" class="main-box-img"><br>
+          do beaurit<img src="../images/main-img/main-bg5.png" alt="메인박스 이미지2" class="main-box-img">
+          <br>now
+        </h2>
+
+      <div class="wrapper">
+        <div class="txt-wrapper active">
+          <h2></h2>
+        </div>
+      </div>  
     </section>
+<!------ // main-bg 이미지 텍스트 효과// ------->
 
     <!------ sub-main --------->
     <section class="sub-main">
@@ -350,7 +370,8 @@
 
   <!-- 이 페이지에만 들어가는 jQuery -->
   <script src="../js/main-choice.js"></script>
-  <script src="../js/detail.js"></script>
+  <script src="../js/bg.js"></script>
+
 </body>
 
 </html>

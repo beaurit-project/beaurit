@@ -46,7 +46,7 @@ imgs.forEach((img, i) => {
     duration: 1,
     opacity: 1,
     ease: "power4.out",
-    y: 10,
+    y: 5,
     onStart: changeText // 이미지 전환 시작 시 텍스트 변경
   }, i * 1.8); // 이미지 애니메이션 시작 시점 조정
 });
