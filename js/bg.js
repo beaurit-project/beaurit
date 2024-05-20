@@ -7,8 +7,7 @@ TL.to(imgs, {
   duration: 0.4,
   opacity: 1,
   stagger: 1,
-  ease: "back.out(1.7)",
-  'border-radius': 20
+  ease: "back.out(1.7)"
 });
 
 btn.addEventListener('mouseenter' , ()=>{
@@ -16,11 +15,7 @@ btn.addEventListener('mouseenter' , ()=>{
 });
 
 
-TLend.to(imgs, {
-  opacity: 0
-});
-
 btn.addEventListener('mouseleave' , ()=>{
-  TLend.play();
+  TL.reverse();
 });
 
