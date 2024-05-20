@@ -1,7 +1,9 @@
 @charset "UTF-8";
-/****** header ********/
-body{color: #222; overflow-x: hidden;}
 
+body{
+  overflow-x: hidden;
+}
+/****** header ********/
 header {
   position: fixed;
   top: 0;
@@ -46,7 +48,7 @@ header.none{
 
 /******** home-pliates *******/
 .home-pliates{
-  margin: 270px;
+  margin: 275px;
   position: relative;
   min-width: 1300px;
 }
@@ -72,7 +74,7 @@ header.none{
   background-color: var(--color-point-orange);
   position: relative;
   z-index: -999;
-  margin-left: calc(100% - 750px);
+  margin-left: calc(100% - 660px);
 }
 .detail-img p{
   background: url(../images/detail-img/상세페이지-제품.png) no-repeat 50% / cover;
@@ -152,27 +154,27 @@ header.none{
   color: #fff;
   width: 250px;text-align: center;
   height: 50px; line-height: 50px;
-  border-radius: 20px;
-  margin-top: 15px;
+  /* border-radius: 20px; */
+  margin-top: 50px;
   position: absolute;
-  right: 470px;
+  right: 400px;
   font-family: var(--font-m-en);
   font-weight: 600;
   text-transform: uppercase;
 }
 .home-pliates .buy:hover{
-  background-color: rgb(0, 0, 0 , 0.3);
-  color: #000;
+  background-color: rgb(255, 145, 104, 0.3);
+  color: var(--color-point-orange);
 }
 .home-pliates .buy-txt{
   font-size: var(--font-button);
   font-weight: 600;
   position: absolute;
-  right: 100px;
-  margin-top: 15px;
+  right: -25px;
+  margin-top: 50px;
 }
 .home-pliates .buy-txt1{
-  margin-top: 40px;
+  margin-top: 83px;
 }
 
 
@@ -192,6 +194,13 @@ header.none{
   font-size: 30px;
   margin-right: 30px;
 }
+.home-pliates .review li:first-child{
+  margin-right: 25px;
+}
+.home-pliates .review li:nth-child(2){
+  margin-right: 20px;
+}
+
 .home-pliates .review li:nth-child(3) strong{
   margin-right: 0;
 }
@@ -209,17 +218,17 @@ header.none{
 .home-pliates .review li:nth-child(1) strong::after, .home-pliates .review li:nth-child(2) strong::after{
   content: "";
   position: absolute;
-  top: 25px; 
+  top: 30px; 
   width: 1px;
   height: 25px;
   background-color: #fff;
 }
 
 .home-pliates .review li:nth-child(1) strong::after{
-  left: 140px;
+  left: 128px;
 }
 .home-pliates .review li:nth-child(2) strong::after{
-  right: 183px;
+  right: 175px;
 }
 
 .home-pliates .review-txt-box{
@@ -243,7 +252,7 @@ header.none{
 
 /********** add-color-into ***********/
 .add-color-into{
-  margin: 300px 400px 400px 400px;
+  margin: 460px 400px 560px 335px;
   position: relative;
   min-width: 1000px;
   /* cursor: none; */
@@ -268,7 +277,7 @@ header.none{
 }
 
 .emoji img{
-  width: 250%;
+  width: 200%;
 }
 
 .swiper{
@@ -284,6 +293,7 @@ header.none{
 
 .swiper-wrapper .swiper-slide img{
   width: 400px;
+  height: 550px;
 }
 .swiper-pagination{
   background-color: #F4F5F6;
@@ -304,27 +314,33 @@ header.none{
 }
 .add-color-into .easy{
   position: absolute;
-  left: 450px;
-  top: -20px;
+  left: 640px;
+  top: -30px;
   width: 300px;
 }
 .add-color-into .super-hard{
   position: absolute;
   top: 140px;
-  right: 0;
+  right: -180px;
+}
+.add-color-into .super-hard p{
+  width: 250px;
 }
 .add-color-into .c-curve{
   position: absolute;
   top: 260px;
-  left: 450px;
+  left: 640px;
 }
 .add-color-into .c-curve p{
   width: 310px;
 }
 .add-color-into .way{
  position: absolute;
- bottom: -60px;
- right: 0;
+ bottom: -80px;
+ right: -165px;
+}
+.add-color-into .way p{
+  width: 220px;
 }
 .add-color-into-txt h2{
   position: absolute;
@@ -361,38 +377,45 @@ header.none{
   position: absolute;
   right: 50%;
   transform: translate(50%);
-  margin-top: 260px;
+  margin-top: 380px;
   font-weight: 700;
   font-family: var(--font-m-ko);
   color: rgb(255, 145, 104, .8);
 }
 .text_box span{
-  margin-bottom: 250px;
+  margin-bottom: 300px;
 }
 
 /********** hero-section 텍스트 움직임 *****************/
 .hero-section{
   background-color: var(--color-point-orange);
-  height: 100px;
+  height: 85px;
   display: flex;
   align-items: center;
-  overflow: hidden;
+  /* overflow: hidden; */
+  width: 1920px;
+}
+.hero-section .loop-container .item:first-child{
+  margin-left: 150px;
 }
 .hero-section .loop-container .item{
-  font-size: var(--font-title-md);
-  font-weight: 700;
-  margin-right: 20px;
+  font-size: 35px;
+  font-weight: 800;
+  margin-right: 50px;
+  margin-top: 5px;
+  text-align: center;
+  margin-bottom: 5px;
 }
 .hero-section .loop-container .item img{
-  margin-top: 2px;
   margin-right: 20px;
-  width: 60px;
+  width: 40px;
+  margin-bottom: 5px;
 }
 
 /********** set-product ***********/
 .set-product {
   min-width: 1000px;
-  margin-top: 180px;
+  margin-top: 250px;
 }
  
 .set-product h3{
@@ -481,16 +504,16 @@ footer{
   position: relative;
 }
 footer .footer-img{
-  /* margin: 40px; */
   position: absolute;
   left: 30px;
-  bottom: 30px;
-  margin-top: 10px;
+  bottom: 50px;
 }
 footer p{
+  width: 500px;
   position: absolute;
-  margin-top: 10px;
-  margin-bottom: 10px;
+  left: 680px;
+  bottom: -5px;
+  /* margin-top: 10px; */
 }
 
 

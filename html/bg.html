@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="UTF-8">
-  <title>메인페이지</title>
+  <title>bg</title>
   <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
   <!-- favicon -->
   <link rel="shortcut icon" href="../favicon/favicon.ico" type="image/x-icon">
@@ -23,10 +23,11 @@
   <link rel="stylesheet" href="../css/main.css">
   <link rel="stylesheet" href="../css/main-bg.css">
   <link rel="stylesheet" href="../css/main-choice.css">
+  <link rel="stylesheet" href="../css/bg.css">
+  <script src="../assets/gsap.min.js"></script>
 
   <!-- jQuery -->
   <script src="../assets/jquery-3.7.1.min.js"></script>
-  <script src="../../assets/gsap.min.js"></script>
 
   <!-- plugIn -->
 </head>
@@ -49,7 +50,7 @@
   <!------ main bg ------->
   <main>
     <section class="main-bg">
-      <div class="main-bg-wrapper">
+      <!-- <div class="main-bg-wrapper">
         <div class="main-bg-contents img1">
           <img src="../images/main-img/main-bg1.png" alt="메인 슬라이드 이미지1">
         </div>
@@ -59,7 +60,15 @@
         <div class="main-bg-contents img3">
           <img src="../images/main-img/main-bg3.png" alt="메인 슬라이드 이미지3">
         </div>
+      </div> -->
+
+      <div class="container">
+        <img src="../images/main-img/main-bg1.png" alt="메인 슬라이드 이미지1" class="bg-img">
+        <img src="../images/main-img/main-bg2.png" alt="메인 슬라이드 이미지2" class="bg-img">
+        <img src="../images/main-img/main-bg3.png" alt="메인 슬라이드 이미지3" class="bg-img">
+        <a href="#" class="btn"><img src="../images/main-img/Group 75.png" alt="" class="btn-img"></a>
       </div>
+
       <div class="main-box">
         <h2>Life is short
           <img src="../images/main-img/main-bg4.png" alt="메인박스 이미지1" class="main-box-img"><br>
@@ -70,7 +79,7 @@
           <h2>PLAY NOW</h2>
           <!-- mouse hover 아이콘 영역  -->
           <div class="button-container">
-            <button class="title-button">
+            <!-- <button class="title-button">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 86 86" width="75" height="75"
                 class="title-button-svg">
                 <g class="title-button-group play">
@@ -87,7 +96,7 @@
                     fill="#FFC857"></path>
                 </g>
               </svg>
-            </button>
+            </button> -->
           </div>
         </div>
       </div>
@@ -98,26 +107,17 @@
       <div class="sub-main-container">
         <div class="sub-main-box1">
           <img src="../images/main-img/sub-main_1.png" alt="폼롤러 이미지">
-          <div class="sub-main-txt" id="txt1">
-            <p>Pilates</p>
+          <div class="sub-main-txt">
+            <p>2-way</p>
           </div>
-          <div class="info-box">Basic Bar</div>
           <div class="sub-main-img-bg"></div>
         </div>
         <div class="sub-main-box2">
           <img src="../images/main-img/sub-main_2.png" alt="요가링 이미지">
-          <div class="sub-main-txt" id="txt2">
-            <p>Relax</p>
-          </div>
-          <div class="info-box">Yoga Ring</div>
           <div class="sub-main-img-bg"></div>
         </div>
         <div class="sub-main-box3">
           <img src="../images/main-img/sub-main_3.png" alt="뷰릿토핑 이미지">
-          <div class="sub-main-txt" id="txt3">
-            <p>3 Type</p>
-          </div>
-          <div class="info-box">Beaurit Topping</div>
           <div class="sub-main-img-bg"></div>
         </div>
       </div>
@@ -131,7 +131,6 @@
               fill="#000000" />
           </svg>
           <span class="fit-content">Love Myself</span>
-
           <svg width="50" height="50" viewBox="0 0 57 57" fill="none" xmlns="http://www.w3.org/2000/svg"
             class="fit-content">
             <path
@@ -139,7 +138,6 @@
               fill="#000000" />
           </svg>
           <span class="fit-content">Core Training</span>
-
           <svg width="50" height="50" viewBox="0 0 51 57" fill="none" xmlns="http://www.w3.org/2000/svg"
             class="fit-content">
             <path
@@ -147,29 +145,18 @@
               fill="#000000" />
           </svg>
           <span class="fit-content">Premium Homecare</span>
-
           <svg width="50" height="50" viewBox="0 0 57 60" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path
               d="M21.4507 2.06829C23.7898 0.0957263 27.2102 0.0957263 29.5493 2.06829L48.3931 17.9587C49.8082 19.1522 50.625 20.9093 50.625 22.7606V26.4379C49.2719 25.949 47.8543 25.7062 46.4375 25.7081V22.7606C46.4375 22.1435 46.1653 21.5578 45.6935 21.16L26.8498 5.26949C26.0701 4.61197 24.9299 4.61197 24.1502 5.26949L5.30651 21.16C4.83474 21.5578 4.5625 22.1435 4.5625 22.7606V48.7505C4.5625 49.1361 4.87497 49.4485 5.26042 49.4485H25.273L29.3187 53.636H5.26042C2.56227 53.636 0.375 51.4487 0.375 48.7505V22.7606C0.375 20.9093 1.1917 19.1522 2.60699 17.9587L21.4507 2.06829ZM53.3519 45.7322C57.1606 41.7901 57.1606 35.3986 53.3519 31.4562C52.9354 31.0251 52.4907 30.6413 52.0239 30.3046C48.2211 27.5612 42.9518 27.9451 39.5597 31.4562H39.357C36.3643 28.3585 31.9105 27.695 28.2917 29.4654C26.546 30.3197 25.0813 31.7091 24.1042 33.3858C21.8424 37.2665 22.3292 42.3833 25.5648 45.7322L37.9662 58.5686C38.79 59.4211 40.1267 59.4211 40.9505 58.5686L53.3519 45.7322Z"
               fill="#000000" />
           </svg>
-          <span class="fit-content">Love Myself</span>
-
-          <svg width="50" height="50" viewBox="0 0 57 57" fill="none" xmlns="http://www.w3.org/2000/svg"
-            class="fit-content">
+          <span>Love Myself</span>
+          <svg width="50" height="50" viewBox="0 0 57 57" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path
               d="M28.5007 0.583496C43.9185 0.583496 56.4173 13.0822 56.4173 28.5002C56.4173 43.918 43.9185 56.4168 28.5007 56.4168C13.0827 56.4168 0.583984 43.918 0.583984 28.5002C0.583984 13.0822 13.0827 0.583496 28.5007 0.583496ZM28.5007 4.771C15.3954 4.771 4.77148 15.3949 4.77148 28.5002C4.77148 41.6054 15.3954 52.2293 28.5007 52.2293C41.6059 52.2293 52.2298 41.6054 52.2298 28.5002C52.2298 15.3949 41.6059 4.771 28.5007 4.771ZM28.5007 14.5418C29.657 14.5418 30.5944 15.4792 30.5944 16.6356V26.4064H40.3652C41.5215 26.4064 42.459 27.3439 42.459 28.5002C42.459 29.6565 41.5215 30.5939 40.3652 30.5939H30.5944V40.3647C30.5944 41.5211 29.657 42.4585 28.5007 42.4585C27.3443 42.4585 26.4069 41.5211 26.4069 40.3647V30.5939H16.6361C15.4797 30.5939 14.5423 29.6565 14.5423 28.5002C14.5423 27.3439 15.4797 26.4064 16.6361 26.4064H26.4069V16.6356C26.4069 15.4792 27.3443 14.5418 28.5007 14.5418Z"
               fill="#000000" />
           </svg>
-          <span class="fit-content">Core Training</span>
-
-          <svg width="50" height="50" viewBox="0 0 51 57" fill="none" xmlns="http://www.w3.org/2000/svg"
-            class="fit-content">
-            <path
-              d="M32.4792 0.583496C37.4899 0.583496 41.5521 4.64557 41.5521 9.65641C41.5521 11.4558 41.0284 13.1328 40.1247 14.5433L47.1354 14.5418C49.0628 14.5418 50.625 16.1042 50.625 18.0314V27.8022C50.625 29.4895 49.4274 30.8971 47.8358 31.2215L47.8333 47.3439C47.8333 52.1819 44.0464 56.1354 39.2752 56.4026L38.7604 56.4168H12.2396C7.40154 56.4168 3.44793 52.6299 3.18102 47.8587L3.16667 47.3439L3.16681 31.222C1.57394 30.8988 0.375 29.4906 0.375 27.8022V18.0314C0.375 16.1042 1.93733 14.5418 3.86458 14.5418L10.8752 14.5433C9.97172 13.1328 9.44792 11.4558 9.44792 9.65641C9.44792 4.64557 13.51 0.583496 18.5208 0.583496C21.3279 0.583496 23.8373 1.85834 25.5017 3.86066C27.1627 1.85834 29.6721 0.583496 32.4792 0.583496ZM23.4062 31.289H7.35417V47.3439C7.35417 49.9072 9.32818 52.0093 11.8389 52.2131L12.2396 52.2293H23.4062V31.289ZM43.6458 31.289H27.5938V52.2293H38.7604C41.3237 52.2293 43.4258 50.2553 43.6296 47.7445L43.6458 47.3439V31.289ZM23.4062 18.7293H4.5625V27.1043L23.4062 27.1015V18.7293ZM46.4375 27.1043V18.7293H27.5938V27.1015L46.4375 27.1043ZM32.4792 4.771C29.781 4.771 27.5938 6.95827 27.5938 9.65641V14.539H32.5462L32.8798 14.5256C35.3906 14.3218 37.3646 12.2196 37.3646 9.65641C37.3646 6.95827 35.1773 4.771 32.4792 4.771ZM18.5208 4.771C15.8227 4.771 13.6354 6.95827 13.6354 9.65641C13.6354 12.2196 15.6094 14.3218 18.1201 14.5256L18.4538 14.539H23.4062V9.65641L23.3901 9.25573C23.1863 6.74501 21.0841 4.771 18.5208 4.771Z"
-              fill="#000000" />
-          </svg>
-          <span class="fit-content">Premium Homecare</span>
+          <span>Core Training</span>
         </div>
       </div>
     </section>
@@ -421,7 +408,8 @@
   <!-- 이 페이지에만 들어가는 jQuery -->
   <script src="../js/main-choice.js"></script>
   <script src="../js/main.js"></script>
-  <script src="../js/main-bg.js"></script>
+  <!-- <script src="../js/main-bg.js"></script> -->
+  <script src="../js/bg.js"></script>
 </body>
 
 </html>

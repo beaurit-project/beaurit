@@ -1,0 +1,27 @@
+@charset "UTF-8";
+  
+.container{
+  height: 100vh;
+  overflow: hidden;
+}
+.container .btn{
+  position: absolute;
+  z-index: 9999;
+  top: 100px;
+  right: 0;
+}
+
+.container .bg-img{
+  position: absolute;
+  opacity: 0;
+  transition: 3s;
+  width: 100%;
+  border-radius: 50px;
+}
+
+/* <div class="container">
+<img src="../images/main-img/main-bg1.png" alt="메인 슬라이드 이미지1" class="bg-img">
+<img src="../images/main-img/main-bg2.png" alt="메인 슬라이드 이미지2" class="bg-img">
+<img src="../images/main-img/main-bg3.png" alt="메인 슬라이드 이미지3" class="bg-img">
+<a href="#" class="btn"><img src="../images/main-img/Group 75.png" alt="" class="btn-img"></a>
+</div> */

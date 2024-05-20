@@ -7,6 +7,7 @@ $(window).on('scroll', () => {
   }
 });
 
+/******* 제품리스트 스크롤 이벤트 **********/
 $(window).on('scroll', () => {
   if (document.documentElement.scrollTop >= 400) {
     $('.product-list .product-list-img li .best-seller-box').addClass('active');
