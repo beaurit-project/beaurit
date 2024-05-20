@@ -1,3 +1,4 @@
+/*
 $(document).ready(function () {
   const $button = $('.main-bg .main-sub-box .button-container');
   const $images = $('.main-bg-contents');
@@ -26,6 +27,7 @@ $(document).ready(function () {
     $images.stop(true, true).removeClass('active');
   });
 });
+*/
 
 /* 이미지 구역 hover 시, background 생김 */
 $('.sub-main .sub-main-container .sub-main-box1').on('mouseenter', () => {
@@ -129,8 +131,8 @@ document.addEventListener('DOMContentLoaded', () => {
       const offsetX = e.clientX - rect.left;
       const offsetY = e.clientY - rect.top;
       
-      const moveX = (offsetX / rect.width - 0.5) * 40; // 이동 강도 조절
-      const moveY = (offsetY / rect.height - 0.5) * 40; // 이동 강도 조절
+      const moveX = (offsetX / rect.width - 0.5) * 30; // 이동 강도 조절
+      const moveY = (offsetY / rect.height - 0.5) * 30; // 이동 강도 조절
       
       element.style.transform = `translate(${moveX}px, ${moveY}px)`;
   });
@@ -150,8 +152,8 @@ document.addEventListener('DOMContentLoaded', () => {
       const offsetX = e.clientX - rect.left;
       const offsetY = e.clientY - rect.top;
       
-      const moveX = (offsetX / rect.width - 0.5) * 40; // 이동 강도 조절
-      const moveY = (offsetY / rect.height - 0.5) * 40; // 이동 강도 조절
+      const moveX = (offsetX / rect.width - 0.5) * 30; // 이동 강도 조절
+      const moveY = (offsetY / rect.height - 0.5) * 30; // 이동 강도 조절
       
       element.style.transform = `translate(${moveX}px, ${moveY}px)`;
   });
@@ -169,8 +171,8 @@ document.addEventListener('DOMContentLoaded', () => {
       const offsetX = e.clientX - rect.left;
       const offsetY = e.clientY - rect.top;
       
-      const moveX = (offsetX / rect.width - 0.5) * 40; // 이동 강도 조절
-      const moveY = (offsetY / rect.height - 0.5) * 40; // 이동 강도 조절
+      const moveX = (offsetX / rect.width - 0.5) * 30; // 이동 강도 조절
+      const moveY = (offsetY / rect.height - 0.5) * 30; // 이동 강도 조절
       
       element.style.transform = `translate(${moveX}px, ${moveY}px)`;
   });
