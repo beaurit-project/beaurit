@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="UTF-8">
-  <title>메인페이지</title>
+  <title>bg</title>
   <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
   <!-- favicon -->
   <link rel="shortcut icon" href="../favicon/favicon.ico" type="image/x-icon">
@@ -23,6 +23,8 @@
   <link rel="stylesheet" href="../css/main.css">
   <link rel="stylesheet" href="../css/main-bg.css">
   <link rel="stylesheet" href="../css/main-choice.css">
+  <link rel="stylesheet" href="../css/bg.css">
+  <script src="../assets/gsap.min.js"></script>
 
   <!-- jQuery -->
   <script src="../assets/jquery-3.7.1.min.js"></script>
@@ -48,7 +50,7 @@
   <!------ main bg ------->
   <main>
     <section class="main-bg">
-      <div class="main-bg-wrapper">
+      <!-- <div class="main-bg-wrapper">
         <div class="main-bg-contents img1">
           <img src="../images/main-img/main-bg1.png" alt="메인 슬라이드 이미지1">
         </div>
@@ -58,7 +60,15 @@
         <div class="main-bg-contents img3">
           <img src="../images/main-img/main-bg3.png" alt="메인 슬라이드 이미지3">
         </div>
+      </div> -->
+
+      <div class="container">
+        <img src="../images/main-img/main-bg1.png" alt="메인 슬라이드 이미지1" class="bg-img">
+        <img src="../images/main-img/main-bg2.png" alt="메인 슬라이드 이미지2" class="bg-img">
+        <img src="../images/main-img/main-bg3.png" alt="메인 슬라이드 이미지3" class="bg-img">
+        <a href="#" class="btn"><img src="../images/main-img/Group 75.png" alt="" class="btn-img"></a>
       </div>
+
       <div class="main-box">
         <h2>Life is short
           <img src="../images/main-img/main-bg4.png" alt="메인박스 이미지1" class="main-box-img"><br>
@@ -69,7 +79,7 @@
           <h2>PLAY NOW</h2>
           <!-- mouse hover 아이콘 영역  -->
           <div class="button-container">
-            <button class="title-button">
+            <!-- <button class="title-button">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 86 86" width="75" height="75"
                 class="title-button-svg">
                 <g class="title-button-group play">
@@ -86,7 +96,7 @@
                     fill="#FFC857"></path>
                 </g>
               </svg>
-            </button>
+            </button> -->
           </div>
         </div>
       </div>
@@ -398,7 +408,8 @@
   <!-- 이 페이지에만 들어가는 jQuery -->
   <script src="../js/main-choice.js"></script>
   <script src="../js/main.js"></script>
-  <script src="../js/main-bg.js"></script>
+  <!-- <script src="../js/main-bg.js"></script> -->
+  <script src="../js/bg.js"></script>
 </body>
 
 </html>

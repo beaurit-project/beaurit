@@ -1,6 +1,6 @@
 @charset "UTF-8";
 /****** header ********/
-body{color: #222; overflow-x: hidden;}
+body{color: #222;}
 
 header {
   position: fixed;
@@ -376,7 +376,8 @@ header.none{
   height: 100px;
   display: flex;
   align-items: center;
-  overflow: hidden;
+  /* overflow: hidden; */
+  width: 1920px;
 }
 .hero-section .loop-container .item{
   font-size: var(--font-title-md);
