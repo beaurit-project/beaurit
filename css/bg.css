@@ -10,13 +10,34 @@
   top: 100px;
   right: 0;
 }
-
 .container .bg-img{
   position: absolute;
   opacity: 0;
-  transition: 3s;
   width: 100%;
   border-radius: 50px;
+}
+
+.wrapper{
+  position: relative;
+}
+.wrapper .txt-wrapper{
+  position: absolute;
+  top: 0; left: 0;
+}
+.wrapper .txt-wrapper h2{
+  color: #9AC8CD;
+  font-weight: bold;
+  font-size: 3rem;
+  margin: 10px 0;
+  line-height: 0.9;
+  /* transition: 1s 0.8s; 진행시간 대기시간 */
+  transform: translateY(50px);
+  opacity: 0;
+}
+.wrapper .txt-wrapper.active span,
+.wrapper .txt-wrapper.active h2{
+  opacity: 1;
+  transform: translateY(0);
 }
 
 /* <div class="container">
