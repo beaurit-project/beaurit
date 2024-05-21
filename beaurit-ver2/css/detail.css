@@ -1,7 +1,7 @@
 @charset "UTF-8";
 
 body{
-  overflow-x: hidden;
+  /* overflow-x: hidden; */
 }
 /****** header ********/
 header {
@@ -392,7 +392,7 @@ header.none{
   display: flex;
   align-items: center;
   overflow: hidden;
-  width: 100%;
+  width: 1920px;
 }
 .hero-section .loop-container .item:first-child{
   margin-left: 200px;
@@ -516,7 +516,7 @@ footer p{
 }
 
 
-@media (max-width : 450px){
+@media (max-width : 500px){
   body {
     margin: 0 auto;
     /* overflow-x: hidden; */
