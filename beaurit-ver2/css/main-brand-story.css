@@ -30,7 +30,7 @@
     position: relative;
 }
 .brand-story .circle .rotate{
-    width: 70%; height: 100vh;
+    width: 70%; height: 500px;
     margin: 0 auto;
     position: sticky;
     top: 25%
