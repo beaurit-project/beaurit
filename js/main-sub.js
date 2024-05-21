@@ -92,7 +92,6 @@ gsap.fromTo(".sub-main-box3", {
 });
 
 /* 마우스 hover 시, 커서에 따라 이동 */
-/*
 document.addEventListener('DOMContentLoaded', () => {
   const element = document.querySelector('.sub-main .sub-main-container .sub-main-box1');
 
@@ -111,6 +110,8 @@ document.addEventListener('DOMContentLoaded', () => {
       element.style.transform = 'translate(0, 0)';
   });
 });
+
+
 
 document.addEventListener('DOMContentLoaded', () => {
   const element = document.querySelector('.sub-main .sub-main-container .sub-main-box2');
@@ -149,4 +150,3 @@ document.addEventListener('DOMContentLoaded', () => {
       element.style.transform = 'translate(0, 0)';
   });
 });
-*/
