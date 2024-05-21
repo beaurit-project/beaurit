@@ -35,12 +35,11 @@ body {
 .sub-main {
   position: relative;
   width: 100vw;
-  margin: 100px 0 100px 10px;
+  margin: 100px 0;
 }
 .sub-main .sub-main-container {
   margin: 0 auto 500px;
   max-width: 1920px;
-  padding: 0 16px;
   display: flex;
 }
 .sub-main .sub-main-container .sub-main-box1 {
@@ -50,11 +49,12 @@ body {
   transition: all 0.1s;
 }
 .sub-main .sub-main-container .sub-main-box1 img {
-  transform: rotate(0);
+  transform: rotate(-10deg);
   transition: .1s;
 }
-.sub-main .sub-main-container .sub-main-box1 img:hover {
-  transform: rotate(10deg);
+.sub-main .sub-main-container .sub-main-box1:hover img {
+  transform: rotate(0deg);
+  transition: all 0.3s;
 }
 .sub-main .sub-main-container .sub-main-box1 .sub-main-img-bg {
   background-color: #FF9168;
@@ -93,8 +93,9 @@ body {
   transform: rotate(0);
   transition: .1s;
 }
-.sub-main .sub-main-container .sub-main-box2 img:hover {
+.sub-main .sub-main-container .sub-main-box2:hover img {
   transform: rotate(15deg);
+  transition: all 0.3s;
 }
 .sub-main .sub-main-container .sub-main-box2 .sub-main-txt {
   left: 46%;
@@ -108,7 +109,7 @@ body {
 .sub-main .sub-main-container .sub-main-box2 .sub-main-txt.active,
 .sub-main .sub-main-container .sub-main-box3 .sub-main-txt.active {
   opacity: 1;
-  transform: rotate(0) scaleX(1);
+  transform: rotate(-3deg) scaleX(1);
 }
 .sub-main .sub-main-container .sub-main-box2 {
  margin: 0 auto;
@@ -120,8 +121,8 @@ body {
   width: 450px;
   height: 450px;
   position: absolute;
-  top: 15%;
-  left: 15%;
+  top: 22%;
+  left: 16%;
   z-index: -99;
   transition: all .3s;
   transform: scale(0);
@@ -132,18 +133,19 @@ body {
 .sub-main .sub-main-container .sub-main-box3 {
   position: absolute;
   bottom: -55%;
-  right: -50px;
+  right: -30px;
   transition: all 0.1s;
 }
 .sub-main .sub-main-container .sub-main-box3 img {
   transform: rotate(0);
   transition: .1s;
 }
-.sub-main .sub-main-container .sub-main-box3 img:hover {
+.sub-main .sub-main-container .sub-main-box3:hover img {
   transform: rotate(10deg);
+  transition: all 0.3s;
 }
 .sub-main img {
-  width: 90%;
+  width: 100%;
 }
 .sub-main .sub-main-container .sub-main-box3 .sub-main-img-bg {
   background-color: #FFCE51;
@@ -214,4 +216,42 @@ body {
 }
 .sub-main .sub-main-container .sub-main-box3 .info-box.active {
   opacity: 1;
+}
+.sub-main-cursor {
+  cursor: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='60' height='60' fill='none' viewBox='0 0 120 120'%3E%3Ccircle cx='60' cy='60' r='60' fill='%230E0F19'/%3E%3Cpath fill='%23fff' fill-rule='evenodd' d='M63.7 50.3a1 1 0 0 0-1.4 1.4l7.29 7.3H48a1 1 0 1 0 0 2h21.59l-7.3 7.3a1 1 0 0 0 1.42 1.4l9-9 .7-.7-.7-.7-9-9Z' clip-rule='evenodd'/%3E%3C/svg%3E") 30 30, pointer;
+}
+
+@media (max-width:500px) {
+  .sub-main {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1000px;
+    width: 100%;
+    height: 100%;
+  }
+  .sub-main .sub-main-container .sub-main-txt {
+    /* opacity: 1; */
+    width: 100px;
+    font-size: var(--font-mobile-lg);
+    right: 10%;
+    bottom: 120px;
+  }
+  .sub-main .sub-main-container .sub-main-box1 {
+    top: 0;
+    left: 0;
+  }
+  .sub-main .sub-main-container .sub-main-box2 {
+    position: absolute;
+    top: 100%;
+    left: 0;
+  }
+  .sub-main .sub-main-container .sub-main-box3 {
+    top: 200%;
+    left: 0;
+  }
+  .sub-main .sub-main-container .sub-main-box1 .sub-main-img-bg {
+    width: 350px;
+    height: 350px;
+    top: 50px;
+  }
 }
