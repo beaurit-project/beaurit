@@ -64,7 +64,7 @@ $('.choice-product-contents').on({
         });
     
 
-        progressBarBtn.css('width', (progressIndex * 16.66) + 'px');
+        progressBarBtn.css('width', (progressIndex * 8.33) + 'px');
 
         
     });

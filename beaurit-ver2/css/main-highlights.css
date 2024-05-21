@@ -6,9 +6,6 @@
   text-align: center;
   margin: 0 auto;
 }
-.highlights h2{
-  font-size: 50px;
-}
 
 .highlights-box{
   display: grid;
@@ -16,7 +13,7 @@
   grid-template-rows: 1fr 1fr;
   max-width: 1000px; 
   height: auto;
-  margin: 100px  auto  300px;
+  margin: 100px auto;
 
 }
 .highlights-img1, .highlights-img2, .highlights-img3, .highlights-img4{
@@ -110,9 +107,8 @@
 
     .highlights-box h3{
       opacity: 1;
-      margin: 60px 0 ;
+      margin: 40px 0 ;
       position: absolute;
-      font-size: 23px;
     }
     .highlights-box p{
       opacity: 1;
@@ -192,22 +188,4 @@
     transform: translate(0, 0); 
     
   }
-}
-
-
-/********** mobile 화면  *********/
-@media (max-width:450px){
-  .addcolor{
-    margin-bottom: 180px;
-  }
-  .addcolor h2{
-    font-size: 30px;
-    margin-bottom: 75px;
-  }
-  .item {
-    width: 110px;
-  }
-  .highlights h2{
-  font-size: 30px;
-}
 }
