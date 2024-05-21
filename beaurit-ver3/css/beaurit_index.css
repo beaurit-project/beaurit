@@ -1,0 +1,69 @@
+@charset "UTF-8";
+
+  /* *** fonts *** */
+  /* 'Pretendard' ,sans-serif */
+  @import url(../assets/styles/pretendard-subset.css);
+
+  
+  /* 
+    *font-family: "Montserrat", sans-serif;
+    *font-optical-sizing: auto;
+    *font-weight: <weight>;
+    *font-style: normal;
+    */
+  @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap');
+
+  @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap');
+
+  /**** CSS 변수 *****/
+:root{
+
+  /* font */
+  --font-m-ko: 'Pretendard', -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Apple SD Gothic Neo", Arial ,sans-serif;
+  --font-m-en: "Montserrat", -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Apple SD Gothic Neo", Arial ,sans-serif;
+
+/***** font-size ****/
+  --font-title-xlg : 80px;
+  --font-title-lg: 60px;
+  --font-title-md: 50px;
+  --font-title-sm: 1rem;
+
+  --color-point-orange: #FF9168;
+  --color-point-pink: #FF9EAA;
+  --color-point-yellow: #FFCE51;
+  
+  
+  
+  /***** mobile font-size ****/
+  --font-mobile-lg: 16px;
+  --font-mobile-md: 12px;
+  --font-mobile-sm: 10px;
+  
+}
+
+
+body{
+  font-family: var(--font-m-ko);
+}
+
+
+/* !!제목태그 크기통일 필요!! */
+h1{font-size: var(--font-title-md);}
+h2{font-size: 40px;}
+h3{font-size: 30px;}
+
+
+/********** choice *********/
+.choice-img h1, h2{font-family: var(--font-m-en);}
+.choice-img p{font-family: var(--font-m-ko);font-size: 16px;}
+.choice-img a{font-family: var(--font-m-ko);font-size: 20px;}
+.choice-box .choice-btn{font-family: var(--font-m-ko); font-size: var(--font-title-sm); font-weight: bold;}
+
+
+footer{
+    line-height: 1.2;
+    text-align: center;
+    margin: 100px auto 0 ;
+    font-size: .8rem;
+    color: #414141;
+  }
