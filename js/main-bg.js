@@ -1,3 +1,5 @@
+$('a[href="#"]').on('click', e => e.preventDefault());
+
 /******* header 사라짐 **********/
 
 $(window).on('scroll',()=>{

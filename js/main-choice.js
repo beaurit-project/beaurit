@@ -1,3 +1,7 @@
+$('a[href="#"]').on('click', e => e.preventDefault());
+
+
+
 // choice slide
 const $slideBtn = $('.choice-product .choice-no-bar li');
 const $slideImgBox = $('.choice-slide-imgbox');
