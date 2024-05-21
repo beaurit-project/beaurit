@@ -1,2 +1,232 @@
 @charset "UTF-8";
+.loader{
+    background-color: #fff;
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    top: 100%; /* Initially off-screen */
+    left: 0;
+       z-index: 9999;
+}
+.loader-container {
+    position: fixed;
+    top: 100%; /* Initially off-screen */
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    background-color: #FFCE51; /* Semi-transparent background */
+    animation: loader-slide-up 0.3s ease-out forwards; /* Slide-up animation */
+}
+.loader-container.loader-hide {
+    animation: loader-slide-down 0.3s ease-out forwards; /* Slide-down animation when hiding */
+}
 
+.loader-container .loader-box {
+    display: grid;
+    place-items: center;
+    width: 142px;
+    height: 40px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.loader-container .loader-box .dot {
+    width: 16px;
+    height: 16px;
+    filter: blur(2px);
+    background-color: #ddd;
+    border-radius: 50%;
+    position: absolute;
+    top: 12px;
+    left: 15px;
+    animation: loader-mov1 2.8s infinite;
+}
+
+.loader-container .loader-box .dots {
+    display: flex;
+    gap: 16px;
+    margin-left: 31px;
+    animation: loader-mov2 2.8s infinite;
+}
+
+.loader-container .loader-box .dots span {
+    width: 16px;
+    height: 16px;
+    background-color: #ddd;
+    border-radius: 50%;
+    filter: blur(2px);
+}
+
+
+@keyframes loader {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
+
+@keyframes loader {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
+
+@keyframes loader-mov1 {
+    50% {
+        transform: translateX(96px);
+    }
+}
+
+@keyframes loader-mov2 {
+    50% {
+        transform: translateX(-31px);
+    }
+}
+
+@keyframes loader-slide-up {
+    from {
+        top: 100%; /* Start from off-screen at the bottom */
+    }
+    to {
+        top: 0; /* End at the top of the screen */
+    }
+}
+
+@keyframes loader-slide-down {
+    from {
+        top: 0; /* Start from the top of the screen */
+    }
+    to {
+        top: -100%; /* End off-screen at the top */
+    }
+}
+
+
+
+.container { 
+    font-family: 'Dosis', sans-serif;
+    font-weight: 200;
+    height: 100vh;
+    color: #111;
+  }
+  
+  .logo { font-size: 6rem; }
+  .mark { 
+    border-bottom: 4px solid #111; 
+    width: 2rem;
+    position: absolute;
+    top: 1rem;
+    left: 0.25rem;
+    transform: translate3d(0, 0, 0);
+    animation: mark-anim 2s infinite cubic-bezier(0.55, 0, 0.1, 1);
+  }
+  
+  .r,
+  .e1,
+  .s1,
+  .s2,
+  .e2 { will-change: margin-left, margin-right; }
+  
+  .r { 
+    margin-left: 0.25rem;
+    margin-right: 0.25rem;
+    animation: r-anim 2s infinite cubic-bezier(0.55, 0, 0.1, 1);
+  }
+  
+  .e1 {
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+    animation: e1-anim 2s infinite cubic-bezier(0.55, 0, 0.1, 1);
+  }
+  
+  .s1 { 
+    margin-left: 1rem;
+    margin-right: 1rem; 
+    animation: s1-anim 2s infinite cubic-bezier(0.55, 0, 0.1, 1);
+  }
+  
+  .s2 { 
+    margin-left: 1rem;
+    margin-right: 1rem;
+    animation: s2-anim 2s infinite cubic-bezier(0.55, 0, 0.1, 1);
+  }
+  
+  .e2 { 
+    margin-left: 2rem;
+    margin-right: 3rem;
+    animation: e2-anim 2s infinite cubic-bezier(0.55, 0, 0.1, 1);
+  }
+  
+  
+  @keyframes mark-anim {
+    0%, 25%, 100% { 
+      left: 1.5%;
+    }
+    50%, 75%  {
+      left: 92%;
+    }
+  }
+  
+  
+  @keyframes r-anim {
+    0%, 25%, 100% { 
+      margin-left: 0.25rem;
+      margin-right: 0.25rem;
+    }
+    50%, 75%  {
+      margin-left: 3rem;
+      margin-right: 2rem;
+    }
+  }
+  
+  @keyframes e1-anim {
+    0%, 25%, 100% { 
+      margin-left: 0.5rem;
+      margin-right: 0.5rem;
+    }
+    50%, 75%  {
+      margin-left: 1rem;
+      margin-right: 1rem; 
+    }
+  }
+  
+  @keyframes s1-anim {
+    0%, 25%, 100% { 
+      margin-left: 1rem;
+      margin-right: 1rem; 
+    }
+    50%, 75%  {
+      margin-left: 1rem;
+      margin-right: 1rem;  
+    }
+  }
+  
+  @keyframes s2-anim {
+    0%, 25%, 100% { 
+      margin-left: 1rem;
+      margin-right: 2rem; 
+    }
+    50%, 75%  {
+      margin-left: 0.5rem;
+      margin-right: 0.5rem;
+    }
+  }
+  
+  @keyframes e2-anim {
+    0%, 25%, 100%   { 
+      margin-left: 2rem;
+      margin-right: 3rem;
+    }
+    50%, 75% {
+      margin-left: 0.25rem;
+      margin-right: 0.25rem;
+    }
+  }
