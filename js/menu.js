@@ -1,3 +1,8 @@
+$('a[href="#"]').on('click', e => e.preventDefault());
+
+
+
+
 
 function magneticButton(element) {
     const children = element.children[0]

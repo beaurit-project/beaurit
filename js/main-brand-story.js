@@ -1,3 +1,7 @@
+$('a[href="#"]').on('click', e => e.preventDefault());
+
+
+
 window.addEventListener('scroll', function() {
     scrollRotate();
 });

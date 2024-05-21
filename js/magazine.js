@@ -1,4 +1,4 @@
-
+$('a[href="#"]').on('click', e => e.preventDefault());
 
 // magazine-box box1
 $('.open').on('click', function(e) {

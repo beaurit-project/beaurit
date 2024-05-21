@@ -1,3 +1,7 @@
+$('a[href="#"]').on('click', e => e.preventDefault());
+
+
+
 /* 이미지 구역 hover 시, background 생김 */
 $('.sub-main .sub-main-container .sub-main-box1').on('mouseenter', () => {
   $('.sub-main .sub-main-container .sub-main-box1 .sub-main-img-bg').addClass('active');
