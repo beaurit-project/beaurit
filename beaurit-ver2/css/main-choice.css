@@ -303,6 +303,7 @@
 }
 .choice-box h1{
     margin: 0 5px;
+    font-size: 30px
 }
 .choice-product{
     margin-top: 80px;
@@ -311,6 +312,10 @@
 }
 .choice-product-contents{
     height: 50vh;
+    margin-top: 450px;
+}
+.choice-product-contents h1{
+    font-size: 30px;
 }
 .choice-slide-imgbox #bg1, #bg2, #bg3, #bg4, #bg5, #bg6{
     /* background-size: 50%; */
@@ -327,6 +332,7 @@
     position: sticky;
     top: 0;
     padding-top: 10%;
+    font-size: 30px;
 }
 .waystouse-no-box{
     display: none;
