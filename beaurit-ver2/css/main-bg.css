@@ -71,11 +71,11 @@ main-box-h2{
   border-radius: 50px;
 }
 .bg-img1{
-  background: url(../images/main-img/main-bg2.png)no-repeat fixed 50% ;
+  background: url(../images/main-img/main-bg2-1.png)no-repeat fixed 50%;
   text-indent: -9999px;
 }
 .bg-img2{
-  background: url(../images/main-img/main-bg2-1.png)no-repeat fixed 50%;
+  background: url(../images/main-img/main-bg1-1.png)no-repeat fixed 50% ;
   text-indent: -9999px;
 }
 .bg-img3{

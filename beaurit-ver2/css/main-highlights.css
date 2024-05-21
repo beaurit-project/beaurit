@@ -6,6 +6,9 @@
   text-align: center;
   margin: 0 auto;
 }
+.highlights h2{
+  font-size: 50px;
+}
 
 .highlights-box{
   display: grid;
@@ -13,7 +16,7 @@
   grid-template-rows: 1fr 1fr;
   max-width: 1000px; 
   height: auto;
-  margin: 100px auto;
+  margin: 100px  auto  300px;
 
 }
 .highlights-img1, .highlights-img2, .highlights-img3, .highlights-img4{
@@ -204,7 +207,7 @@
   .item {
     width: 110px;
   }
-}
-.highlights h2{
+  .highlights h2{
   font-size: 30px;
+}
 }
