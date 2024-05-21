@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>메인페이지</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
+  <!-- favicon -->
+  <link rel="shortcut icon" href="../favicon/favicon.ico" type="image/x-icon">
+  <link rel="apple-touch-icon" sizes="180x180" href="../favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="../favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="../favicon/favicon-16x16.png">
+  <link rel="manifest" href="../favicon/site.webmanifest">
+  <!-- open graph -->
+
+  <!-- reset -->
+  <link rel="stylesheet" href="../assets/styles/reset.css">
+  <!-- fonts -->
+
+  <!-- 공통된 style -->
+  <link rel="stylesheet" href="../css/beaurit_index.css">
+  <!-- 이 페이지에만 들어가는 style -->
+  <link rel="stylesheet" href="../css/main.css">
+  <link rel="stylesheet" href="../css/main-bg.css">
+  <link rel="stylesheet" href="../css/main-choice.css">
+
+  <!-- jQuery -->
+  <script src="../assets/jquery-3.7.1.min.js"></script>
+  <script src="../assets/gsap.min.js"></script>
+
+  <!-- plugIn -->
+</head>
+
+<body>
+  <!------ header -------->
+  <header>
+    <a href="#">
+      <img src="../images/main-img/로고블랙.png" alt="로고이미지" class="logo-img">
+    </a>
+    <nav class="menu-page">
+      <div class="mobile-button">
+        <span class="bar1"></span>
+        <span class="bar2"></span>
+        <span class="bar3"></span>
+      </div>
+    </nav>
+  </header>
+
+  <!------ main bg ------->
+  <main>
+    <section class="main-bg">
+      <div class="main-bg-wrapper">
+        <div class="main-bg-contents img1">
+          <img src="../images/main-img/main-bg1.png" alt="메인 슬라이드 이미지1">
+        </div>
+        <div class="main-bg-contents img2">
+          <img src="../images/main-img/main-bg2.png" alt="메인 슬라이드 이미지2">
+          </div> 
+        <div class="main-bg-contents img3">
+          <img src="../images/main-img/main-bg3.png" alt="메인 슬라이드 이미지3">
+        </div>
+      </div>
+      <div class="main-box">
+        <h2>Life is short
+          <img src="../images/main-img/main-bg4.png" alt="메인박스 이미지1" class="main-box-img"><br>
+          do beaurit now
+          <img src="../images/main-img/main-bg5.png" alt="메인박스 이미지2" class="main-box-img">
+        </h2>
+        <div class="main-sub-box">
+          <h2>PLAY NOW</h2>
+          <!-- mouse hover 아이콘 영역  -->
+          <div class="button-container">
+            <button class="title-button">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 86 86" width="75" height="75"
+                class="title-button-svg">
+                <g class="title-button-group play">
+                  <path
+                    d="M81.8 54.45a6.66 6.66 0 0 1-.26-3.77 6.72 6.72 0 0 1 1.69-3.4 6.06 6.06 0 0 0 0-8.57 6.71 6.71 0 0 1-1.69-3.39 6.68 6.68 0 0 1 .26-3.77 6.07 6.07 0 0 0-3.27-7.9 6.72 6.72 0 0 1-2.85-2.48 6.69 6.69 0 0 1-1.21-3.59c0-1.6-.64-3.14-1.78-4.28l-.7.7.7-.7a6.07 6.07 0 0 0-4.27-1.78 6.69 6.69 0 0 1-3.59-1.2 6.68 6.68 0 0 1-2.48-2.85 6.07 6.07 0 0 0-7.9-3.28h-.01a6.64 6.64 0 0 1-3.77.26 6.7 6.7 0 0 1-3.39-1.68 6.07 6.07 0 0 0-8.57 0 6.68 6.68 0 0 1-3.38 1.68c-1.35.27-2.7.18-3.77-.26a6.07 6.07 0 0 0-7.91 3.28 6.7 6.7 0 0 1-2.49 2.85 6.68 6.68 0 0 1-3.58 1.2 6.07 6.07 0 0 0-6.05 6.06 6.7 6.7 0 0 1-1.2 3.59 6.68 6.68 0 0 1-2.86 2.48 6.07 6.07 0 0 0-3.27 7.89c.44 1.06.53 2.42.26 3.77a6.7 6.7 0 0 1-1.69 3.4 6.06 6.06 0 0 0 0 8.56 6.69 6.69 0 0 1 1.69 3.4c.27 1.34.18 2.7-.26 3.76a6.08 6.08 0 0 0 3.27 7.92 6.72 6.72 0 0 1 2.85 2.48 6.67 6.67 0 0 1 1.21 3.59 6.07 6.07 0 0 0 6.05 6.05 6.7 6.7 0 0 1 3.59 1.2 6.68 6.68 0 0 1 2.48 2.86 6.07 6.07 0 0 0 7.9 3.28h.01a6.67 6.67 0 0 1 3.77-.26c1.35.26 2.57.87 3.39 1.68a6.08 6.08 0 0 0 8.57 0 6.68 6.68 0 0 1 3.38-1.68 6.69 6.69 0 0 1 3.77.26 6.07 6.07 0 0 0 7.91-3.28 6.72 6.72 0 0 1 2.49-2.85 6.67 6.67 0 0 1 3.58-1.2 6.07 6.07 0 0 0 6.05-6.06 6.7 6.7 0 0 1 1.21-3.59 6.7 6.7 0 0 1 2.85-2.48 6.07 6.07 0 0 0 3.27-7.9Z"
+                    stroke="currentColor" stroke-width="2" fill="none"></path>
+                  <path
+                    d="m40.6 34.86 11.26 7.02a2 2 0 0 1 .9 1.64 1.9 1.9 0 0 1-.9 1.63L40.6 52.17c-.58.36-1.33.4-1.91.04a1.87 1.87 0 0 1-.94-1.67V36.49c0-.67.35-1.31.94-1.63a1.84 1.84 0 0 1 1.91 0Z"
+                    fill="currentColor"></path>
+                </g>
+                <g class="title-button-group star">
+                  <path
+                    d="M58.73 44.54c-1.97-2.63-2.71-7.33-1.66-10.45l1.24-3.65c1.05-3.1-.63-4.77-3.74-3.74l-3.65 1.24c-3.1 1.05-7.8.3-10.45-1.65l-3.08-2.3c-2.64-1.97-4.76-.9-4.71 2.38l.06 3.86c.04 3.29-2.13 7.52-4.8 9.42l-3.15 2.23c-2.68 1.9-2.3 4.24.83 5.22l3.68 1.14c3.13.97 6.5 4.34 7.46 7.47l1.15 3.67c.97 3.14 3.32 3.51 5.22.83l2.22-3.14c1.9-2.7 6.14-4.85 9.42-4.8l3.85.05c3.29.04 4.37-2.1 2.39-4.71l-2.28-3.07Z"
+                    fill="#FFC857"></path>
+                </g>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!------ sub-main --------->
+    <section class="sub-main">
+      <div class="sub-main-container ">
+        <div class="sub-main-box1 sub-main-cursor">
+          <img src="../images/main-img/sub-main_1.png" alt="폼롤러 이미지">
+          <div class="sub-main-txt" id="txt1">
+            <p>Pilates</p>
+          </div>
+          <div class="info-box">Basic Bar</div>
+          <div class="sub-main-img-bg"></div>
+        </div>
+        <div class="sub-main-box2 sub-main-cursor">
+          <img src="../images/main-img/sub-main_2.png" alt="요가링 이미지">
+          <div class="sub-main-txt" id="txt2">
+            <p>Relax</p>
+          </div>
+          <div class="info-box">Yoga Ring</div>
+          <div class="sub-main-img-bg"></div>
+        </div>
+        <div class="sub-main-box3 sub-main-cursor">
+          <img src="../images/main-img/sub-main_3.png" alt="뷰릿토핑 이미지">
+          <div class="sub-main-txt" id="txt3">
+            <p>3 Type</p>
+          </div>
+          <div class="info-box">Beaurit Topping</div>
+          <div class="sub-main-img-bg"></div>
+        </div>
+      </div>
+
+      <!-- sub-main slide -->
+      <div class="sub-main-slide">
+        <div class="marquee-contents-box">
+          <svg width="50" height="50" viewBox="0 0 57 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M21.4507 2.06829C23.7898 0.0957263 27.2102 0.0957263 29.5493 2.06829L48.3931 17.9587C49.8082 19.1522 50.625 20.9093 50.625 22.7606V26.4379C49.2719 25.949 47.8543 25.7062 46.4375 25.7081V22.7606C46.4375 22.1435 46.1653 21.5578 45.6935 21.16L26.8498 5.26949C26.0701 4.61197 24.9299 4.61197 24.1502 5.26949L5.30651 21.16C4.83474 21.5578 4.5625 22.1435 4.5625 22.7606V48.7505C4.5625 49.1361 4.87497 49.4485 5.26042 49.4485H25.273L29.3187 53.636H5.26042C2.56227 53.636 0.375 51.4487 0.375 48.7505V22.7606C0.375 20.9093 1.1917 19.1522 2.60699 17.9587L21.4507 2.06829ZM53.3519 45.7322C57.1606 41.7901 57.1606 35.3986 53.3519 31.4562C52.9354 31.0251 52.4907 30.6413 52.0239 30.3046C48.2211 27.5612 42.9518 27.9451 39.5597 31.4562H39.357C36.3643 28.3585 31.9105 27.695 28.2917 29.4654C26.546 30.3197 25.0813 31.7091 24.1042 33.3858C21.8424 37.2665 22.3292 42.3833 25.5648 45.7322L37.9662 58.5686C38.79 59.4211 40.1267 59.4211 40.9505 58.5686L53.3519 45.7322Z"
+              fill="#000000" />
+          </svg>
+          <span class="fit-content">Love Myself</span>
+
+          <svg width="50" height="50" viewBox="0 0 57 57" fill="none" xmlns="http://www.w3.org/2000/svg"
+            class="fit-content">
+            <path
+              d="M28.5007 0.583496C43.9185 0.583496 56.4173 13.0822 56.4173 28.5002C56.4173 43.918 43.9185 56.4168 28.5007 56.4168C13.0827 56.4168 0.583984 43.918 0.583984 28.5002C0.583984 13.0822 13.0827 0.583496 28.5007 0.583496ZM28.5007 4.771C15.3954 4.771 4.77148 15.3949 4.77148 28.5002C4.77148 41.6054 15.3954 52.2293 28.5007 52.2293C41.6059 52.2293 52.2298 41.6054 52.2298 28.5002C52.2298 15.3949 41.6059 4.771 28.5007 4.771ZM28.5007 14.5418C29.657 14.5418 30.5944 15.4792 30.5944 16.6356V26.4064H40.3652C41.5215 26.4064 42.459 27.3439 42.459 28.5002C42.459 29.6565 41.5215 30.5939 40.3652 30.5939H30.5944V40.3647C30.5944 41.5211 29.657 42.4585 28.5007 42.4585C27.3443 42.4585 26.4069 41.5211 26.4069 40.3647V30.5939H16.6361C15.4797 30.5939 14.5423 29.6565 14.5423 28.5002C14.5423 27.3439 15.4797 26.4064 16.6361 26.4064H26.4069V16.6356C26.4069 15.4792 27.3443 14.5418 28.5007 14.5418Z"
+              fill="#000000" />
+          </svg>
+          <span class="fit-content">Core Training</span>
+
+          <svg width="50" height="50" viewBox="0 0 51 57" fill="none" xmlns="http://www.w3.org/2000/svg"
+            class="fit-content">
+            <path
+              d="M32.4792 0.583496C37.4899 0.583496 41.5521 4.64557 41.5521 9.65641C41.5521 11.4558 41.0284 13.1328 40.1247 14.5433L47.1354 14.5418C49.0628 14.5418 50.625 16.1042 50.625 18.0314V27.8022C50.625 29.4895 49.4274 30.8971 47.8358 31.2215L47.8333 47.3439C47.8333 52.1819 44.0464 56.1354 39.2752 56.4026L38.7604 56.4168H12.2396C7.40154 56.4168 3.44793 52.6299 3.18102 47.8587L3.16667 47.3439L3.16681 31.222C1.57394 30.8988 0.375 29.4906 0.375 27.8022V18.0314C0.375 16.1042 1.93733 14.5418 3.86458 14.5418L10.8752 14.5433C9.97172 13.1328 9.44792 11.4558 9.44792 9.65641C9.44792 4.64557 13.51 0.583496 18.5208 0.583496C21.3279 0.583496 23.8373 1.85834 25.5017 3.86066C27.1627 1.85834 29.6721 0.583496 32.4792 0.583496ZM23.4062 31.289H7.35417V47.3439C7.35417 49.9072 9.32818 52.0093 11.8389 52.2131L12.2396 52.2293H23.4062V31.289ZM43.6458 31.289H27.5938V52.2293H38.7604C41.3237 52.2293 43.4258 50.2553 43.6296 47.7445L43.6458 47.3439V31.289ZM23.4062 18.7293H4.5625V27.1043L23.4062 27.1015V18.7293ZM46.4375 27.1043V18.7293H27.5938V27.1015L46.4375 27.1043ZM32.4792 4.771C29.781 4.771 27.5938 6.95827 27.5938 9.65641V14.539H32.5462L32.8798 14.5256C35.3906 14.3218 37.3646 12.2196 37.3646 9.65641C37.3646 6.95827 35.1773 4.771 32.4792 4.771ZM18.5208 4.771C15.8227 4.771 13.6354 6.95827 13.6354 9.65641C13.6354 12.2196 15.6094 14.3218 18.1201 14.5256L18.4538 14.539H23.4062V9.65641L23.3901 9.25573C23.1863 6.74501 21.0841 4.771 18.5208 4.771Z"
+              fill="#000000" />
+          </svg>
+          <span class="fit-content">Premium Homecare</span>
+
+          <svg width="50" height="50" viewBox="0 0 57 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M21.4507 2.06829C23.7898 0.0957263 27.2102 0.0957263 29.5493 2.06829L48.3931 17.9587C49.8082 19.1522 50.625 20.9093 50.625 22.7606V26.4379C49.2719 25.949 47.8543 25.7062 46.4375 25.7081V22.7606C46.4375 22.1435 46.1653 21.5578 45.6935 21.16L26.8498 5.26949C26.0701 4.61197 24.9299 4.61197 24.1502 5.26949L5.30651 21.16C4.83474 21.5578 4.5625 22.1435 4.5625 22.7606V48.7505C4.5625 49.1361 4.87497 49.4485 5.26042 49.4485H25.273L29.3187 53.636H5.26042C2.56227 53.636 0.375 51.4487 0.375 48.7505V22.7606C0.375 20.9093 1.1917 19.1522 2.60699 17.9587L21.4507 2.06829ZM53.3519 45.7322C57.1606 41.7901 57.1606 35.3986 53.3519 31.4562C52.9354 31.0251 52.4907 30.6413 52.0239 30.3046C48.2211 27.5612 42.9518 27.9451 39.5597 31.4562H39.357C36.3643 28.3585 31.9105 27.695 28.2917 29.4654C26.546 30.3197 25.0813 31.7091 24.1042 33.3858C21.8424 37.2665 22.3292 42.3833 25.5648 45.7322L37.9662 58.5686C38.79 59.4211 40.1267 59.4211 40.9505 58.5686L53.3519 45.7322Z"
+              fill="#000000" />
+          </svg>
+          <span class="fit-content">Love Myself</span>
+
+          <svg width="50" height="50" viewBox="0 0 57 57" fill="none" xmlns="http://www.w3.org/2000/svg"
+            class="fit-content">
+            <path
+              d="M28.5007 0.583496C43.9185 0.583496 56.4173 13.0822 56.4173 28.5002C56.4173 43.918 43.9185 56.4168 28.5007 56.4168C13.0827 56.4168 0.583984 43.918 0.583984 28.5002C0.583984 13.0822 13.0827 0.583496 28.5007 0.583496ZM28.5007 4.771C15.3954 4.771 4.77148 15.3949 4.77148 28.5002C4.77148 41.6054 15.3954 52.2293 28.5007 52.2293C41.6059 52.2293 52.2298 41.6054 52.2298 28.5002C52.2298 15.3949 41.6059 4.771 28.5007 4.771ZM28.5007 14.5418C29.657 14.5418 30.5944 15.4792 30.5944 16.6356V26.4064H40.3652C41.5215 26.4064 42.459 27.3439 42.459 28.5002C42.459 29.6565 41.5215 30.5939 40.3652 30.5939H30.5944V40.3647C30.5944 41.5211 29.657 42.4585 28.5007 42.4585C27.3443 42.4585 26.4069 41.5211 26.4069 40.3647V30.5939H16.6361C15.4797 30.5939 14.5423 29.6565 14.5423 28.5002C14.5423 27.3439 15.4797 26.4064 16.6361 26.4064H26.4069V16.6356C26.4069 15.4792 27.3443 14.5418 28.5007 14.5418Z"
+              fill="#000000" />
+          </svg>
+          <span class="fit-content">Core Training</span>
+
+          <svg width="50" height="50" viewBox="0 0 51 57" fill="none" xmlns="http://www.w3.org/2000/svg"
+            class="fit-content">
+            <path
+              d="M32.4792 0.583496C37.4899 0.583496 41.5521 4.64557 41.5521 9.65641C41.5521 11.4558 41.0284 13.1328 40.1247 14.5433L47.1354 14.5418C49.0628 14.5418 50.625 16.1042 50.625 18.0314V27.8022C50.625 29.4895 49.4274 30.8971 47.8358 31.2215L47.8333 47.3439C47.8333 52.1819 44.0464 56.1354 39.2752 56.4026L38.7604 56.4168H12.2396C7.40154 56.4168 3.44793 52.6299 3.18102 47.8587L3.16667 47.3439L3.16681 31.222C1.57394 30.8988 0.375 29.4906 0.375 27.8022V18.0314C0.375 16.1042 1.93733 14.5418 3.86458 14.5418L10.8752 14.5433C9.97172 13.1328 9.44792 11.4558 9.44792 9.65641C9.44792 4.64557 13.51 0.583496 18.5208 0.583496C21.3279 0.583496 23.8373 1.85834 25.5017 3.86066C27.1627 1.85834 29.6721 0.583496 32.4792 0.583496ZM23.4062 31.289H7.35417V47.3439C7.35417 49.9072 9.32818 52.0093 11.8389 52.2131L12.2396 52.2293H23.4062V31.289ZM43.6458 31.289H27.5938V52.2293H38.7604C41.3237 52.2293 43.4258 50.2553 43.6296 47.7445L43.6458 47.3439V31.289ZM23.4062 18.7293H4.5625V27.1043L23.4062 27.1015V18.7293ZM46.4375 27.1043V18.7293H27.5938V27.1015L46.4375 27.1043ZM32.4792 4.771C29.781 4.771 27.5938 6.95827 27.5938 9.65641V14.539H32.5462L32.8798 14.5256C35.3906 14.3218 37.3646 12.2196 37.3646 9.65641C37.3646 6.95827 35.1773 4.771 32.4792 4.771ZM18.5208 4.771C15.8227 4.771 13.6354 6.95827 13.6354 9.65641C13.6354 12.2196 15.6094 14.3218 18.1201 14.5256L18.4538 14.539H23.4062V9.65641L23.3901 9.25573C23.1863 6.74501 21.0841 4.771 18.5208 4.771Z"
+              fill="#000000" />
+          </svg>
+          <span class="fit-content">Premium Homecare</span>
+        </div>
+      </div>
+    </section>
+
+    <!--------- hilights ----------->
+    <section class="highlights">
+      <h2>Highlights</h2>
+
+
+      <div class="highlights-box">
+        <div class="highlights-img">
+          <div class="highlights-bg">
+            <p>이미지</p>
+          </div>
+          <div class="highlights-img-txt highlights-img-txt1">
+            <h3>BEAURIT<br>
+              BASIC BAR</h3>
+            <p>Life is short,<br>
+              do beaurit now</p>
+          </div>
+        </div>
+
+
+        <div class="highlights-img">
+          <div class="highlights-bg1">
+            <p>이미지</p>
+          </div>
+          <div class="highlights-img-txt highlights-img-txt2">
+            <h3>SHINE<br>
+              YOUR BODY</h3>
+            <p>Raw Food<br>
+              Vegan Shake</p>
+          </div>
+        </div>
+
+        <div class="highlights-bg-pos">
+          <div class="highlights-bg2">
+            <p>이미지</p>
+          </div>
+          <div class="highlights-img-txt highlights-img-txt3">
+            <h3>BEARIT<br>
+              TOPPING</h3>
+            <p>Beaurit Bar<br>
+              Set</p>
+          </div>
+        </div>
+
+        <div class="highlights-img">
+          <div class="highlights-bg3">
+            <p class="bg3-p">이미지</p>
+          </div>
+          <div class="highlights-img-txt highlights-img-txt4">
+            <h3>TEACHING<br>
+              BAND</h3>
+            <p>Home Pilates</p>
+          </div>
+        </div>
+
+
+      </div>
+    </section>
+
+
+    <!---- addcolor --------->
+    <section class="addcolor">
+      <h2>Add color into<br>your home life</h2>
+
+
+      <!-- addcolor 제품 슬라이드 -->
+      <div id="silder">
+        <div class="image-box">
+          <div class="item"><img src="../images/main-img/베이지.png" alt="베이지"></div>
+          <div class="item"><img src="../images/main-img/보라.png" alt="보라"></div>
+          <div class="item"><img src="../images/main-img/주황.png" alt="주황"></div>
+          <div class="item"><img src="../images/main-img/갈색.png" alt="갈색"></div>
+          <div class="item"><img src="../images/main-img/핑크.png" alt="핑크"></div>
+          <div class="item"><img src="../images/main-img/파랑.png" alt="파랑"></div>
+          <div class="item"><img src="../images/main-img/그린.png" alt="그린"></div>
+          <!-- clone -->
+          <div class="item"><img src="../images/main-img/베이지.png" alt="베이지"></div>
+          <div class="item"><img src="../images/main-img/보라.png" alt="보라"></div>
+          <div class="item"><img src="../images/main-img/주황.png" alt="주황"></div>
+          <div class="item"><img src="../images/main-img/갈색.png" alt="갈색"></div>
+          <div class="item"><img src="../images/main-img/핑크.png" alt="핑크"></div>
+          <div class="item"><img src="../images/main-img/파랑.png" alt="파랑"></div>
+          <div class="item"><img src="../images/main-img/그린.png" alt="그린"></div>
+          <!-- clone -->
+          <div class="item"><img src="../images/main-img/베이지.png" alt="베이지"></div>
+          <div class="item"><img src="../images/main-img/보라.png" alt="보라"></div>
+          <div class="item"><img src="../images/main-img/주황.png" alt="주황"></div>
+          <div class="item"><img src="../images/main-img/갈색.png" alt="갈색"></div>
+          <div class="item"><img src="../images/main-img/핑크.png" alt="핑크"></div>
+          <div class="item"><img src="../images/main-img/파랑.png" alt="파랑"></div>
+          <div class="item"><img src="../images/main-img/그린.png" alt="그린"></div>
+        </div>
+      </div>
+
+    </section>
+
+
+    <!----- choice ----->
+    <section class="choice">
+      <div class="choice-img">
+        <div class="choice-box">
+          <h1>Do Beaurit Now!</h1>
+          <p>뷰릿에서 추천하는 상품입니다.</p>
+          <a href="#" class="choice-btn">더보기</a>
+        </div>
+      </div>
+
+      <div class="choice-product">
+        <div class="choice-product-contents">
+          <h1>Beaurit Choice!</h1>
+          <ul class="choice-slide-imgbox">
+            <li class="slide-item" id="bg1"><a href="#">bg1</a></li>
+            <li class="slide-item" id="bg2"><a href="#">bg2</a></li>
+            <li class="slide-item" id="bg3"><a href="#">bg3</a></li>
+            <li class="slide-item" id="bg4"><a href="#">bg4</a></li>
+            <li class="slide-item" id="bg5"><a href="#">bg5</a></li>
+            <li class="slide-item" id="bg6"><a href="#">bg6</a></li>
+          </ul>
+
+          <ul class="choice-no-bar">
+            <li class="active">button1</li>
+            <li>button2</li>
+            <li>button3</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!----- ways to  use ----->
+    <section class="waystouse">
+      <h2>Ways to use</h2>
+      <div class="waystouse-box">
+        <div class="waystouse-no-box">
+          <ul class="waystouse-no-bar">
+            <li class="active">01</li>
+            <li>02</li>
+            <li>03</li>
+            <li>04</li>
+            <li>05</li>
+            <li>06</li>
+          </ul>
+
+          <div class="progress-bar-wrapper">
+            <div class="progress-bar">
+              <ul class="btn-group">
+                <li>1</li>
+              </ul>
+            </div>
+
+          </div>
+        </div>
+
+
+        <div class="user-detail-box">
+          <div class="user-detail coreclub active">
+            <img src="../images/main-img/ways_1.png" alt="waystouse-img1">
+            <div class="use-txtdetail">
+              <h3>Core Club</h3>
+              <p>뷰릿 회원님들을 위한 4주 운동 루틴 (with 솔쌤, 은쌤)
+                3만명의 수강생을 만나본 솔쌤이 가장 효율적으로
+                몸이 변화될 수 있는 루틴을 진행하는 클럽
+                4주 후 건강한 아름다움으로 가득찬 나를 만날 준비 되셨나요?</p>
+              <a href="#" class="waystouse-btn">코어클럽 입장하기
+                <img src="../images/main-img/icon_svg/enter_icon.svg" alt="enter-icon">
+              </a>
+            </div>
+          </div>
+
+
+          <div class="user-detail homepilates  ">
+            <img src="../images/main-img/ways_2.png" alt="waystouse-img2">
+            <div class="use-txtdetail">
+              <h3>Home Pilates</h3>
+              <p>가구필라테스를 내 방에서, 뷰릿 필라테스
+                뷰릿은 필라테스, 체형관리, 전신 마사지를 한 번에 할 수 있는
+                프리미엄 홈케어 입니다.</p>
+              <a href="#" class="waystouse-btn">홈필라테스 보러가기
+                <img src="../images/main-img/icon_svg/enter_icon.svg" alt="enter-icon">
+              </a>
+            </div>
+          </div>
+
+          <div class="user-detail beaurittopping">
+            <img src="../images/main-img/ways_3.png" alt="waystouse-img3">
+            <div class="use-txtdetail">
+              <h3>Beaurit Topping</h3>
+              <p>침대에서 편안하게 누워서 하는 셀프마사지
+                뷰릿 토핑은 베이직바에 결합하여 사용하는 모듈형 제품으로,
+                굳어진 근육을 이완시키며 전신을 마사지 할 수 있습니다.</p>
+              <a href="#" class="waystouse-btn">뷰릿토핑 보러가기
+                <img src="../images/main-img/icon_svg/enter_icon.svg" alt="enter-icon">
+              </a>
+            </div>
+          </div>
+
+          <div class="user-detail beauritlegband">
+            <img src="../images/main-img/ways_4.png" alt="waystouse-img4">
+            <div class="use-txtdetail">
+              <h3>Beaurit Leg Band</h3>
+              <p>체형과 자세를 한번에 교정하는 뷰릿 다리밴드
+                3가지 종류의 밴드를 다리에 착용하고 운동하기 때문에
+                몸의 정렬을 빠르게 되돌릴 수 있습니다.</p>
+              <a href="#" class="waystouse-btn">뷰릿밴드 보러가기
+                <img src="../images/main-img/icon_svg/enter_icon.svg" alt="enter-icon">
+              </a>
+            </div>
+          </div>
+
+          <div class="user-detail teachingband">
+            <img src="../images/main-img/ways_5.png" alt="waystouse-img5">
+            <div class="use-txtdetail">
+              <h3>Teaching Band</h3>
+              <p>홈필라테스의 완성도를 높여줄 티칭밴드
+                손, 발 착용법에 따라 다양한 동작을 활용할 수 있는 2way
+                고무의 장력을 이용하여 운동하기 때문에 운동효과를 3배이상 높여줍니다.</p>
+              <a href="#" class="waystouse-btn">티칭밴드 보러가기
+                <img src="../images/main-img/icon_svg/enter_icon.svg" alt="enter-icon">
+              </a>
+            </div>
+          </div>
+
+          <div class="user-detail coreclub">
+            <img src="../images/main-img/ways_6.png" alt="waystouse-img6">
+            <div class="use-txtdetail">
+              <h3>Shine Your Body</h3>
+              <p>이너뷰티를 위한 비건쉐이크
+                100% 식물유래 원료로 만들어진 식사대용 로푸드 비건 쉐이크
+                내 몸에 정말 필요한 음식이 무엇인지 샤인유어바디를 통해
+                직접 경험해보세요.</p>
+              <a href="#" class="waystouse-btn">샤유바 보러가기
+                <img src="../images/main-img/icon_svg/enter_icon.svg" alt="enter-icon">
+              </a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer>
+
+  </footer>
+
+
+
+  <!-- 이 페이지에만 들어가는 jQuery -->
+  <script src="../js/main-choice.js"></script>
+  <script src="../js/main.js"></script>
+  <script src="../js/main-bg.js"></script>
+</body>
+
+</html>
