@@ -30,7 +30,7 @@
     position: relative;
 }
 .brand-story .circle .rotate{
-    width: 70%; height: 500px;
+    width: 70%; height: 600px;
     margin: 0 auto;
     position: sticky;
     top: 25%
@@ -66,12 +66,15 @@
 .brand-story-txt-box img{
     margin-bottom: 200px;
 }
+.brand-story-txt-box.stop img{
+    margin-bottom: 0;
+}
 
 /* footer */
 footer {
     margin: 0;
     width: 100%; 
-    padding-top: 200px;
+    padding-top: 100px;
     background-color: var(--color-point-pink);
     color: #fff;
 }
@@ -112,16 +115,15 @@ footer {
     .brand-story-container{
         display: grid;
         grid-template-columns: 1fr;
-        margin: 0; padding: 0;
+        margin: 0 auto; padding: 0;
         width: 100%; 
 
     }
     .brand-story .circle{
         display: none;
-        text-align: center;
     }
     .brand-story-txt-box{
-        margin: 50px;
+        margin: 50px auto;
         width: 80%;
     }
     .brand-story-txt-box img{

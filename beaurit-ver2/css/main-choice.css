@@ -127,7 +127,7 @@
 }
 
 .user-detail-box{
-    width: 70%;
+    width: 80%;
     margin: 0 auto;
 }
 .user-detail{
@@ -141,38 +141,39 @@
 .user-detail img{
     width: 100%;
 }
-.use-txtdetail h3{font-family: var(--font-m-en);}
-.use-txtdetail p{font-family: var(--font-m-ko);}
+.use-txtdetail h3{font-family: var(--font-m-en); line-height: 1;
+    margin-bottom: 40px; font-size: var(--font-title-lg);}
+.use-txtdetail p{font-family: var(--font-m-ko);
+    margin-bottom: 40px; word-break: keep-all; font-size: 1.2rem;}
 
 .use-txtdetail{
-    margin: 50px;
+    margin: 20px 0 50px 50px;
     transition: .3s;
     opacity: 0;
     background-color: #fff;
+    line-height: 1.5;
 }
 .use-txtdetail.active{
     opacity: 1;
     background-color: #fff;
 
 }
-.use-txtdetail h3{margin-bottom: 10px;}
-.use-txtdetail p{margin-bottom: 40px; word-break: keep-all}
+
 .waystouse-btn{
     position: relative;
     display: block;
-    width: 200px; height: 40px;
+    width: 250px; height: 50px;
     background-color: #eaeaea;
-    border: 1px solid #000;
     border-radius: 20px;
     padding-left: 30px;
-    line-height: 40px;
+    line-height: 50px;
     margin: 0;
 }
 .waystouse-btn img{
     position: absolute;
     width: 10%; 
-    height: 37px;
-    right: 15px;
+    height: 100%;
+    right: 20px;
 }
 
 .waystouse-btn:hover{
@@ -182,11 +183,14 @@
 .waystouse-btn:hover img{
     filter:invert(100%);
 }
-/* progress bar */
 
+/* progress bar */
+.waystouse-no-box{
+   padding-bottom: 600px;
+}
 .waystouse-no-bar{
     margin: 50px 0;
-    width: 50px; height: 50px;
+    width: 100px; height: 100px;
     position: sticky;
     top: 10%;
 }
@@ -196,7 +200,9 @@
     transform: translateX(-50%) translateY(-50%);
     opacity: 0;
     line-height: 50px;
-    font-size: 2rem;
+    font-size: var(--font-title-lg);
+    font-family: var(--font-m-en);
+    font-weight: 500;
     color: #ddd;
     transition: .2s;
 
@@ -208,7 +214,7 @@
 
 .waystouse-box .progress-bar-wrapper{
     background-color: #ddd;
-    height: 8px; width: 100%;
+    height: 10px; width: 100%;
     border-radius: 10px;
     transform: translateY(-50px);
     position: sticky;
@@ -227,8 +233,8 @@
 }
 
 .progress-bar-btn-group li:nth-child(1) {
-    width: 8.333px;
-    height: 8px;
+    width: 20px;
+    height: 10px;
     background-color: #000;
     border-radius: 10px;
     text-indent: -9999px;
@@ -305,7 +311,7 @@
     margin: 0 5px;
 }
 .choice-product{
-    margin-top: 80px;
+    margin-top: 500px;
     grid-row: 2 / 3;
     width: 100%;
 }
@@ -354,20 +360,22 @@
     opacity: 0;
     background-color: #fff;
     grid-column: 2 / 3;
-    padding: 0 10px;
+    padding: 0 0 0 20px;
 }
 .use-txtdetail.active{
     margin-left: 0;
+    margin-right: 0;
 }
 .waystouse-btn{
-    width: 90%;
+    width: 90%; height: 30px;
+    line-height: 30px;
     font-size: var(--font-mobile-md);
 }
 .waystouse-btn img{
     display: none;
 }
 
-.use-txtdetail h3{font-size: var(--font-mobile-lg);}
+.use-txtdetail h3{font-size: var(--font-mobile-lg); margin-bottom: 10px;}
 .use-txtdetail p{font-size: var(--font-mobile-sm);}
 
 /* 슬라이드 영역 효과 */
