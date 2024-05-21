@@ -144,7 +144,7 @@
 .use-txtdetail h3{font-family: var(--font-m-en); line-height: 1;
     margin-bottom: 40px; font-size: var(--font-title-lg);}
 .use-txtdetail p{font-family: var(--font-m-ko);
-    margin-bottom: 40px; word-break: keep-all; font-size: 1.2rem;}
+    margin-bottom: 40px; word-break: keep-all; font-size: 1rem;}
 
 .use-txtdetail{
     margin: 20px 0 50px 50px;
