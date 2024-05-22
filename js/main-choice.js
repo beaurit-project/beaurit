@@ -13,7 +13,7 @@ $slideBtn.on('click', function () {
 
     $slideImgBox.stop().animate({
         marginLeft: -100 * idx + '%'
-    }, 700);
+    }, 500);
 
     $slideBtn.removeClass('active');
     $(this).addClass('active');
@@ -26,7 +26,7 @@ const autoSlide = () => {
 
     $slideImgBox.stop().animate({
         marginLeft: -100 * currentIdx + '%'
-    }, 700);
+    }, 500);
 
     $slideBtn.eq(currentIdx).addClass('active').siblings().removeClass('active');
 };
