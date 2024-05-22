@@ -58,4 +58,3 @@ document.querySelectorAll('.logo-effect').forEach(element => {
 //     menuBoxDetailImg.style.animation = 'none';
 // });
 
-
