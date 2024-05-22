@@ -1,7 +1,5 @@
 $('a[href="#"]').on('click', e => e.preventDefault());
 
-
-
 // choice slide
 const $slideBtn = $('.choice-product .choice-no-bar li');
 const $slideImgBox = $('.choice-slide-imgbox');
@@ -13,7 +11,7 @@ $slideBtn.on('click', function () {
 
     $slideImgBox.stop().animate({
         marginLeft: -100 * idx + '%'
-    }, 500);
+    }, 700);
 
     $slideBtn.removeClass('active');
     $(this).addClass('active');
@@ -26,7 +24,7 @@ const autoSlide = () => {
 
     $slideImgBox.stop().animate({
         marginLeft: -100 * currentIdx + '%'
-    }, 500);
+    }, 700);
 
     $slideBtn.eq(currentIdx).addClass('active').siblings().removeClass('active');
 };
@@ -35,7 +33,7 @@ let mainSlide = setInterval(autoSlide, 2500);
 
 $('.choice-product-contents').on({
     mouseenter: () => { clearInterval(mainSlide); },
-    mouseleave: () => { mainSlide = setInterval(autoSlide, 3000); },
+    mouseleave: () => { mainSlide = setInterval(autoSlide, 2500); },
 });
 
 
