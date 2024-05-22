@@ -41,5 +41,9 @@ header.none{
   opacity: 0;
   transition: 1.5s;
 }
+header.on{
+  pointer-events: none;
+}
+
 
 

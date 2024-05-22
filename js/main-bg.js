@@ -1,25 +1,25 @@
 $('a[href="#"]').on('click', e => e.preventDefault());
 
-  /******* header 사라짐 **********/
-  let lastScrollTop = 0;
+ /******* header 사라짐 **********/
+ let lastScrollTop = 0;
 
-  $(window).on('scroll', () => {
-    // 현재 스크롤 위치를 가져옴
-    let currentScrollTop = $(window).scrollTop();
-    
-    // 현재 스크롤 위치와 이전 스크롤 위치를 비교
-    if (currentScrollTop > lastScrollTop) {
-      // 스크롤을 내릴 때
-      $('header').addClass('none');
-    } else {
-      // 스크롤을 올릴 때
-      $('header').removeClass('none').css({ 'transition' : 0.8 });
-    }
-    
-    // 이전 스크롤 위치를 현재 스크롤 위치로 업데이트
-    lastScrollTop = currentScrollTop;
-  });
-  
+ $(window).on('scroll', () => {
+   // 현재 스크롤 위치를 가져옴
+   let currentScrollTop = $(window).scrollTop();
+   
+   // 현재 스크롤 위치와 이전 스크롤 위치를 비교
+   if (currentScrollTop > lastScrollTop) {
+     // 스크롤을 내릴 때
+     $('header').addClass('none on');
+   } else {
+     // 스크롤을 올릴 때
+     $('header').removeClass('none on');
+   }
+   
+   // 이전 스크롤 위치를 현재 스크롤 위치로 업데이트
+   lastScrollTop = currentScrollTop;
+ });
+ 
 
 /*************** main-bg 이미지 텍스트 효과 ***************/
 const btn = document.querySelector('.btn');
