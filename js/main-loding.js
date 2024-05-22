@@ -1,11 +1,15 @@
 $('a[href="#"]').on('click', e => e.preventDefault());
 
 
-
+/************ 로딩페이지 ********/
 function hideLoader() {
-    $('.loader-container').addClass('loader-hide');
+    $('.loader-container').slideUp();
+    $(".contents").show();
   }
   
   window.addEventListener('load', () => {
-    setTimeout(hideLoader, 2500); // 2000 밀리초 = 2초
+    $(".contents").css({'display':'none'});
+    setTimeout(hideLoader, 2000); // 2000 밀리초 = 2초
+
   });
+

@@ -2,15 +2,26 @@ $('a[href="#"]').on('click', e => e.preventDefault());
 
 
 
+ /******* header 사라짐 **********/
+ let lastScrollTop = 0;
 
-/******* header 사라짐 **********/
-$(window).on('scroll', () => {
-  if (scrollY > 200) {
-    $('header').addClass('none');
-  } else {
-    $('header').removeClass('none').animate({ 'transition': '1s' });
-  }
-});
+ $(window).on('scroll', () => {
+   // 현재 스크롤 위치를 가져옴
+   let currentScrollTop = $(window).scrollTop();
+   
+   // 현재 스크롤 위치와 이전 스크롤 위치를 비교
+   if (currentScrollTop > lastScrollTop) {
+     // 스크롤을 내릴 때
+     $('header').addClass('none');
+   } else {
+     // 스크롤을 올릴 때
+     $('header').removeClass('none');
+   }
+   
+   // 이전 스크롤 위치를 현재 스크롤 위치로 업데이트
+   lastScrollTop = currentScrollTop;
+ });
+ 
 
 /******* 제품리스트 스크롤 이벤트 **********/
 $(window).on('scroll', () => {

@@ -39,7 +39,7 @@ header .menu-page span {
 
 header.none{
   opacity: 0;
-  transition: 2s;
+  transition: 1.5s;
 }
 
 
