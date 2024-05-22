@@ -1,10 +1,19 @@
 $('a[href="#"]').on('click', e => e.preventDefault());
 
-// magazine-box box1
 $('.open').on('click', function(e) {
     e.preventDefault(); 
     var $this = $(this);
-    var $contents = $this.closest('.magazine-box').find('.magazine-txtbox-contents, .magazine-txtbox-top');
+    var $container = $this.closest('.magazine-box');
+    var $contents = $container.find('.magazine-txtbox-contents, .magazine-txtbox-top');
+    
+    $('.magazine-box').not($container).find('.magazine-txtbox-contents, .magazine-txtbox-top').slideUp();
+    $('html, body').animate({
+        scrollTop: 0
+    }, 500); 
+    
+    $('.magazine-box').find('.open').show();
+    $('.magazine-box').find('.close').hide();
+    
     $contents.slideDown();
     $this.hide();
     $this.siblings('.close').show();
@@ -13,9 +22,11 @@ $('.open').on('click', function(e) {
 $('.close').on('click', function(e) {
     e.preventDefault(); 
     var $this = $(this);
-    var $contents = $this.closest('.magazine-box').find('.magazine-txtbox-contents, .magazine-txtbox-top');
+    var $container = $this.closest('.magazine-box');
+    var $contents = $container.find('.magazine-txtbox-contents, .magazine-txtbox-top');
+    
     $contents.slideUp();
-    $this.hide(); 
-    $this.siblings('.open').show(); 
+    $this.hide();
+    $this.siblings('.open').show();
 });
 

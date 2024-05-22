@@ -118,7 +118,7 @@
 .waystouse{
     text-align: center; 
     margin: 0 auto; 
-    padding: 200px 0;
+    padding: 200px 0 0 0;
 }
 .waystouse-box{
     display: flex;
@@ -318,7 +318,7 @@
     font-size: 30px
 }
 .choice-product{
-    margin-top: 500px;
+    /* margin-top: 500px; */
     grid-row: 2 / 3;
     width: 100%;
 }
@@ -340,11 +340,16 @@
 
 
 /* ways to use */
+.waystouse{
+    padding-top: 0;
+}
 .waystouse h2{
     position: sticky;
     top: 0;
-    padding-top: 10%;
+    padding-top: 30%;
     font-size: 30px;
+    height: 500px;
+    max-height: 700px;
 }
 .waystouse-no-box{
     display: none;
@@ -360,9 +365,11 @@
 }
 .user-detail{
     width: 100%;
+    padding-top: 200px;
 }
 .user-detail img{
     width: 100%; 
+    padding-top: 200px;
 
 }
 .use-txtdetail{
@@ -372,7 +379,9 @@
     opacity: 0;
     background-color: #fff;
     grid-column: 2 / 3;
-    padding: 0 0 0 20px;
+    padding: 200px 0 0 20px;
+    margin: 0;
+
 }
 .use-txtdetail.active{
     margin-left: 0;
@@ -394,7 +403,7 @@
 .user-detail.coreclub{
     position: sticky;
     top: 0;
-    padding-top: 200px;
+    /* padding-top: 200px; */
     background-color: rgba(0, 0, 0, 0);
 
 }
@@ -402,48 +411,51 @@
 .user-detail.homepilates{
     position: sticky;
     top: 0;
-    padding-top: 200px;
+    /* padding-top: 200px; */
     background-color: rgba(0, 0, 0, 0);
 }
 
 .user-detail.beaurittopping{
     position: sticky;
     top: 0;
-    padding-top: 200px;
+    /* padding-top: 200px; */
     background-color: rgba(0, 0, 0, 0);
 }
 
 .user-detail.beauritlegband{
     position: sticky;
     top: 0;
-    padding-top: 200px;
+    /* padding-top: 200px; */
     background-color: rgba(0, 0, 0, 0);
 }
 
 .user-detail.teachingband{
     position: sticky;
     top: 0;
-    padding-top: 200px;
+    /* padding-top: 200px; */
     background-color: rgba(0, 0, 0, 0);
 }
 
 .user-detail.syd{
     position: sticky;
     top: 0;
-    padding-top: 200px;
+    /* padding-top: 200px; */
     background-color: rgba(0, 0, 0, 0);
 }
 
 .use-txtdetail{
-    margin: 50px;
     transition: .3s;
     opacity: 0;
     background-color: #ffffff00;
-    padding-top: 150px;
 }
 .use-txtdetail.active{
     opacity: 1;
     background-color: #ffffff00;
+    top: 10%;
+    /* padding-top: 150px;
+    margin: 50px; */
+
+
 
 }
 
