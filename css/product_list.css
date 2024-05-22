@@ -30,9 +30,13 @@ header .menu-page span {
   margin-left: 20px;
   margin: 5px 17px 5px;
 }
+
 header.none{
   opacity: 0;
   transition: 1.5s;
+}
+header.on{
+  pointer-events: none;
 }
 
 /***** product-list-bg *****/

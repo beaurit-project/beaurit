@@ -20,8 +20,6 @@ function magneticButton(element) {
       translate3d(${centerX / 4}px, ${centerY / 4}px, 0)
       rotate3d(${-centerY / 100}, ${centerX / 100}, 0, ${d / 10}deg)
     `
-
-    
   })
 
   element.addEventListener('mouseleave', () => {

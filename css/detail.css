@@ -44,6 +44,9 @@ header.none{
   opacity: 0;
   transition: 1.5s;
 }
+header.on{
+  pointer-events: none;
+}
 
 
 /******** home-pliates *******/
@@ -516,7 +519,7 @@ footer p{
 }
 
 
-@media (max-width : 450px){
+@media (max-width : 500px){
   body {
     margin: 0 auto;
     /* overflow-x: hidden; */
