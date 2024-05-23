@@ -56,7 +56,6 @@
 }
 .sub-main .sub-main-container .sub-main-box3 .sub-main-img-bg {
   background-color: #65A8FF;
-  /* background-color: #6581ff; */
   border-radius: 50%;
   width: 23vw;
   height: 23vw;
@@ -71,7 +70,7 @@
   width: 28vw;
   height: 28vw;
   object-fit: contain;
-  padding: 0 0 0 55px;
+  padding: 5px;
   top: 0%;
   left: 5%;
 }
@@ -117,8 +116,8 @@
   transform: rotate(-7deg) scaleX(1);
   transform-origin: center left;
   position: absolute;
-  left: 37%;
-  bottom: 11%;
+  left: 40%;
+  bottom: 8%;
   z-index: 9999;
   transition: all 0.25s ease;
   opacity: 1;
@@ -133,11 +132,11 @@
   border-radius: 30px;
   text-align: center;
   padding: 10px;
-  transform: rotate(-7deg) scaleX(1); /* scaleX(0)으로 하고 active하면 0 */
+  transform: rotate(-7deg) scaleX(1); /* scaleX(0)으로 하고 active에는 0 */
   transform-origin: center left;
   position: absolute;
-  left: 30%;
-  bottom: 13%;
+  left: 40%;
+  bottom: 40%;
   transition: all 0.25s ease;
   opacity: 1;
 }
@@ -208,8 +207,9 @@
   color: #FD7645;
   transition: 0.5s;
   opacity: 1;
-  position: relative;
-  bottom: -50%;
+  position: absolute;
+  left: 35%;
+  bottom: 32%;
 }
 .sub-main .sub-main-container .sub-main-box2 .info-box.active {
   opacity: 1;
@@ -266,11 +266,12 @@
 .sub-main-box2 .obj-wrapper img.active {
   opacity: 1;
 }
+/* 자몽, 아령 이미지 영역이 뷰릿토핑 이미지 영역을 침범해서 마우스 커서에 따라 움직일 때 떨림현상 있음  */
 .sub-main-box2 .obj-wrapper img:nth-child(1) {/* 아령 */
   top: 40%;
   left: -25%;
   height: 40%;
-  z-index: -9;
+  z-index: -9999;
 }
 .sub-main-box2 .obj-wrapper img:nth-child(2) {
   top: 3%;
