@@ -96,7 +96,7 @@ body{margin: 0; height: 100vh;}
 .menu-box-detail img{
     position: absolute;
     bottom: -30px; right: 20px;
-    width: 50%;
+    width: 40%;
     transition: .5s;
     opacity: 0;
     transition: 0.5s;
