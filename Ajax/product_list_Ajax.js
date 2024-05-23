@@ -1,36 +1,48 @@
 $(document).ready(function() {
-
   $.ajax({
     url: "./product_list.json",
     dataType: "json",
-    success: (users) => {
-      if(users) {
-        console.log(users);
-        $.each(users, (idx, user) => {
-          // Skip the icon object with id 15
-          if (user.id === 15) return;
+    success: (products) => {
+      if(products) {
+        const icons = products.find(product => product.id === 15);
 
-          const dataList = `
-            <div class="product-item">
-              <img src="${user.url}" alt="${user.title}">
-              <h3>${user.title}</h3>
-              <p>${user.price}</p>
-              <div class="icons">
-                <img src="${users[14].icon1}" alt="Option Icon">
-                <img src="${users[14].icon2}" alt="Wish Icon">
-                <img src="${users[14].icon3}" alt="Cart Icon">
+        $.each(products, (idx, product) => {
+          if (product.id === 15) return;
+
+          const isBestSeller = product.bestSeller ? '<div class="best-seller-box"><p>BEST SELLER</p></div>' : '';
+
+          const productItem = `
+            <li class="product-list-item${idx + 1}">
+              <div class="thumbnail">
+                <a href="../html/detail.html">
+                  <img src="${product.url}" alt="${product.title}">
+                </a>
+                <div class="product-list-img-option-box">
+                  <a href="#">
+                    <img src="${icons.icon1}" alt="제품옵션 보기">
+                  </a>
+                  <a href="#">
+                    <img src="${icons.icon2}" alt="관심상품 등록">
+                  </a>
+                  <a href="#">
+                    <img src="${icons.icon3}" alt="장바구니 등록">
+                  </a>
+                </div>
               </div>
-            </div>
+              ${isBestSeller}
+              <div class="product-list-des">
+                <strong class="name">${product.title}</strong>
+                <div class="bar"></div>
+                <p class="price">${product.price}</p>
+              </div>
+            </li>
           `;
 
-          // Debug message to check the data being appended
-          console.log(`Appending data for idx ${idx}:`, dataList);
-
-          $('.product-list-img li').eq(idx).append(dataList);
+          $('.product-list-img').append(productItem);
         });
       }
     },
-    error: (xhr, status, error) => {
+    error: function(xhr, status, error) {
       console.log('AJAX 요청 실패:', xhr, status, error);
     }
   });

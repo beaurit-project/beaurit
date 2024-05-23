@@ -3,25 +3,29 @@
     "id": 1,
     "title": "코어클럽 42기",
     "price" : "60,000원",
-    "url": "./images/list-img/제품리스트1.png"
+    "url": "./images/list-img/제품리스트1.png",
+    "bestSeller": true 
   },
   {
     "id": 2,
     "title": "홈필라테스SET+뷰릿 다리 밴드",
     "price" : "177,800원",
-    "url": "./images/list-img/제품리스트2.png"
+    "url": "./images/list-img/제품리스트2.png",
+    "bestSeller": true 
   },
   {
     "id": 3,
     "title": "뷰릿 홈필라테스 SET",
     "price" : "99,800원",
-    "url": "./images/list-img/제품리스트3.png"
+    "url": "./images/list-img/제품리스트3.png",
+    "bestSeller": true 
   },
   {
     "id": 4,
     "title": "릴렉스 요가링",
     "price" : "78,000원",
-    "url": "./images/list-img/제품리스트4.png"
+    "url": "./images/list-img/제품리스트4.png",
+    "bestSeller": true 
   },
   {
     "id": 5,

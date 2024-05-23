@@ -2,22 +2,19 @@
 <html lang="ko">
 <head>
   <meta charset="utf-8">
-  <title>Product_list</title>
+  <title>Product_list_Ajax</title>
   <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
-  <style>
-  
-  </style>
   <!-- favicon -->
   <link rel="shortcut icon" href="../favicon/favicon.ico" type="image/x-icon">
   <link rel="apple-touch-icon" sizes="180x180" href="../favicon/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="../favicon/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="../favicon/favicon-16x16.png">
   <link rel="manifest" href="../favicon/site.webmanifest">
-    <!-- open graph -->
-    <meta property="og:title" content="Beaurit">
-    <meta property="og:description" content="내 방에서 하는 홈필라테스">
-    <meta property="og:image" content="https://beaurit-project.github.io/beaurit/images/opengraph/open-graph.jpg">
-    <meta property="og:url" content="https://beaurit-project.github.io/beaurit/html/product_list.html">
+  <!-- open graph -->
+  <meta property="og:title" content="Beaurit">
+  <meta property="og:description" content="내 방에서 하는 홈필라테스">
+  <meta property="og:image" content="https://beaurit-project.github.io/beaurit/images/opengraph/open-graph.jpg">
+  <meta property="og:url" content="https://beaurit-project.github.io/beaurit/html/product_list.html">
   <!-- reset -->
   <link rel="stylesheet" href="../assets/styles/reset.css">
   <!-- plugIn style -->
@@ -25,13 +22,13 @@
   <link rel="stylesheet" href="../css/beaurit_index.css">
   <!-- 이 페이지에만 들어가는 style -->
   <link rel="stylesheet" href="../css/product_list.css">
-
   <!-- jQuery -->
   <script src="../assets/jquery-3.7.1.min.js"></script>
   <!-- plugIn js -->
   <!-- 이 페이지에만 들어가는 js -->
+  <script defer src="../js/product_list.js"></script>
+  <script src="./product_list_Ajax.js"></script>
 </head>
-
 <body>
   <header>
     <a href="../html/main.html">
@@ -66,58 +63,14 @@
       <li><a href="#">높은가격</a></li>
       <li><img src="../images/list-img/list-icon-filter.png" alt="필터아이콘"></li>
     </ul>
-      <p class="mobile-filter"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960"
-          width="24px" fill="#222">
-          <path d="M480-344 240-584l56-56 184 184 184-184 56 56-240 240Z" />
-        </svg><span>상품정렬</span></p>
+    <p class="mobile-filter"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#222">
+      <path d="M480-344 240-584l56-56 184 184 184-184 56 56-240 240Z" /></svg><span>상품정렬</span></p>
   </div>
 
   <!-- 제품 리스트 영역 -->
   <section class="product-list">
     <ul class="product-list-img">
-      <li>
-        
-      </li>
-      <li class="product-list-item2">
       
- 
-      </li>
-      <li class="product-list-item3">
-   
-      </li>
-      <li class="product-list-item4">
-      
-      </li>
-      <li class="product-list-item5">
-      
-      </li>
-      <li class="product-list-item6">
-     
-      </li>
-      <li class="product-list-item7">
-      
-      </li>
-      <li class="product-list-item8">
-       
-      </li>
-      <li class="product-list-item9">
-       
-      </li>
-      <li class="product-list-item10">
-      
-      </li>
-      <li class="product-list-item11">
-      
-      </li>
-      <li class="product-list-item12">
-        
-      </li>
-      <li class="product-list-item13">
-      
-      </li>
-      <li class="product-list-item14">
-    
-      </li>
     </ul>
   </section>
 
@@ -125,7 +78,6 @@
     <p>현재 전화상담은 별도로 운영하고 있지 않습니다. 뷰릿 채널톡으로 문의 부탁드립니다<br>
       AM 11:00 ~ PM 6:00 / Lunch Time PM 12:00 ~ PM 1:00 / Sat.Sun.Holiday CLOSED<br>
       신한 140-012-525782 (주)파인유얼뷰티</p>
-
     <section class="footer-bottom">
       <ul class="util-menu">
         <li><a href="#">Guide</a></li>
@@ -151,14 +103,9 @@
           <img src="../images/list-img/list-icon-kakaoch.png" alt="카카오채널 연결">
           <div class="footer-bottom-btn-bar"></div>
           <svg width="30" height="30" fill="none" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-            <path
-              d="m7.293 8.293 3.995-4a1 1 0 0 1 1.32-.084l.094.083 4.006 4a1 1 0 0 1-1.32 1.499l-.094-.083-2.293-2.291v11.584a1 1 0 0 1-.883.993L12 20a1 1 0 0 1-.993-.884L11 19.001V7.41L8.707 9.707a1 1 0 0 1-1.32.084l-.094-.084a1 1 0 0 1-.084-1.32l.084-.094 3.995-4-3.995 4Z"
-              fill="#fff" />
+            <path d="m7.293 8.293 3.995-4a1 1 0 0 1 1.32-.084l.094.083 4.006 4a1 1 0 0 1-1.32 1.499l-.094-.083-2.293-2.291v11.584a1 1 0 0 1-.883.993L12 20a1 1 0 0 1-.993-.884L11 19.001V7.41L8.707 9.707a1 1 0 0 1-1.32.084l-.094-.084a1 1 0 0 1-.084-1.32l.084-.094 3.995-4-3.995 4Z" fill="#fff"/>
           </svg>
         </a>
       </div>
     </section>
   </footer>
-</body>
-<script src="./product_list_Ajax.js"></script>
-</html>
