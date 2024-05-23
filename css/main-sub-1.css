@@ -1,0 +1,131 @@
+@charset "utf-8";
+
+/******** sub-main ********/
+.sub-main {
+  position: relative;
+  width: 100%; height: 600px;
+  margin: 100px 0;
+  position: relative;
+}
+.sub-main .sub-main-container {
+  position: absolute;
+  /* margin: 0 auto 500px;
+  max-width: 1920px; */
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-row: 1fr 1fr;
+  height: 100%; width: 100%;
+
+}
+.sub-main .sub-main-container .sub-main-box1 {
+  position: absolute;
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+  width: 100%; height: 100%;
+}
+.sub-main .sub-main-container .sub-main-box2  {
+  position: absolute;
+  grid-column: 2 / 3;
+  grid-row: 1 / 2;
+  width: 100%; height: 100%;
+}
+.sub-main .sub-main-container .sub-main-box3  {
+  position: absolute;
+  grid-column: 3 / 4;
+  grid-row: 1 / 2;
+  width: 100%; height: 100%;
+}
+
+
+.sub-main .sub-main-container .sub-main-box1 img {
+  position: absolute;
+  width: 100%;
+  padding: 50px 50px 50px 0;
+}
+.sub-main .sub-main-container .sub-main-box2 img {
+  position: absolute;
+  width: 100%;
+  top: -30%;
+  padding: 50px;
+}
+.sub-main .sub-main-container .sub-main-box3 img {
+  position: absolute;
+  width: 100%;
+  padding: 50px;
+}
+
+/* 콘텐츠 */
+.sub-main-txt {
+  background-color: #000;
+  color: #fff;
+  width: 200px;
+  font-size: var(--font-title-md);
+  font-family: var(--font-m-en);
+  font-weight: bold;
+  border-radius: 30px;
+  text-align: center;
+  padding: 10px;
+  transform: rotate(-7deg) scaleX(1);
+  transform-origin: center left;
+  transition: all 0.25s ease;
+  opacity: ;
+}
+.info-box {
+  font-family: var(--font-m-en);
+  font-size: var(--font-title-md);
+  text-align: center;
+  font-weight: bold;
+}
+.product1 {
+  /* background: url(../images/main-img/bg1.png) no-repeat 100% / cover; */
+  border-radius: 50%;
+}
+.info1 {
+
+}
+.sub-main .sub-main-container .sub-main-box1 .box1 {
+  width: 50%;
+  position: absolute;
+  top: 20%;
+  left: 10%;
+}
+.sub-main .sub-main-container .sub-main-box2 .box2 {
+  width: 50%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.sub-main .sub-main-container .sub-main-box3 .box3 {
+  width: 50%;
+  position: absolute;
+  /* top: 0; */
+  /* left: 0; */
+}
+/* slide */
+.sub-main .sub-main-slide {
+  width: 200%;
+  height: 50px;
+  position: absolute;
+  top: 60%;
+  font-size: var(--font-title-md);
+  font-family: var(--font-m-en);
+  display: flex;
+  font-weight: bold;
+  animation: marquee 30s linear infinite;
+  z-index: -999;
+  white-space: nowrap;
+}
+@keyframes marquee {
+  0% {
+    left: 0
+  }
+
+  100% {
+    left: -100%;
+  }
+}
+.sub-main .sub-main-slide .marquee-contents-box {
+  display: flex;
+  align-items: center;
+  gap: 100px;
+}
