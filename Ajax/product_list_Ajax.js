@@ -1,6 +1,6 @@
 $(document).ready(function() {
   $.ajax({
-    url: "./product_list.json",
+    url: "https://beaurit-project.github.io/beaurit/Ajax/product_list.json",
     dataType: "json",
     success: (products) => {
       if(products) {
