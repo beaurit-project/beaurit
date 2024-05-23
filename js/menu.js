@@ -39,25 +39,12 @@ document.querySelectorAll('.logo-effect').forEach(element => {
 });
 
 
-// // HTML 요소를 가져옵니다.
-// var menuBoxDetail = document.querySelector('.menu-box-detail');
-// var menuBoxDetailImg = document.querySelector('.menu-box-detail img');
 
-// // 바운싱 애니메이션을 적용할 함수를 정의합니다.
-// function applyBounceEffect() {
-//     // 이미지에 바운싱 효과를 적용합니다.
-//     menuBoxDetailImg.style.animation = 'bounce 0.5s infinite alternate'; // 바운싱 애니메이션 적용
-// }
+document.addEventListener('mousemove', (e) => {
+  let mouseX = e.pageX + -15; // document의 x좌표값
+  let mouseY = e.pageY + -15; // document의 y좌표값
 
-// // 마우스를 올렸을 때의 이벤트 리스너를 추가합니다.
-// menuBoxDetail.addEventListener('mouseenter', function() {
-//     applyBounceEffect();
-// });
-
-// // 마우스를 떼었을 때의 이벤트 리스너를 추가합니다.
-// menuBoxDetail.addEventListener('mouseleave', function() {
-//     // 바운싱 애니메이션을 제거합니다.
-//     menuBoxDetailImg.style.animation = 'none';
-// });
-
-
+  let cursor = document.querySelector('.cursor');
+  cursor.style.left = mouseX + 'px';
+  cursor.style.top = mouseY + 'px';
+})

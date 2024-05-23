@@ -59,7 +59,9 @@ body{margin: 0; height: 100vh;}
     text-align: center;
     position: relative;
     height: 100vh;
+    cursor: url(../images/menu-img/mouse.png) 30 30, auto;
 }
+
 .menu-container .logo{
     position: absolute;
     top: 30px; left: 30px;
@@ -70,7 +72,9 @@ body{margin: 0; height: 100vh;}
     height: 100vh;
     padding: 0 20px;
 }
-
+.menu-box::-webkit-scrollbar {
+    display: none;
+  }
 .menu-box h1{
     font-size: 3.5rem;
     color: #fff;
@@ -80,29 +84,29 @@ body{margin: 0; height: 100vh;}
     place-content: center;
     margin: 0;
     width: 100%; height: 100%;
-    transition: 0.5s;
-   
+    transition: 0.5s;   
+    cursor: url(../images/menu-img/mouse.png) 30 30, auto;
 }
 .menu-box-detail{
     border-radius: 20px;
     margin: 10px auto;
-    height: 200px;
+    height: 300px;
     position: relative;
     overflow: hidden;
     max-width: 700px;
     min-width: 300px;
     transition: 0.5s;
 }
-.menu-box-detail img{
+/* .menu-box-detail img{
     position: absolute;
     bottom: -30px; right: 20px;
     width: 40%;
     transition: .5s;
     opacity: 0;
     transition: 0.5s;
-}
+} */
 
-@keyframes bounce {
+/* @keyframes bounce {
     0% {
         transform: translateY(0); 
     }
@@ -112,7 +116,7 @@ body{margin: 0; height: 100vh;}
     100% {
         transform: translateY(-5px); 
     }
-}
+} */
 
 .menu-box-detail iframe{
     position: absolute;
@@ -121,16 +125,11 @@ body{margin: 0; height: 100vh;}
     opacity: 0;
     transition: 1s;
 }
-.menu-box-detail:hover img{
+.menu-box-detail:hover iframe{
     opacity: 1;
     bottom: -10px;
-    z-index: 99999;
-    animation: bounce 1s ease-in-out infinite alternate;
 }
-.menu-box-detail:hover{
-    height: 220px;
-    overflow: visible;
-}
+
 
 
 .menu-box-detail.box1{
