@@ -1,0 +1,112 @@
+@charset "utf-8";
+
+/******** sub-main ********/
+.sub-main {
+  position: relative;
+  width: 100%; height: 600px;
+  margin: 100px 0;
+}
+.sub-main .sub-main-container {
+  position: absolute;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-row: 1fr 1fr;
+  height: 100%; width: 100%;
+}
+.sub-main .sub-main-container .sub-main-box1 {
+  position: absolute;
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+  width: 100%; height: 100%;
+  position: relative;
+}
+.sub-main .sub-main-container .sub-main-box2  {
+  position: absolute;
+  grid-column: 2 / 3;
+  grid-row: 1 / 2;
+  width: 100%; height: 100%;
+}
+.sub-main .sub-main-container .sub-main-box3  {
+  position: absolute;
+  grid-column: 3 / 4;
+  grid-row: 1 / 2;
+  width: 100%; height: 100%;
+}
+.product-item.box1{
+  position: absolute;
+  width: 23vw; height: 23vw;
+}
+.sub-main .sub-main-container .sub-main-box1 .sub-main-img-bg {
+  background-color: #FDE245;
+  border-radius: 50%;
+  position: absolute;
+  width: 100%; height: 100%;
+  top: 12%;
+  left: 18%;
+  z-index: -99;
+  opacity: 1;
+}
+
+/* 제품이미지 */
+.sub-main .sub-main-container .sub-main-box1 .product1 {
+  position: relative;
+  width: 28vw;
+  height: 28vw;
+  object-fit: contain;
+  padding: 5px;
+  top: 0%;
+  left: 5%;
+}
+
+/* 토핑 */
+.obj-wrapper.box1 img{
+  position: absolute;
+  width: 140%;
+  top: -15%; left: -15px;
+  z-index: -9;
+
+}
+
+/* 텍스트 */
+.sub-main .sub-main-container .sub-main-box1 .sub-main-txt {
+  background-color: #000;
+  color: #fff;
+  font-size: var(--font-title-md);
+  font-family: var(--font-m-en);
+  font-weight: bold;
+  border-radius: 30px;
+  text-align: center;
+  padding: 10px;
+  transform: rotate(-7deg) scaleX(1);
+  transform-origin: center left;
+  position: absolute;
+  left: 40%;
+  bottom: -30%;
+  z-index: 9999;
+  transition: all 0.25s ease;
+  opacity: 1;
+  width: 80%; 
+  max-height: 80px; min-height: 20px;
+}
+.sub-main .sub-main-container .info-box {
+  font-family: var(--font-m-en);
+  font-size: var(--font-title-md);
+  text-align: center;
+  font-weight: bold;
+}
+.sub-main .sub-main-container .sub-main-box1 .info-box {
+  color: #FDE245;
+  transition: 0.5s;
+  opacity: 1;
+}
+
+
+/* 모바일 버전 */
+@media (max-width: 450px) {
+  .sub-main .sub-main-container .sub-main-box1 .sub-main-txt{
+    font-size: var(--font-mobile-md);
+  }
+  .sub-main .sub-main-container .sub-main-box1 .info-box {
+    font-size: var(--font-mobile-md);
+  }
+}
