@@ -1,0 +1,138 @@
+@charset "UTF-8";
+
+/******** main box ********/
+body {
+  overflow-x: hidden;
+}
+.main-bg {
+  height: 100%;
+}
+
+.main-bg .main-box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.main-bg .main-box h2 {
+  font-size: clamp(1rem,6.5vw,5rem);
+  white-space: nowrap;
+}
+.main-bg .main-box h2 .main-box-img {
+  margin-top: 10px;
+  width: 30%;
+}
+
+main-box-h2{
+  width: 100%;
+  position: relative;
+}
+
+/*************** main-bg 이미지 텍스트 효과 ***************/
+.container{
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+}
+
+.btn{
+  background: url(../images/main-img/main-bg-btn.png) no-repeat 50%;
+  background-size: 70%;
+  position: absolute;
+  z-index: 9999;
+  width: 15%;
+  height: 20%;
+  margin-top: 2%;
+  color: transparent;
+}
+.btn.on{
+  background: url(../images/main-img/별.png) no-repeat 50%;
+  background-size: 50%;
+  /* left: 775px; */
+  animation: spin 7s linear infinite; /* spin 애니메이션 적용 */
+}
+
+/***** 별 움직임 ******/
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+
+.container .bg-img{
+  position: absolute;
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 50px;
+}
+.bg-img1{
+  background: url(../images/main-img/main-bg2-1.png)no-repeat fixed 50%;
+  text-indent: -9999px;
+}
+.bg-img2{
+  background: url(../images/main-img/main-bg1-1.png)no-repeat fixed 50% ;
+  text-indent: -9999px;
+}
+.bg-img3{
+  background: url(../images/main-img/main-bg3-1.png)no-repeat fixed 50%;
+  text-indent: -9999px;
+}
+
+.wrapper{
+  position: relative;
+}
+.wrapper .txt-wrapper{
+  position: absolute;
+  top: 0; left: 0;
+}
+.wrapper .txt-wrapper h2{
+  color: #000;
+  font-weight: bold;
+  font-size: clamp(1rem,6.5vw,4rem);
+  margin: 10px 0;
+  line-height: 0.9;
+  /* transition: 1s 0.8s; 진행시간 대기시간 */
+  transform: translateY(50px);
+  opacity: 0;
+  font-family: var(--font-m-en);
+  margin-top: 30px;
+}
+
+
+
+
+.wrapper .txt-wrapper.active span,
+.wrapper .txt-wrapper.active h2{
+  opacity: 1;
+  transform: translateY(0);
+}
+
+
+
+.wrapper {
+  position: relative;
+  width: 100%;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.txt-wrapper {
+  display: none;
+}
+
+.txt-wrapper.active {
+  display: block;
+}
+
+.main-box-img{
+  margin-left: 33px;
+}
+
+
