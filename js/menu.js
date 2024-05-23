@@ -20,8 +20,6 @@ function magneticButton(element) {
       translate3d(${centerX / 4}px, ${centerY / 4}px, 0)
       rotate3d(${-centerY / 100}, ${centerX / 100}, 0, ${d / 10}deg)
     `
-
-    
   })
 
   element.addEventListener('mouseleave', () => {
@@ -39,12 +37,3 @@ document.querySelectorAll('.logo-effect').forEach(element => {
 });
 
 
-
-document.addEventListener('mousemove', (e) => {
-  let mouseX = e.pageX + -15; // document의 x좌표값
-  let mouseY = e.pageY + -15; // document의 y좌표값
-
-  let cursor = document.querySelector('.cursor');
-  cursor.style.left = mouseX + 'px';
-  cursor.style.top = mouseY + 'px';
-})

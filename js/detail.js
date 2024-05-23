@@ -11,16 +11,15 @@ $('a[href="#"]').on('click', e => e.preventDefault());
    // 현재 스크롤 위치와 이전 스크롤 위치를 비교
    if (currentScrollTop > lastScrollTop) {
      // 스크롤을 내릴 때
-     $('header').addClass('none');
+     $('header').addClass('none on');
    } else {
      // 스크롤을 올릴 때
-     $('header').removeClass('none');
+     $('header').removeClass('none on');
    }
    
    // 이전 스크롤 위치를 현재 스크롤 위치로 업데이트
    lastScrollTop = currentScrollTop;
  });
- 
 
 /******* add-color-into 슬라이드 버튼 ***********/
   

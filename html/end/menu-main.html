@@ -12,7 +12,10 @@
   <link rel="icon" type="image/png" sizes="16x16" href="../favicon/favicon-16x16.png">
   <link rel="manifest" href="../favicon/site.webmanifest">
   <!-- open graph -->
-
+  <meta property="og:title" content="Beaurit">
+  <meta property="og:description" content="내 방에서 하는 홈필라테스">
+  <meta property="og:image" content="https://beaurit-project.github.io/beaurit/images/opengraph/open-graph.jpg">
+  <meta property="og:url" content="https://beaurit-project.github.io/beaurit/html/main.html">
   <!-- reset -->
   <link rel="stylesheet" href="../assets/styles/reset.css">
   <!-- fonts -->
@@ -26,6 +29,7 @@
   <link rel="stylesheet" href="../css/main-bg.css">
   <link rel="stylesheet" href="../css/main-brand-story.css">
   <link rel="stylesheet" href="../css/main-highlights.css">
+  <link rel="stylesheet" href="../css/main-loding.css">
 
   <!-- jQuery -->
   <script src="../assets/jquery-3.7.1.min.js"></script>
@@ -38,8 +42,8 @@
 </head>
 
 <body>
+ <!----- header -------->
 
-  <!----- header -------->
   <header>
     <a href="#">
       <img src="../images/main-img/로고블랙.png" alt="로고이미지" class="logo-img">
@@ -95,45 +99,28 @@
     <section class="sub-main">
       <div class="sub-main-container">
         <div class="sub-main-box1 sub-main-cursor">
-          <img src="../images/main-img/sub-main3.png" alt="뷰릿토핑 이미지">
-          <div class="sub-main-txt">
+          <img src="../images/main-img/sub-main_1.png" alt="폼롤러 이미지">
+          <div class="sub-main-txt" id="txt1">
             <p>Pilates</p>
           </div>
           <div class="info-box">Basic Bar</div>
           <div class="sub-main-img-bg"></div>
-          <div class="obj-wrapper box1">
-            <img src="../images/main-img/sub-main3-2번.png" alt="레드토핑1">
-            <img src="../images/main-img/sub-main3-3번.png" alt="블루토핑">
-            <img src="../images/main-img/sub-main3-4번.png" alt="레드토핑2">
-            <img src="../images/main-img/sub-main3-1번.png" alt="옐로우 토핑1">
-          </div>
         </div>
-
         <div class="sub-main-box2 sub-main-cursor">
-          <img src="../images/main-img/sub-main_1번.png" alt="베이직바 이미지">
-          <div class="sub-main-txt">
+          <img src="../images/main-img/sub-main_2.png" alt="요가링 이미지">
+          <div class="sub-main-txt" id="txt2">
             <p>Relax</p>
           </div>
           <div class="info-box">Yoga Ring</div>
           <div class="sub-main-img-bg"></div>
-          <div class="obj-wrapper box2">
-            <img src="../images/main-img/sub-main_2번.png" alt="폼롤러 아령">
-            <img src="../images/main-img/sub-main_3번.png" alt="폼롤러 오렌지">
-            <img src="../images/main-img/sub-main_4번.png" alt="폼롤러 자몽">
-          </div>
         </div>
-
         <div class="sub-main-box3 sub-main-cursor">
-          <img src="../images/main-img/sub-main2-0번.png" alt="요가링 이미지">
-          <div class="sub-main-txt">
+          <img src="../images/main-img/sub-main_3.png" alt="뷰릿토핑 이미지">
+          <div class="sub-main-txt" id="txt3">
             <p>3 Type</p>
           </div>
           <div class="info-box">Beaurit Topping</div>
           <div class="sub-main-img-bg"></div>
-          <div class="obj-wrapper box3">
-            <img src="../images/main-img/sub-main2-3번.png" alt="볼 파랑">
-            <img src="../images/main-img/sub-main2-4번.png" alt="볼 핑크">
-          </div>
         </div>
       </div>
 
@@ -319,7 +306,6 @@
       <h2>Ways to use</h2>
       <div class="waystouse-box">
         <div class="waystouse-no-box">
-          <div class="waystouse-container">
           <ul class="waystouse-no-bar">
             <li class="active">01</li>
             <li>02</li>
@@ -338,7 +324,6 @@
 
           </div>
         </div>
-      </div>
 
 
 
@@ -498,6 +483,7 @@
   <script src="../js/main-bg.js"></script>
   <script src="../js/main-sub.js"></script>
   <script src="../js/main-brand-story.js"></script>
+  <script src="../js/main-loding.js"></script>
 
 </body>
 

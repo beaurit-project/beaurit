@@ -84,7 +84,7 @@ gsap.fromTo(".sub-main-box2", {
 gsap.fromTo(".sub-main-box3", {
   translateY : -10,
 }, {
-  translateY: 8,
+  translateY: 20,
   duration : 3,
   repeat : -1,
   yoyo: true,
@@ -93,36 +93,15 @@ gsap.fromTo(".sub-main-box3", {
 
 /* 마우스 hover 시, 커서에 따라 이동 */
 document.addEventListener('DOMContentLoaded', () => {
-  const element = document.querySelector('.sub-main .sub-main-container .sub-main-box1');
+  const element = document.querySelector('.sub-main .sub-main-container .sub-main-box1 img');
 
   element.addEventListener('mousemove', (e) => {
       const rect = element.getBoundingClientRect();
       const offsetX = e.clientX - rect.left;
       const offsetY = e.clientY - rect.top;
       
-      const moveX = (offsetX / rect.width - 0.5) * 40; // 이동 강도 조절
-      const moveY = (offsetY / rect.height - 0.5) * 40; // 이동 강도 조절
-      
-      element.style.transform = `translate(${moveX}px, ${moveY}px)`;
-  });
-
-  element.addEventListener('mouseleave', () => {
-      element.style.transform = 'translate(0, 0)';
-  });
-});
-
-
-
-document.addEventListener('DOMContentLoaded', () => {
-  const element = document.querySelector('.sub-main .sub-main-container .sub-main-box2');
-
-  element.addEventListener('mousemove', (e) => {
-      const rect = element.getBoundingClientRect();
-      const offsetX = e.clientX - rect.left;
-      const offsetY = e.clientY - rect.top;
-      
-      const moveX = (offsetX / rect.width - 0.5) * 40; // 이동 강도 조절
-      const moveY = (offsetY / rect.height - 0.5) * 40; // 이동 강도 조절
+      const moveX = (offsetX / rect.width - 0.5) * 50; // 이동 강도 조절
+      const moveY = (offsetY / rect.height - 0.5) * 50; // 이동 강도 조절
       
       element.style.transform = `translate(${moveX}px, ${moveY}px)`;
   });
@@ -133,15 +112,15 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 document.addEventListener('DOMContentLoaded', () => {
-  const element = document.querySelector('.sub-main .sub-main-container .sub-main-box3');
+  const element = document.querySelector('.sub-main .sub-main-container .sub-main-box2 img');
 
   element.addEventListener('mousemove', (e) => {
       const rect = element.getBoundingClientRect();
       const offsetX = e.clientX - rect.left;
       const offsetY = e.clientY - rect.top;
       
-      const moveX = (offsetX / rect.width - 0.5) * 40; // 이동 강도 조절
-      const moveY = (offsetY / rect.height - 0.5) * 40; // 이동 강도 조절
+      const moveX = (offsetX / rect.width - 0.5) * 50; // 이동 강도 조절
+      const moveY = (offsetY / rect.height - 0.5) * 50; // 이동 강도 조절
       
       element.style.transform = `translate(${moveX}px, ${moveY}px)`;
   });
@@ -149,4 +128,46 @@ document.addEventListener('DOMContentLoaded', () => {
   element.addEventListener('mouseleave', () => {
       element.style.transform = 'translate(0, 0)';
   });
+});
+
+document.addEventListener('DOMContentLoaded', () => {
+  const element = document.querySelector('.sub-main .sub-main-container .sub-main-box3 img');
+
+  element.addEventListener('mousemove', (e) => {
+      const rect = element.getBoundingClientRect();
+      const offsetX = e.clientX - rect.left;
+      const offsetY = e.clientY - rect.top;
+      
+      const moveX = (offsetX / rect.width - 0.5) * 50; // 이동 강도 조절
+      const moveY = (offsetY / rect.height - 0.5) * 50; // 이동 강도 조절
+      
+      element.style.transform = `translate(${moveX}px, ${moveY}px)`;
+  });
+
+  element.addEventListener('mouseleave', () => {
+      element.style.transform = 'translate(0, 0)';
+  });
+});
+
+
+// 영역에 마우스 hover시 오브젝트 나타남
+$('.sub-main .sub-main-container .sub-main-box1').on('mouseenter', () => {
+  $('.sub-main-box1 .obj-wrapper img').addClass('active');
+});
+$('.sub-main .sub-main-container .sub-main-box1').on('mouseleave', () => {
+  $('.sub-main-box1 .obj-wrapper img').removeClass('active');
+});
+
+$('.sub-main .sub-main-container .sub-main-box2').on('mouseenter', () => {
+  $('.sub-main-box2 .obj-wrapper img').addClass('active');
+});
+$('.sub-main .sub-main-container .sub-main-box2').on('mouseleave', () => {
+  $('.sub-main-box2 .obj-wrapper img').removeClass('active');
+});
+
+$('.sub-main .sub-main-container .sub-main-box3').on('mouseenter', () => {
+  $('.sub-main-box3 .obj-wrapper img').addClass('active');
+});
+$('.sub-main .sub-main-container .sub-main-box3').on('mouseleave', () => {
+  $('.sub-main-box3 .obj-wrapper img').removeClass('active');
 });

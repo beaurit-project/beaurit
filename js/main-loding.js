@@ -1,7 +1,6 @@
 $('a[href="#"]').on('click', e => e.preventDefault());
 
 
-
 /************ 로딩페이지 ********/
 function hideLoader() {
     $('.loader-container').slideUp();
@@ -10,7 +9,7 @@ function hideLoader() {
   
   window.addEventListener('load', () => {
     $(".contents").css({'display':'none'});
-    setTimeout(hideLoader, 3300);
+    setTimeout(hideLoader, 3600);
   });
 
 
