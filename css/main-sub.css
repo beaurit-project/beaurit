@@ -263,9 +263,10 @@
   color: #FDE245;
   transition: 0.5s;
   position: absolute;
-  left: 45%;
-  bottom: -45%;
+  left: 30%;
+  bottom: -38%;
   opacity: 0;
+  white-space: nowrap;
 }
 .sub-main .sub-main-container .sub-main-box1 .info-box.active {
   opacity: 1;
@@ -274,8 +275,8 @@
   color: #FD7645;
   transition: 0.5s;
   position: absolute;
-  left: 40%;
-  bottom: -8%;
+  left: 43%;
+  bottom: -6%;
   white-space: nowrap;
   opacity: 0;
 }
@@ -287,8 +288,8 @@
   transition: 0.5s;
   position: absolute;
   white-space: nowrap;
-  left: 18%;
-  bottom: -45%;
+  left: 35%;
+  bottom: -38%;
   opacity: 0;
 }
 .sub-main .sub-main-container .sub-main-box3 .info-box.active {
