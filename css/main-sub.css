@@ -5,7 +5,7 @@
   position: relative;
   width: 100%;
   height: 600px;
-  margin: 200px 0 150px 30px;
+  margin: 200px 0 210px 30px;
 }
 .sub-main .sub-main-container {
   position: absolute;
@@ -113,7 +113,7 @@
   opacity: 1;
 }
 .sub-main .sub-main-container .sub-main-box3 .sub-main-img-bg {
-  background-color: #65A8FF;
+  background-color: var(--color-point-pink);
   border-radius: 50%;
   width: 100%;
   height: 100%;
@@ -263,7 +263,7 @@
   color: #FDE245;
   transition: 0.5s;
   position: absolute;
-  left: 35%;
+  left: 45%;
   bottom: -45%;
   opacity: 0;
 }
@@ -274,7 +274,7 @@
   color: #FD7645;
   transition: 0.5s;
   position: absolute;
-  left: 35%;
+  left: 40%;
   bottom: -8%;
   white-space: nowrap;
   opacity: 0;
@@ -283,11 +283,11 @@
   opacity: 1;
 }
 .sub-main .sub-main-container .sub-main-box3 .info-box {
-  color: #65A8FF;
+  color: var(--color-point-pink);
   transition: 0.5s;
   position: absolute;
   white-space: nowrap;
-  left: 10%;
+  left: 18%;
   bottom: -45%;
   opacity: 0;
 }
