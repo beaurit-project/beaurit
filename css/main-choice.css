@@ -118,7 +118,7 @@
 .waystouse{
     text-align: center; 
     margin: 0 auto; 
-    padding: 200px 0 0 0;
+    padding: 200px 0;
 }
 .waystouse-box{
     display: flex;
@@ -187,9 +187,10 @@
 /* progress bar */
 .waystouse-no-box{
    padding-bottom: 600px;
+   margin-top: 30px;
 }
 .waystouse-no-bar{
-    margin: 50px 0;
+    margin: 50px 0 10px;
     width: 100px; height: 100px;
     position: sticky;
     top: 10%;
@@ -221,9 +222,10 @@
     background-color: #ddd;
     height: 10px; width: 100%;
     border-radius: 10px;
-    transform: translateY(-50px);
+    /* transform: translateY(-20px); */
+    top: 22%;
     position: sticky;
-    top: 30%;
+
     grid-row: 3 / 4;
 }
 
