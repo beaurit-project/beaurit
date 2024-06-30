@@ -1,4 +1,4 @@
-##beaurit-work
+[팀원으로 이동](#팀원)
 
 # 24.05.24(금)
 - main.html과 index.html의 main-sub 구역 수정, main-sub.css 수정
