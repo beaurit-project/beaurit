@@ -1,3 +1,5 @@
+##beaurit-work
+
 # 24.05.24(금)
 - main.html과 index.html의 main-sub 구역 수정, main-sub.css 수정
 - 팀 프로젝트 발표
