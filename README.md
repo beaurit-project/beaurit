@@ -1,4 +1,4 @@
-## Beaurit 작업일지
+## <h1>📝Beaurit 작업일지📝</h1>
 
 # 24.05.24(금)
 - main.html과 index.html의 main-sub 구역 수정, main-sub.css 수정
